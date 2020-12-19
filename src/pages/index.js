@@ -1,5 +1,6 @@
 import React from "react"
 
-export default function Home() {
+const Home = () => {
   return <div>Michael Profile</div>
 }
+export default Home
