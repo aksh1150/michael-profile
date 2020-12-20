@@ -1,26 +1,26 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == xs {
-    @media only screen and (min-width: 375px) {
-      @content;
-    }
-  }
-  @if $breakpoint == sm {
     @media only screen and (min-width: 576px) {
       @content;
     }
   }
-  @if $breakpoint == md {
+  @if $breakpoint == sm {
     @media only screen and (min-width: 768px) {
       @content;
     }
   }
+  @if $breakpoint == md {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
   @if $breakpoint == lg {
-    @media only screen and (min-width: 1040px) {
+    @media only screen and (min-width: 1200px) {
       @content;
     }
   }
   @if $breakpoint == xl {
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 1400px) {
       @content;
     }
   }
@@ -45,7 +45,7 @@
 
 @mixin clearfix {
   &::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }
