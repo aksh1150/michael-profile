@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Footer } from "../Components/organisms"
+import { Footer } from "../Components/molecules"
 
 const Home = () => {
   return (
