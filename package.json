@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "michael-profile",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -24,6 +24,7 @@
     "react-jss": "^10.5.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.2.1"
   },
   "repository": {

@@ -11,13 +11,13 @@ module.exports = {
     author: "Akshit Patel",
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-source-contentful",
-    //   options: {
-    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
-    //     accessToken: process.env.CONTENTFUL_API_KEY,
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_API_KEY,
+      },
+    },
     "gatsby-plugin-sass",
   ],
 }
