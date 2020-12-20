@@ -1,4 +1,4 @@
 import Footer from "./Footer"
-import Buttons from "./Button"
+import Button from "./Button"
 
-export { Footer, Buttons }
+export { Footer, Button }

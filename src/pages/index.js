@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Footer, Buttons } from "../Components/molecules"
+import { Footer, Button } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
 
 const Home = () => {
