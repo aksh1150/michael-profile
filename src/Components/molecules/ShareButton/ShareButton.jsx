@@ -1,17 +1,18 @@
 import React from "react"
 import "./ShareButton.scss"
+import { BaseLink } from "../../atoms"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 
-const ShareButton = () => {
+const ShareButton = ({ iconData }) => {
   const btn = (
     <div className="btn_wrap">
       <span>Contact</span>
       <div className="shareContainer">
-        <FontAwesomeIcon icon={faEnvelopeSquare} className="socialIcon" />
-        <FontAwesomeIcon icon={faFacebook} className="socialIcon" />
-        <FontAwesomeIcon icon={faLinkedin} className="socialIcon" />
+        {iconData.map(share => (
+          <BaseLink link={share.link} className="socialIcon" key={share.link}>
+            <FontAwesomeIcon icon={share.icon} size="2x" />
+          </BaseLink>
+        ))}
       </div>
     </div>
   )

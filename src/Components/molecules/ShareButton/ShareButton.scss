@@ -41,7 +41,7 @@
     transition: all 1.2s ease;
   }
 
-  .ShareContainer {
+  .shareContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -69,13 +69,13 @@
       }
 
       &:nth-of-type(2) {
-        -webkit-transition-delay: 0.9s;
-        transition-delay: 0.9s;
+        -webkit-transition-delay: 0.8s;
+        transition-delay: 0.8s;
       }
 
       &:nth-of-type(3) {
-        -webkit-transition-delay: 0.7s;
-        transition-delay: 0.7s;
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
       }
     }
   }
