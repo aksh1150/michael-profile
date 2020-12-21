@@ -1,7 +1,6 @@
 import React from "react"
 import "./ShareButton.scss"
 import { BaseLink } from "../../atoms"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ShareButton = ({ iconData }) => {
   const btn = (
