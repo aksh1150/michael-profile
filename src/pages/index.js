@@ -9,9 +9,7 @@ const Home = () => {
       <h1>Hello</h1>
       <p>
         <Link to="/uxCaseStudy">UX Case Studies</Link>
-        <BaseLink link="/uxCaseStudy" internal>
-          Button
-        </BaseLink>
+        <Button>Button</Button>
       </p>
       <Footer />
     </div>
