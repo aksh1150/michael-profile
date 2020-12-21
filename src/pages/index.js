@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Footer, Button } from "../Components/molecules"
+import { Footer, Button, ShareButton } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
         <Button link="/uxCaseStudy" internal>
           Small button
         </Button>
+        <ShareButton />
       </p>
       <Footer />
     </div>
