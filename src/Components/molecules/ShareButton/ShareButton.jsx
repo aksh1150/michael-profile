@@ -10,7 +10,7 @@ const ShareButton = ({ iconData }) => {
       <div className="shareContainer">
         {iconData.map(share => (
           <BaseLink link={share.link} className="socialIcon" key={share.link}>
-            <FontAwesomeIcon icon={share.icon} size="2x" />
+            <FontAwesomeIcon icon={share.icon} size="lg" />
           </BaseLink>
         ))}
       </div>
