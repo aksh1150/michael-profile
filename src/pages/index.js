@@ -2,21 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 import { Footer, Button, ShareButton } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
-import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 const Home = () => {
   const iconMap = [
     {
       link: "https://abc.com",
-      icon: faEnvelope,
+      icon: "email_icon",
     },
     {
       link: "https://facebook.com",
-      icon: faFacebook,
+      icon: "FB_icon",
     },
     {
       link: "https://linkedin.com",
-      icon: faLinkedin,
+      icon: "linkedin_icon",
     },
   ]
   return (
