@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/desktop.scss";
+
+.btn {
+  background-color: $primary;
+  color: $base-white;
+  border-radius: 28px;
+  cursor: pointer !important;
+  border-color: $primary;
+  border-style: solid;
+  font-size: 24px;
+  border-width: 1px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 75px;
+  &.large {
+    width: 400px;
+  }
+  &.small {
+    width: 250px;
+  }
+
+  &:hover {
+    background-color: $base-white;
+    color: $primary;
+  }
+}

@@ -2,10 +2,13 @@ import React from "react"
 import { BaseLink } from "../../atoms"
 import "./Button.scss"
 
-const Button = ({ children }) => {
+const Button = ({ children, size, ...props }) => {
+  const btnSize = size === "lg" ? "large" : "small"
   const btn = (
-    <BaseLink>
-      <button type="button">{children}</button>
+    <BaseLink {...props}>
+      <button type="button" className={`btn ${btnSize}`}>
+        {children}
+      </button>
     </BaseLink>
   )
   return btn
