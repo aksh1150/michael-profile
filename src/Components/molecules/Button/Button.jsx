@@ -6,7 +6,7 @@ const Button = ({ children, size, ...props }) => {
   const btnSize = size === "lg" ? "large" : "small"
   const btn = (
     <BaseLink {...props}>
-      <button type="button" className={`btn ${btnSize}`}>
+      <button type="button" className={`btns ${btnSize}`}>
         {children}
       </button>
     </BaseLink>
