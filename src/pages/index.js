@@ -5,6 +5,7 @@ import { Footer, Button, ShareButton, Slider } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
 
 import SocialMediaData from "../data/SocialMedia"
+import SliderData from "../data/Slider"
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
         Small button
       </Button>{" "}
       <ShareButton iconData={SocialMediaData} />
-      <Slider />
+      <Slider slideData={SliderData} />
       <Footer />
     </div>
   )

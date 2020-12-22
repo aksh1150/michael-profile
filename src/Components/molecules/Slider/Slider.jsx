@@ -2,29 +2,17 @@ import React from "react"
 import { Carousel } from "react-bootstrap"
 import "./Slider.scss"
 
-const Slider = () => {
+const Slider = ({ slideData }) => {
   return (
     <Carousel>
-      <Carousel.Item interval={1000}>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {slideData.map(slider => (
+        <Carousel.Item interval={1000} key={slider.name}>
+          <Carousel.Caption>
+            <h3>{slider.name}</h3>
+            <p>{slider.testimonials}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
     </Carousel>
   )
 }
