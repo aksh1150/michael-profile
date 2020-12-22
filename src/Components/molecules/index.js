@@ -3,4 +3,6 @@ import Button from "./Button"
 import ShareButton from "./ShareButton"
 import SocialMedia from "./SocialMedia"
 
-export { Footer, Button, ShareButton, SocialMedia }
+import Slider from "./Slider"
+
+export { Footer, Button, ShareButton, SocialMedia, Slider }

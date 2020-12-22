@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Footer, Button, ShareButton } from "../Components/molecules"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { Footer, Button, ShareButton, Slider } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
 
 import SocialMediaData from "../data/SocialMedia"
@@ -18,6 +19,7 @@ const Home = () => {
         Small button
       </Button>{" "}
       <ShareButton iconData={SocialMediaData} />
+      <Slider />
       <Footer />
     </div>
   )
