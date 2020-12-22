@@ -3,21 +3,9 @@ import { Link } from "gatsby"
 import { Footer, Button, ShareButton } from "../Components/molecules"
 import { BaseLink } from "../Components/atoms"
 
+import SocialMediaData from "../data/SocialMedia"
+
 const Home = () => {
-  const iconMap = [
-    {
-      link: "https://abc.com",
-      icon: "email_icon",
-    },
-    {
-      link: "https://facebook.com",
-      icon: "FB_icon",
-    },
-    {
-      link: "https://linkedin.com",
-      icon: "linkedin_icon",
-    },
-  ]
   return (
     <div>
       <h1>Hello</h1>
@@ -29,7 +17,7 @@ const Home = () => {
       <Button link="/uxCaseStudy" internal>
         Small button
       </Button>{" "}
-      <ShareButton iconData={iconMap} />
+      <ShareButton iconData={SocialMediaData} />
       <Footer />
     </div>
   )
