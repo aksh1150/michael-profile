@@ -1,7 +1,7 @@
-@import '../../../styles/variables';
-@import '../../../styles/desktop.scss';
-@import '../../../styles/mobile.scss';
-@import '../../../styles/mixins.scss';
+@import "../../../styles/variables";
+@import "../../../styles/desktop.scss";
+@import "../../../styles/mobile.scss";
+@import "../../../styles/mixins.scss";
 
 .h1 {
   @include h1-mobile;
@@ -45,12 +45,6 @@
   }
 }
 
-.p {
-  @include p-mobile;
-  @include respond(sm) {
-    @include p-desktop;
-  }
-}
 .primary {
   color: $primary;
 }
