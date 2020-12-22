@@ -1,16 +1,16 @@
 // Desktop inheritance
 
 @mixin h1-desktop {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 48px;
   letter-spacing: 2px;
 }
 
 @mixin h2-desktop {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 32px;
   letter-spacing: 1.1px;
 }
 
@@ -41,24 +41,37 @@
   line-height: 32px;
   letter-spacing: 1.2px;
 }
-@mixin p-desk-var {
-  font-weight: 300;
-  line-height: 24px;
+@mixin p-desktop-one {
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 157px;
   letter-spacing: 1.2px;
 }
-@mixin p-desktop {
-  font-size: 18px;
-  @include p-desk-var;
-}
 
-@mixin p2-desktop {
-  font-size: 16px;
-  @include p-desk-var;
-}
-
-@mixin p3-desktop {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 20px;
+@mixin p-desktop-two {
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 106px;
   letter-spacing: 1.2px;
+}
+
+@mixin p-desktop-three {
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 157px;
+  letter-spacing: 1.24px;
+}
+
+@mixin p-desktop-four {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 1.2px;
+}
+
+@mixin p-desktop-fifth {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
 }
