@@ -61,6 +61,13 @@
 }
 
 @mixin p-mobile-three {
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 97px;
+  letter-spacing: 1.2px;
+}
+
+@mixin p-mobile-four {
   font-size: 28px;
   font-weight: 600;
   line-height: 32px;

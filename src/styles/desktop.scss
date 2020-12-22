@@ -56,8 +56,22 @@
 }
 
 @mixin p-desktop-three {
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 157px;
+  letter-spacing: 1.24px;
+}
+
+@mixin p-desktop-four {
   font-size: 48px;
   font-weight: 600;
   line-height: 72px;
   letter-spacing: 1.2px;
+}
+
+@mixin p-desktop-fifth {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
 }
