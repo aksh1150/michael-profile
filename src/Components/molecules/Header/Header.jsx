@@ -4,6 +4,7 @@ import { Logo, BaseLink } from "../../atoms"
 import SocialMedia from "../SocialMedia"
 import { Navbar, Nav } from "react-bootstrap"
 import SocialMediaData from "../../../data/SocialMedia"
+import Menu from "../../../data/MenuItems"
 
 import "./Header.scss"
 
@@ -19,15 +20,11 @@ const Header = () => {
         id="responsive-navbar-nav"
       >
         <Nav>
-          <BaseLink link="uxCaseStudy" internal className="navLinks">
-            UX Case Studies
-          </BaseLink>
-          <BaseLink link="/graphics" internal className="navLinks">
-            Graphics
-          </BaseLink>
-          <BaseLink link="/about" internal className="navLinks">
-            About
-          </BaseLink>
+          {Menu.map(menuItems => (
+            <BaseLink link={menuItems.link} internal className="navLinks">
+              {menuItems.title}
+            </BaseLink>
+          ))}
           <SocialMedia data={SocialMediaData} />
         </Nav>
       </Navbar.Collapse>
