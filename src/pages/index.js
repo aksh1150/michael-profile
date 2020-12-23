@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Footer, Button, ShareButton, Slider } from "../Components/molecules"
 import { Heading, Paragraph } from "../Components/atoms"
@@ -13,7 +12,9 @@ const Home = () => {
     <div>
       <Heading type="h1">Hello</Heading>
       <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
-      <Link to="/uxCaseStudy">UX Case Studies</Link>
+      <BaseLink link="/uxCaseStudy" internal>
+        UX Case Studies
+      </BaseLink>
       <Button link="/uxCaseStudy" internal size="lg">
         Large button
       </Button>
