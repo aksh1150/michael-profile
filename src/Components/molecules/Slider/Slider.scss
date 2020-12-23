@@ -1,6 +1,13 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/desktop.scss";
 
+@font-face {
+  font-family: "Futura-Light";
+  src: url("../../../static/fonts/futura_light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .carousel-caption {
   text-align: left;
   background-color: $primary;
@@ -8,6 +15,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  font-family: "Futura-Light";
 }
 .carousel-control-next,
 .carousel-control-prev {
