@@ -1,6 +1,12 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Footer, Button, ShareButton, Slider } from "../Components/molecules"
+import {
+  Footer,
+  Button,
+  ShareButton,
+  Slider,
+  Header,
+} from "../Components/molecules"
 import { Heading, Paragraph } from "../Components/atoms"
 import { BaseLink } from "../Components/atoms"
 
@@ -10,6 +16,7 @@ import SliderData from "../data/Slider"
 const Home = () => {
   return (
     <div>
+      <Header />
       <Heading type="h1">Hello</Heading>
       <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
       <BaseLink link="/uxCaseStudy" internal>

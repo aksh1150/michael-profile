@@ -9,7 +9,7 @@ const BaseLink = ({
   clickEvent,
   target,
   internal,
-  noHoverEffect
+  noHoverEffect,
   ...props
 }) => {
   const blankTarget = target ? "_blank" : ""
