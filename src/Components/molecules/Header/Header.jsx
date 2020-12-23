@@ -11,7 +11,7 @@ import "./Header.scss"
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg">
-      <Navbar.Brand href="/" className="mr-auto">
+      <Navbar.Brand href="/">
         <Logo />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
