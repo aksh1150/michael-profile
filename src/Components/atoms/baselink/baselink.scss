@@ -1,12 +1,25 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/desktop.scss";
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("../../../static/fonts/Helvetica-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .baselink {
   cursor: pointer;
   text-decoration: none;
-  color: $primary;
-  font-family: LimerickMedium;
-  &:hover {
+  color: $dark;
+  font-family: "Helvetica-Light";
+  font-size: 24px;
+  line-height: 32px;
+  &:hover,
+  &:active {
     text-decoration: underline;
-    color: $primary;
+    color: $dark;
+    text-decoration: none;
+    border-bottom: 3px solid $primary;
   }
 }

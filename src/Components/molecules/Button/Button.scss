@@ -1,6 +1,13 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/desktop.scss";
 
+@font-face {
+  font-family: "Helvetica-Medium";
+  src: url("../../../static/fonts/Helvetica-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .btns {
   background-color: $primary;
   color: $base-white;
@@ -8,7 +15,7 @@
   cursor: pointer !important;
   border-color: $primary;
   border-style: solid;
-
+  font-family: "Helvetica-Medium";
   border-width: 1px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

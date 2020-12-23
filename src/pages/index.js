@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Footer, Button, ShareButton, Slider } from "../Components/molecules"
+import { Heading, Paragraph } from "../Components/atoms"
 import { BaseLink } from "../Components/atoms"
 
 import SocialMediaData from "../data/SocialMedia"
@@ -10,8 +10,11 @@ import SliderData from "../data/Slider"
 const Home = () => {
   return (
     <div>
-      <h1>Hello</h1>
-      <Link to="/uxCaseStudy">UX Case Studies</Link>
+      <Heading type="h1">Hello</Heading>
+      <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
+      <BaseLink link="/uxCaseStudy" internal>
+        UX Case Studies
+      </BaseLink>
       <Button link="/uxCaseStudy" internal size="lg">
         Large button
       </Button>
