@@ -1,12 +1,22 @@
 @import "../../../styles/variables.scss";
-@import "../../../styles/desktop.scss";
+@import "../../../styles/mixins.scss";
 
 .navbar {
   .navLinks {
-    margin: 0px 30px;
+    margin: 0px 10px;
+    @include respond(sm) {
+      margin: 0px 10px;
+    }
+    @include respond(md) {
+      margin: 0px 30px;
+    }
   }
 
   .socialIcon {
-    margin: 0px 8px;
+    display: none;
+    @include respond(sm) {
+      margin: 0px 8px;
+      display: block;
+    }
   }
 }

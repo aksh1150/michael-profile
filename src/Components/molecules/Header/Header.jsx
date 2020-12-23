@@ -10,7 +10,7 @@ import "./Header.scss"
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="sm">
       <Navbar.Brand href="/">
         <Logo />
       </Navbar.Brand>
