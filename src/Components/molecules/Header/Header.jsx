@@ -21,7 +21,12 @@ const Header = () => {
       >
         <Nav>
           {Menu.map(menuItems => (
-            <BaseLink link={menuItems.link} internal className="navLinks">
+            <BaseLink
+              link={menuItems.link}
+              internal
+              className="navLinks"
+              key={menuItems.link}
+            >
               {menuItems.title}
             </BaseLink>
           ))}
