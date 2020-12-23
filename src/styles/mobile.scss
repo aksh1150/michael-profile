@@ -1,10 +1,33 @@
-// Inheritance for mobile
+// Desktop inheritance
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Futura-Light";
+  src: url("../../../static/fonts/futura_light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Medium";
+  src: url("../../../static/fonts/FuturaPTLight.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Book";
+  src: url("../../../static/fonts/FuturaPTBook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @mixin h1-mobile {
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Light";
 }
 
 @mixin h2-mobile {
@@ -12,6 +35,7 @@
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Medium";
 }
 
 @mixin h3-mobile {
@@ -51,6 +75,7 @@
   font-weight: 700;
   line-height: 97px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Medium";
 }
 
 @mixin p-mobile-two {
@@ -58,6 +83,8 @@
   font-weight: 700;
   line-height: 90px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Book";
+  color: $base-medium-grey;
 }
 
 @mixin p-mobile-three {
@@ -65,6 +92,7 @@
   font-weight: 700;
   line-height: 97px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Book";
 }
 
 @mixin p-mobile-four {
@@ -72,4 +100,5 @@
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 1.2px;
+  font-family: "Futura-Light";
 }
