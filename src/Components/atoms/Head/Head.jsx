@@ -13,6 +13,7 @@ const Head = ({
       <meta name="keyword" content={metaKeywords} />
       <meta name="description" content={metaDescription} />
       <meta name="language" content="English" />
+      <meta name="author" content="Akshit Patel" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#B2E2E7" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="Michelle Portfolio" />
