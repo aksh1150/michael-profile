@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-const Header = ({
+const Head = ({
   pagename,
   metaDescription,
   metaKeywords,
@@ -112,4 +112,4 @@ const Header = ({
   )
 }
 
-export default Header
+export default Head

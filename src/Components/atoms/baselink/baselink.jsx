@@ -9,12 +9,14 @@ const BaseLink = ({
   clickEvent,
   target,
   internal,
+  noHoverEffect
   ...props
 }) => {
   const blankTarget = target ? "_blank" : ""
   const referrer = target ? "noreferrer" : ""
   const newLink = link || null
-  const composedClassName = className || ""
+  const isHover = noHoverEffect ? "isHover" : ""
+  const composedClassName = `${className} ${isHover}` || ""
 
   const events = internal ? (
     <Link
