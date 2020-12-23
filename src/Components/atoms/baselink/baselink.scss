@@ -17,9 +17,12 @@
   line-height: 32px;
   &:hover,
   &:active {
-    text-decoration: underline;
     color: $dark;
     text-decoration: none;
     border-bottom: 3px solid $primary;
+  }
+  &.isHover {
+    text-decoration: none;
+    border-bottom: none;
   }
 }

@@ -9,13 +9,7 @@ const Logo = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>Fill 3</title>
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Landing_static"
         transform="translate(-125.000000, -83.000000)"
