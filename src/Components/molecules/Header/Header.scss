@@ -5,6 +5,15 @@
   max-width: 1440px;
   width: auto;
   margin: auto;
+  &.Grey {
+    background-color: $base-light-grey;
+  }
+  &.Primary {
+    background-color: $primary;
+  }
+  &.White {
+    background-color: $base-white;
+  }
   .navbar {
     .navLinks {
       margin: 0px 10px;

@@ -1,5 +1,5 @@
 import React from "react"
-import { Header } from "../../molecules"
+import { Header, Footer } from "../../molecules"
 import { Head } from "../../atoms"
 import "./Layout.scss"
 
@@ -9,6 +9,7 @@ const Layout = ({
   metaDescription,
   metaKeywords,
   metaImage,
+  menuBackground,
 }) => {
   return (
     <>
@@ -26,7 +27,7 @@ const Layout = ({
         }
         metaImage={metaImage ? metaImage : ""}
       />
-      <Header />
+      <Header background={menuBackground} />
       {children}
       <Footer />
     </>
