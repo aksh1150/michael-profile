@@ -1,24 +1,27 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins.scss";
 
-.navbar {
+.newNav {
   max-width: 1440px;
   width: auto;
-  .navLinks {
-    margin: 0px 10px;
-    @include respond(sm) {
+  margin: auto;
+  .navbar {
+    .navLinks {
       margin: 0px 10px;
+      @include respond(sm) {
+        margin: 0px 10px;
+      }
+      @include respond(md) {
+        margin: 0px 30px;
+      }
     }
-    @include respond(md) {
-      margin: 0px 30px;
-    }
-  }
 
-  .socialIcon {
-    display: none;
-    @include respond(sm) {
-      margin: 0px 8px;
-      display: block;
+    .socialIcon {
+      display: none;
+      @include respond(sm) {
+        margin: 0px 8px;
+        display: block;
+      }
     }
   }
 }
