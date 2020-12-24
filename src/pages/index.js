@@ -7,7 +7,7 @@ import {
   Slider,
   Header,
 } from "../Components/molecules"
-import { Heading, Paragraph, ScrollDown } from "../Components/atoms"
+import { Heading, Paragraph, ScrollDown, Section } from "../Components/atoms"
 import { BaseLink } from "../Components/atoms"
 
 import SocialMediaData from "../data/SocialMedia"
@@ -22,6 +22,7 @@ const Home = () => {
       </div>
       <Heading type="h1">Hello</Heading>
       <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
+      <Section background="Grey" />
       <BaseLink link="/uxCaseStudy" internal>
         UX Case Studies
       </BaseLink>

@@ -2,6 +2,8 @@
 @import "../../../styles/mixins.scss";
 
 .navbar {
+  max-width: 1440px;
+  width: auto;
   .navLinks {
     margin: 0px 10px;
     @include respond(sm) {

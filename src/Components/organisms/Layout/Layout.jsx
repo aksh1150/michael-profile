@@ -1,7 +1,6 @@
 import React from "react"
-import { PartnerFooter,Footer, Navigation,PartnerNavigation } from "../index"
+import { Header } from "../../molecules"
 import { Head } from "../../atoms"
-import { graphql, useStaticQuery } from "gatsby"
 import "./Layout.scss"
 
 const Layout = ({
@@ -10,58 +9,26 @@ const Layout = ({
   metaDescription,
   metaKeywords,
   metaImage,
-  noReferrer,
-  noFollow,
-  partners,
-  partnerName
 }) => {
-  const NavigationLinks = [
-    {
-      title: "About Our Advisors",
-      url: "/our-advisors",
-    },
-    {
-      title: "Blog",
-      url: "/blog",
-    },
-  ]
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          metaDescription
-          metaKeywords
-          metaImage
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <Head
-        pagename={pagename ? pagename : "Caribou"}
+        pagename={pagename ? pagename : "Home - Michelle Profile"}
         metaKeywords={
-          metaKeywords ? metaKeywords : data.site.siteMetadata.metaKeywords
+          metaKeywords
+            ? metaKeywords
+            : "Michelle Profile, A designer, Toronto, Canada, Web designer, web, graphics, design, designer, graphic designer, graphic, best, best designer in toronto, best designer in canada, best designer in gta, best designer in ontario, gta, ontario, graphics, sketch, invision"
         }
         metaDescription={
           metaDescription
             ? metaDescription
-            : data.site.siteMetadata.metaDescription
+            : "Michelle Profile - A web designer portfolio of Michelle Lam "
         }
-        metaImage={metaImage ? metaImage : data.site.siteMetadata.metaImage}
-        noReferrer={noReferrer}
-        noFollow={noFollow}
+        metaImage={metaImage ? metaImage : ""}
       />
-      <noscript>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${process.env.GATSBY_GTM_PRODUCTION}');`}</noscript>
-      {partners?<PartnerNavigation links={NavigationLinks} partnerName={partnerName}/>:<Navigation links={NavigationLinks} partnerName={partnerName}/>}
+      <Header />
       {children}
-      {partners?<PartnerFooter/>:<Footer />}
+      <Footer />
     </>
   )
 }
