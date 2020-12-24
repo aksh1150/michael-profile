@@ -1,10 +1,14 @@
 @import "../../../styles/mixins";
-@import "../../../style/variables";
+@import "../../../styles/variables";
 
 .Section {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
+  width: 1440px;
+  max-width: 1440px;
+  height: 900px;
+  max-height: 900px;
   @include respond(md) {
     padding-top: 80px;
     padding-bottom: 80px;
