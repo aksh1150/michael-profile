@@ -152,7 +152,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={12} className="marginTop1">
+            <Col xs={12} className="marginTop3">
               <Slider slideData={SliderData} />
             </Col>
           </Row>
