@@ -71,27 +71,39 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col xs={12} sm={8}>
-              <Heading type="h1" colour="white">
-                About Me
-              </Heading>
-              <Paragraph size="xs" fontcolour="white">
-                A Product Designer living in Toronto with an extensive graphic
-                design background. Encapsulating the visions of each brand I had
-                the pleasure to work with, I designed an array of promotional
-                graphics, brand identities, and web designs.
-              </Paragraph>
-              <Paragraph size="xs" fontcolour="white">
-                The transition to Product Design not only satisfy my curiosity
-                in solving problems through a human-centered approach, but it
-                also made my design decision more impactful.
-              </Paragraph>
-              <Paragraph size="xs" fontcolour="white">
-                On a typical day, when I am not working, you will find me
-                daydreaming about how I can contribute to building a more
-                inclusive world for my daughter until I hear her calling,
-                ”Mommy, come play with me.”
-              </Paragraph>
+            <Col xs={12} sm={7}>
+              <Row>
+                <Col xs={12}>
+                  <Heading type="h1" colour="white">
+                    About Me
+                  </Heading>
+                </Col>
+                <Col xs={12}>
+                  <Paragraph size="xs" fontcolour="white">
+                    A Product Designer living in Toronto with an extensive
+                    graphic design background. Encapsulating the visions of each
+                    brand I had the pleasure to work with, I designed an array
+                    of promotional graphics, brand identities, and web designs.
+                  </Paragraph>
+                  <Paragraph size="xs" fontcolour="white">
+                    The transition to Product Design not only satisfy my
+                    curiosity in solving problems through a human-centered
+                    approach, but it also made my design decision more
+                    impactful.
+                  </Paragraph>
+                  <Paragraph size="xs" fontcolour="white">
+                    On a typical day, when I am not working, you will find me
+                    daydreaming about how I can contribute to building a more
+                    inclusive world for my daughter until I hear her calling,
+                    ”Mommy, come play with me.”
+                  </Paragraph>
+                </Col>
+                <Col xs={12} className="marginTop1">
+                  <Button link="/uxCaseStudy" internal size="lg">
+                    Request My Resume
+                  </Button>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>

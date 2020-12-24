@@ -5,9 +5,15 @@
 .marginTop {
   margin-top: 150px;
 }
-
+.marginTop1 {
+  margin-top: 50px;
+}
+.marginBottom1 {
+  margin-bottom: 50px;
+}
 .darkbg {
   background-color: $dark;
   padding-top: 50px;
   padding-left: 50px;
+  min-height: 830px;
 }
