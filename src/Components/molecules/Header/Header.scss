@@ -5,19 +5,10 @@
   max-width: 1440px;
   width: auto;
   margin: auto;
-  &.Grey {
-    background-color: $base-light-grey;
-  }
-  &.Primary {
-    background-color: $primary;
-  }
-  &.White {
-    background-color: $base-white;
-  }
+
   .navbar {
-    max-width: 1240px;
+    max-width: 1220px;
     margin: auto;
-    padding-top: 80px;
     .navLinks {
       margin: 0px 10px;
       @include respond(sm) {

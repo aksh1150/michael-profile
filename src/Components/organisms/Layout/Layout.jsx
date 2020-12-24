@@ -9,7 +9,6 @@ const Layout = ({
   metaDescription,
   metaKeywords,
   metaImage,
-  menuBackground,
 }) => {
   return (
     <>
@@ -27,7 +26,7 @@ const Layout = ({
         }
         metaImage={metaImage ? metaImage : ""}
       />
-      <Header background={menuBackground} />
+
       {children}
       <Footer />
     </>

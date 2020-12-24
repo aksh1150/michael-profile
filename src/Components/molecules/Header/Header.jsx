@@ -8,11 +8,9 @@ import Menu from "../../../data/MenuItems"
 
 import "./Header.scss"
 
-const Header = ({ background }) => {
-  const ComposedClassnames = background ? background : ""
-
+const Header = () => {
   return (
-    <div className={`newNav ${ComposedClassnames}`}>
+    <div className="newNav">
       <Navbar collapseOnSelect expand="sm">
         <Navbar.Brand href="/">
           <Logo />

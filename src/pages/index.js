@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <Layout menuBackground="Grey">
       <Section background="Grey">
+        <Header />
         <Heading type="h1">Hello</Heading>
         <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
         <ShareButton iconData={SocialMediaData} />
