@@ -15,6 +15,9 @@
     background-color: $base-white;
   }
   .navbar {
+    max-width: 1190px;
+    margin: auto;
+    padding-top: 100px;
     .navLinks {
       margin: 0px 10px;
       @include respond(sm) {
