@@ -160,13 +160,15 @@ const Home = () => {
       </Section>
       <Container className="footerContainer">
         <Row>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={8} lg={9}>
             <Heading type="h1" colour="blue">
               Want to chat?
             </Heading>
             <Paragraph size="xs">Me too! Can't wait to hear from you</Paragraph>
           </Col>
-          <Col xs={12} sm={6}></Col>
+          <Col xs={12} sm={4} lg={3}>
+            <ShareButton iconData={SocialMediaData} />
+          </Col>
         </Row>
       </Container>
     </Layout>
