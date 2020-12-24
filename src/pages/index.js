@@ -138,27 +138,22 @@ const Home = () => {
                 </Col>
                 <Col xs={12} md={4}>
                   <Paragraph size="sm" fontcolour="white">
-                    <BaseLink internal link="/">
-                      Herrd
-                    </BaseLink>
+                    Herrd
                   </Paragraph>
                   <Paragraph size="sm" fontcolour="white">
-                    <BaseLink internal link="/">
-                      thebabyshop.com
-                    </BaseLink>
+                    thebabyshop.com
                   </Paragraph>
                   <Paragraph size="sm" fontcolour="white">
-                    <BaseLink internal link="/">
-                      Figo Bank
-                    </BaseLink>
+                    Figo Bank
                   </Paragraph>
                   <Paragraph size="sm" fontcolour="white">
-                    <BaseLink internal link="/">
-                      EY Hackathon
-                    </BaseLink>
+                    EY Hackathon
                   </Paragraph>
                 </Col>
               </Row>
+            </Col>
+            <Col xs={12}>
+              <Slider slideData={SliderData} />
             </Col>
           </Row>
         </Container>
