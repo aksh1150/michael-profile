@@ -158,7 +158,7 @@ const Home = () => {
           </Row>
         </Container>
       </Section>
-      <Container>
+      <Container className="footerContainer">
         <Row>
           <Col xs={12} sm={6}>
             <Heading type="h1" colour="blue">
