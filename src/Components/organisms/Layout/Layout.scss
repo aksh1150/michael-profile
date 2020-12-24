@@ -37,6 +37,9 @@
 
 .underline {
   text-decoration: underline;
+  &.hover {
+    color: $base-white;
+  }
 }
 
 .footerContainer {

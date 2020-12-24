@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import {
   Footer,
@@ -23,6 +23,20 @@ import SocialMediaData from "../data/SocialMedia"
 import SliderData from "../data/Slider"
 
 const Home = () => {
+  const [showLinks, setShowLinks] = useState(false)
+  const [showLinks2, setShowLinks2] = useState(false)
+  const mouseEnter = () => {
+    setShowLinks(true)
+    setShowLinks2(false)
+  }
+  const mouseEnter2 = () => {
+    setShowLinks2(true)
+    setShowLinks(false)
+  }
+  const mouseLeave = () => {
+    setShowLinks(false)
+    setShowLinks2(false)
+  }
   return (
     <Layout pagename="Home - Michelle Profile">
       <Section background="Grey">
@@ -124,31 +138,52 @@ const Home = () => {
               <Heading type="h1" colour="white">
                 My Works
               </Heading>
-              <Row>
+              <Row onMouseLeave={mouseLeave}>
                 <Col xs={12} md={5}>
-                  <Paragraph size="md" className="underline">
+                  <Paragraph
+                    size="md"
+                    className={`underline ${showLinks ? "hover" : ""}`}
+                    onMouseEnter={mouseEnter}
+                  >
                     Product
                   </Paragraph>
-                  <Paragraph size="md" className="underline">
+                  <Paragraph
+                    size="md"
+                    className={`underline ${showLinks2 ? "hover" : ""}`}
+                    onMouseEnter={mouseEnter2}
+                  >
                     Graphic
                   </Paragraph>
                 </Col>
                 <Col xs={12} md={3}>
-                  <img src={require("../static/icons/arrow.svg")} alt="Arrow" />
+                  {showLinks || showLinks2 ? (
+                    <img
+                      src={require("../static/icons/arrow.svg")}
+                      alt="Arrow"
+                    />
+                  ) : (
+                    ""
+                  )}
                 </Col>
                 <Col xs={12} md={4}>
-                  <Paragraph size="sm" fontcolour="white">
-                    Herrd
-                  </Paragraph>
-                  <Paragraph size="sm" fontcolour="white">
-                    thebabyshop.com
-                  </Paragraph>
-                  <Paragraph size="sm" fontcolour="white">
-                    Figo Bank
-                  </Paragraph>
-                  <Paragraph size="sm" fontcolour="white">
-                    EY Hackathon
-                  </Paragraph>
+                  {showLinks || showLinks2 ? (
+                    <>
+                      <Paragraph size="sm" fontcolour="white">
+                        Herrd
+                      </Paragraph>
+                      <Paragraph size="sm" fontcolour="white">
+                        thebabyshop.com
+                      </Paragraph>
+                      <Paragraph size="sm" fontcolour="white">
+                        Figo Bank
+                      </Paragraph>
+                      <Paragraph size="sm" fontcolour="white">
+                        EY Hackathon
+                      </Paragraph>
+                    </>
+                  ) : (
+                    ""
+                  )}
                 </Col>
               </Row>
             </Col>

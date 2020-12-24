@@ -2,12 +2,19 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./Paragraph.scss"
 
-export default function Paragraph({ size, fontcolour, children, className }) {
+export default function Paragraph({
+  size,
+  fontcolour,
+  children,
+  className,
+  onMouseEnter,
+}) {
   return (
     <p
       className={`Paragraph ${fontcolour ? fontcolour : "dark"} ${
         size ? size : "xs"
       } ${className}`}
+      onMouseEnter={onMouseEnter}
     >
       {children}
     </p>
