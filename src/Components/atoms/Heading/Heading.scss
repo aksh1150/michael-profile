@@ -7,6 +7,7 @@
   @include h1-mobile;
   @include respond(sm) {
     @include h1-desktop;
+    margin-bottom: 30px;
   }
 }
 
@@ -50,6 +51,9 @@
 }
 .white {
   color: $base-white;
+}
+.blue {
+  color: $base-blue;
 }
 .royal {
   color: $base-dark-grey;

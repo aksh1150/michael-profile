@@ -4,7 +4,6 @@
 @import "../../../styles/mixins.scss";
 
 .Paragraph {
-  font-family: LimerickMedium;
   &.xl {
     @include p-mobile-one;
     @include respond(sm) {
@@ -37,6 +36,7 @@
     @include p-desktop-fifth;
     @include respond(sm) {
       @include p-desktop-fifth;
+      margin-bottom: 20px;
     }
   }
 
