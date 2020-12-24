@@ -1,0 +1,37 @@
+@import "../../../styles/mixins";
+@import "../../../style/variables";
+
+.Section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include respond(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &.Grey {
+    background-color: $background-grey;
+  }
+  &.LightBlue {
+    background-color: $light-periwinkle-blue;
+  }
+  &.PrimaryBlue {
+    background-color: $primary-blue;
+  }
+  &.TropicalBlue {
+    background-color: $light-tropical-blue;
+  }
+  .rightNoPadding {
+    text-align: left;
+    border: none;
+    margin: auto;
+
+    @include respond(sm) {
+      text-align: right;
+      border-right: 2px solid $accent-periwinkle-blue;
+      margin-right: 0px;
+    }
+  }
+  .leftNoPadding {
+    margin-left: 0px;
+  }
+}
