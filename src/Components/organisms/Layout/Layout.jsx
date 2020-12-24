@@ -9,6 +9,7 @@ const Layout = ({
   metaDescription,
   metaKeywords,
   metaImage,
+  title,
 }) => {
   return (
     <>
@@ -19,6 +20,7 @@ const Layout = ({
             ? metaKeywords
             : "Michelle Profile, A designer, Toronto, Canada, Web designer, web, graphics, design, designer, graphic designer, graphic, best, best designer in toronto, best designer in canada, best designer in gta, best designer in ontario, gta, ontario, graphics, sketch, invision"
         }
+        title={title ? title : ""}
         metaDescription={
           metaDescription
             ? metaDescription

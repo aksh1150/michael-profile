@@ -15,6 +15,8 @@ import {
   BaseLink,
 } from "../Components/atoms"
 
+import { Container, Row, Col } from "react-bootstrap"
+
 import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
@@ -22,13 +24,24 @@ import SliderData from "../data/Slider"
 
 const Home = () => {
   return (
-    <Layout menuBackground="Grey">
+    <Layout pagename="Home - Michelle Profile">
       <Section background="Grey">
         <Header />
-        <Heading type="h1">Hello</Heading>
+        <Container>
+          <Row>
+            <Col
+              xs={12}
+              md={{ span: 8, offset: 4 }}
+              lg={{ span: 8, offset: 6 }}
+            >
+              <Paragraph size="xl">Michelle</Paragraph>
+            </Col>
+          </Row>
+        </Container>
+        {/* <Heading type="h1">Hello</Heading>
         <Paragraph size="lg">Thi si stext Paragraph</Paragraph>
         <ShareButton iconData={SocialMediaData} />
-        <Slider slideData={SliderData} />
+        <Slider slideData={SliderData} /> */}
       </Section>
     </Layout>
     // <div>
