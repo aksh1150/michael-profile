@@ -10,8 +10,8 @@
   height: 900px;
   max-height: 900px;
   @include respond(md) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   &.Grey {
     background-color: $base-light-grey;
@@ -26,12 +26,6 @@
     text-align: left;
     border: none;
     margin: auto;
-
-    // @include respond(sm) {
-    //   text-align: right;
-    //   border-right: 2px solid $accent-periwinkle-blue;
-    //   margin-right: 0px;
-    // }
   }
   .leftNoPadding {
     margin-left: 0px;
