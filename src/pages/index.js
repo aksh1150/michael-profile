@@ -152,12 +152,23 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={12} className="marginTop3">
+            <Col xs={12} className="marginTop4">
               <Slider slideData={SliderData} />
             </Col>
           </Row>
         </Container>
       </Section>
+      <Container>
+        <Row>
+          <Col xs={12} sm={6}>
+            <Heading type="h1" colour="blue">
+              Want to chat?
+            </Heading>
+            <Paragraph size="xs">Me too! Can't wait to hear from you</Paragraph>
+          </Col>
+          <Col xs={12} sm={6}></Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
