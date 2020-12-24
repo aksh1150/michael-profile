@@ -71,7 +71,7 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col xs={12} sm={7}>
+            <Col sm={12} md={7} className>
               <Row>
                 <Col xs={12}>
                   <Heading type="h1" colour="white">
@@ -104,6 +104,13 @@ const Home = () => {
                   </Button>
                 </Col>
               </Row>
+            </Col>
+            <Col sm={12} md={5} className="secondLayerHeight">
+              <img
+                src={require("../static/images/michas.png")}
+                alt="Michelle"
+                className="imageBottom"
+              />
             </Col>
           </Row>
         </Container>

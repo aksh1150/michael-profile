@@ -11,6 +11,14 @@
 .marginBottom1 {
   margin-bottom: 50px;
 }
+.imageBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.secondLayerHeight {
+  height: 780px;
+}
 .darkbg {
   background-color: $dark;
   padding-top: 50px;
