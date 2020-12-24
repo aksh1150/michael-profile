@@ -1,0 +1,39 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.Section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 1440px;
+  max-width: 1440px;
+  height: 900px;
+  max-height: 900px;
+  @include respond(md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &.Grey {
+    background-color: $base-light-grey;
+  }
+  &.Primary {
+    background-color: $primary;
+  }
+  &.White {
+    background-color: $base-white;
+  }
+  .rightNoPadding {
+    text-align: left;
+    border: none;
+    margin: auto;
+
+    // @include respond(sm) {
+    //   text-align: right;
+    //   border-right: 2px solid $accent-periwinkle-blue;
+    //   margin-right: 0px;
+    // }
+  }
+  .leftNoPadding {
+    margin-left: 0px;
+  }
+}
