@@ -5,8 +5,8 @@ import "./Paragraph.scss"
 export default function Paragraph({ size, fontcolour, children }) {
   return (
     <p
-      className={`Paragraph ${size ? size : "xs"} ${
-        fontcolour ? fontcolour : "dark"
+      className={`Paragraph ${fontcolour ? fontcolour : "dark"} ${
+        size ? size : "xs"
       }`}
     >
       {children}
