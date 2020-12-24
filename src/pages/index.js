@@ -115,6 +115,18 @@ const Home = () => {
           </Row>
         </Container>
       </Section>
+
+      <Section background="Primary">
+        <Container>
+          <Row>
+            <Col xs={12}>
+              <Heading type="h1" colour="white">
+                My Works
+              </Heading>
+            </Col>
+          </Row>
+        </Container>
+      </Section>
     </Layout>
   )
 }
