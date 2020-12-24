@@ -1,6 +1,13 @@
+@import "../../../styles/variables.scss";
 .text-center {
   margin: auto;
 }
 .marginTop {
   margin-top: 150px;
+}
+
+.darkbg {
+  background-color: $dark;
+  padding-top: 50px;
+  padding-left: 50px;
 }
