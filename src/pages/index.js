@@ -133,8 +133,30 @@ const Home = () => {
                     Graphic
                   </Paragraph>
                 </Col>
-                <Col xs={12} md={2}>
+                <Col xs={12} md={3}>
                   <img src={require("../static/icons/arrow.svg")} alt="Arrow" />
+                </Col>
+                <Col xs={12} md={4}>
+                  <Paragraph size="sm" fontcolour="white">
+                    <BaseLink internal link="/">
+                      Herrd
+                    </BaseLink>
+                  </Paragraph>
+                  <Paragraph size="sm" fontcolour="white">
+                    <BaseLink internal link="/">
+                      thebabyshop.com
+                    </BaseLink>
+                  </Paragraph>
+                  <Paragraph size="sm" fontcolour="white">
+                    <BaseLink internal link="/">
+                      Figo Bank
+                    </BaseLink>
+                  </Paragraph>
+                  <Paragraph size="sm" fontcolour="white">
+                    <BaseLink internal link="/">
+                      EY Hackathon
+                    </BaseLink>
+                  </Paragraph>
                 </Col>
               </Row>
             </Col>
