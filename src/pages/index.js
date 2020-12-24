@@ -35,6 +35,7 @@ const Home = () => {
               md={{ span: 8, offset: 2 }}
               lg={{ span: 8, offset: 4 }}
               xl={{ span: 8, offset: 6 }}
+              className="marginTop2"
             >
               <Paragraph size="xl">Michelle</Paragraph>
 
@@ -71,7 +72,7 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col sm={12} md={7} className>
+            <Col sm={12} md={8} className>
               <Row>
                 <Col xs={12}>
                   <Heading type="h1" colour="white">
@@ -105,7 +106,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={12} md={5} className="secondLayerHeight">
+            <Col sm={12} md={4} className="secondLayerHeight">
               <img
                 src={require("../static/images/michas.png")}
                 alt="Michelle"
@@ -119,10 +120,23 @@ const Home = () => {
       <Section background="Primary">
         <Container>
           <Row>
-            <Col xs={12}>
+            <Col xs={12} className="marginTop2">
               <Heading type="h1" colour="white">
                 My Works
               </Heading>
+              <Row>
+                <Col xs={12} md={5}>
+                  <Paragraph size="md" className="underline">
+                    Product
+                  </Paragraph>
+                  <Paragraph size="md" className="underline">
+                    Graphic
+                  </Paragraph>
+                </Col>
+                <Col xs={12} md={2}>
+                  <img src={require("../static/icons/arrow.svg")} alt="Arrow" />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
