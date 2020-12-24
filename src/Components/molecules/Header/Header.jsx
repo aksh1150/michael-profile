@@ -8,32 +8,36 @@ import Menu from "../../../data/MenuItems"
 
 import "./Header.scss"
 
-const Header = () => {
+const Header = ({ background }) => {
+  const ComposedClassnames = background ? background : ""
+
   return (
-    <Navbar collapseOnSelect expand="sm">
-      <Navbar.Brand href="/">
-        <Logo />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse
-        className="justify-content-end"
-        id="responsive-navbar-nav"
-      >
-        <Nav>
-          {Menu.map(menuItems => (
-            <BaseLink
-              link={menuItems.link}
-              internal
-              className="navLinks"
-              key={menuItems.link}
-            >
-              {menuItems.title}
-            </BaseLink>
-          ))}
-          <SocialMedia data={SocialMediaData} />
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <div className={`newNav ${ComposedClassnames}`}>
+      <Navbar collapseOnSelect expand="sm">
+        <Navbar.Brand href="/">
+          <Logo />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          className="justify-content-end"
+          id="responsive-navbar-nav"
+        >
+          <Nav>
+            {Menu.map(menuItems => (
+              <BaseLink
+                link={menuItems.link}
+                internal
+                className="navLinks"
+                key={menuItems.link}
+              >
+                {menuItems.title}
+              </BaseLink>
+            ))}
+            <SocialMedia data={SocialMediaData} />
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   )
 }
 

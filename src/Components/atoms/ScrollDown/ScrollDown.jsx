@@ -3,8 +3,8 @@ import "./ScrollDown.scss"
 
 const ScrollDown = () => (
   <>
-    <div class="mouse-icon">
-      <div class="wheel"></div>
+    <div className="mouse-icon">
+      <div className="wheel"></div>
     </div>
   </>
 )
