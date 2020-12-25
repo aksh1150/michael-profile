@@ -102,3 +102,10 @@
   letter-spacing: 1.2px;
   font-family: "Futura-Light";
 }
+@mixin p-mobile-fifth {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-family: "Futura-Light";
+}

@@ -33,7 +33,7 @@
   }
 
   &.xs {
-    @include p-desktop-fifth;
+    @include p-mobile-fifth;
     @include respond(md) {
       @include p-desktop-fifth;
       margin-bottom: 20px;

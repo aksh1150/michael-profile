@@ -1,5 +1,6 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/desktop.scss";
+@import "../../../styles/mixins.scss";
 
 @font-face {
   font-family: "Helvetica-Medium";
@@ -21,8 +22,11 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   height: 75px;
   &.large {
-    width: 400px;
+    width: 320px;
     font-size: 24px;
+    @include respond(md) {
+      width: 400px;
+    }
   }
   &.small {
     width: 250px;

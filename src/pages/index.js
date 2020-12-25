@@ -52,6 +52,9 @@ const Home = () => {
               className="marginTop2"
             >
               <Paragraph size="xl">Michelle</Paragraph>
+              <Paragraph size="xl" className="d-xs-block d-sm-none">
+                Lam
+              </Paragraph>
 
               <Row>
                 <Col xs={12} sm={7} lg={6} xl={5}>
@@ -60,7 +63,7 @@ const Home = () => {
                     products
                   </Paragraph>
                 </Col>
-                <Col xs={12} sm={5} lg={6} xl={7}>
+                <Col xs={12} sm={5} lg={6} xl={7} className="d-none d-sm-block">
                   <Paragraph size="xl">Lam</Paragraph>
                 </Col>
               </Row>
@@ -86,7 +89,7 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col sm={12} lg={8} className>
+            <Col xs={12} sm={8} className>
               <Row>
                 <Col xs={12}>
                   <Heading type="h1" colour="white">
@@ -120,7 +123,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={4} className="secondLayerHeight d-none d-lg-block">
+            <Col sm={4} className="secondLayerHeight d-none d-sm-block">
               <img
                 src={require("../static/images/michas.png")}
                 alt="Michelle"
@@ -131,7 +134,7 @@ const Home = () => {
         </Container>
       </Section>
 
-      <Section background="Primary">
+      <Section background="Primary" className="autoHeight">
         <Container>
           <Row>
             <Col xs={12} className="marginTop2">
@@ -155,7 +158,7 @@ const Home = () => {
                     Graphic
                   </Paragraph>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} md={3} className="d-none d-sm-block">
                   {showLinks || showLinks2 ? (
                     <img
                       src={require("../static/icons/arrow.svg")}
