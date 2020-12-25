@@ -1,12 +1,6 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import {
-  Footer,
-  Button,
-  ShareButton,
-  Slider,
-  Header,
-} from "../Components/molecules"
+import { Button, ShareButton, Slider, Header } from "../Components/molecules"
 import {
   Heading,
   Paragraph,
@@ -21,6 +15,7 @@ import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
 import SliderData from "../data/Slider"
+import { DownArrow, Line } from "../static/icons/animate"
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false)
@@ -41,7 +36,12 @@ const Home = () => {
     <Layout pagename="Home - Michelle Profile">
       <Section background="Grey">
         <Header />
+
         <Container>
+          <div className="iconPosition">
+            <DownArrow />
+            <Line />
+          </div>
           <Row>
             <Col
               xs={{ span: 0, offset: 0 }}
