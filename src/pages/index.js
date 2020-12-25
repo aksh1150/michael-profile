@@ -167,7 +167,7 @@ const Home = () => {
                 </Col>
                 <Col xs={12} md={4}>
                   {showLinks || showLinks2 ? (
-                    <>
+                    <BaseLink link="/uxCaseStudy" internal>
                       <Paragraph size="sm" fontcolour="white">
                         Herrd
                       </Paragraph>
@@ -180,7 +180,7 @@ const Home = () => {
                       <Paragraph size="sm" fontcolour="white">
                         EY Hackathon
                       </Paragraph>
-                    </>
+                    </BaseLink>
                   ) : (
                     ""
                   )}
