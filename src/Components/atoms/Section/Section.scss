@@ -3,15 +3,22 @@
 
 .Section {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin: auto;
   width: auto;
   max-width: 1440px;
-  height: 900px;
-  max-height: 900px;
+  height: 1020px;
+  min-height: 1020px;
+  @include respond(sm) {
+    height: 750px;
+    min-height: 750px;
+  }
   @include respond(md) {
     padding-top: 70px;
     padding-bottom: 70px;
+    max-width: 1440px;
+    height: 900px;
+    min-height: 900px;
   }
   &.Grey {
     background-color: $base-light-grey;

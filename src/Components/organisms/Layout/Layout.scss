@@ -1,9 +1,13 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 .text-center {
   margin: auto;
 }
 .marginTop {
-  margin-top: 150px;
+  margin-top: 80px;
+  @include respond(md) {
+    margin-top: 150px;
+  }
 }
 .marginTop1 {
   margin-top: 30px;
@@ -26,13 +30,27 @@
   right: 0;
 }
 .secondLayerHeight {
-  height: 750px;
+  height: 670px;
+  @include respond(md) {
+    height: 770px;
+  }
+  @include respond(lg) {
+    height: 750px;
+  }
 }
 .darkbg {
   background-color: $dark;
-  padding-top: 80px;
-  padding-left: 50px;
-  min-height: 830px;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  min-height: 1020px;
+  @include respond(sm) {
+    min-height: 830px;
+  }
+  @include respond(lg) {
+    padding-top: 80px;
+    padding-left: 50px;
+  }
 }
 
 .underline {
@@ -43,5 +61,24 @@
 }
 
 .footerContainer {
-  padding: 150px 80px;
+  padding: 100px 15px;
+  @include respond(sm) {
+    padding: 150px 80px;
+  }
+}
+img {
+  width: 100%;
+}
+
+.autoHeight {
+  height: auto;
+  min-height: auto;
+  @include respond(sm) {
+    height: 750px;
+    min-height: 750px;
+  }
+  @include respond(md) {
+    height: 900px;
+    min-height: 900px;
+  }
 }

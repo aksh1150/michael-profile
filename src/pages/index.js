@@ -45,36 +45,39 @@ const Home = () => {
           <Row>
             <Col
               xs={{ span: 0, offset: 0 }}
-              sm={{ span: 8, offset: 2 }}
-              md={{ span: 8, offset: 2 }}
+              sm={{ span: 8, offset: 3 }}
+              md={{ span: 8, offset: 4 }}
               lg={{ span: 8, offset: 4 }}
               xl={{ span: 8, offset: 6 }}
               className="marginTop2"
             >
               <Paragraph size="xl">Michelle</Paragraph>
+              <Paragraph size="xl" className="d-xs-block d-sm-none">
+                Lam
+              </Paragraph>
 
               <Row>
-                <Col xs={12} sm={8} lg={6} xl={5}>
+                <Col xs={12} sm={7} lg={6} xl={5}>
                   <Paragraph size="xs">
                     Building holistic user-centered experience for digital
                     products
                   </Paragraph>
                 </Col>
-                <Col xs={12} sm={4} lg={6} xl={7}>
+                <Col xs={12} sm={5} lg={6} xl={7} className="d-none d-sm-block">
                   <Paragraph size="xl">Lam</Paragraph>
                 </Col>
               </Row>
             </Col>
 
-            <Col xs={12} sm={5}>
+            <Col xs={12} sm={6} lg={6} xl={5}>
               <Paragraph size="lg" fontcolour="grey">
                 Product Designer
               </Paragraph>
             </Col>
-            <Col xs={12} sm={1} className="text-center">
+            <Col xs={12} sm={1} lg={1} xl={1} className="text-center">
               <ScrollDown />
             </Col>
-            <Col xs={12} sm={5} className="text-center marginTop">
+            <Col xs={12} sm={4} lg={4} xl={5} className="text-center marginTop">
               <Button link="/uxCaseStudy" internal>
                 UX Case Studies
               </Button>
@@ -86,7 +89,7 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col sm={12} md={8} className>
+            <Col xs={12} sm={8} className>
               <Row>
                 <Col xs={12}>
                   <Heading type="h1" colour="white">
@@ -120,7 +123,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={12} md={4} className="secondLayerHeight">
+            <Col sm={4} className="secondLayerHeight d-none d-sm-block">
               <img
                 src={require("../static/images/michas.png")}
                 alt="Michelle"
@@ -131,7 +134,7 @@ const Home = () => {
         </Container>
       </Section>
 
-      <Section background="Primary">
+      <Section background="Primary" className="autoHeight">
         <Container>
           <Row>
             <Col xs={12} className="marginTop2">
@@ -155,7 +158,7 @@ const Home = () => {
                     Graphic
                   </Paragraph>
                 </Col>
-                <Col xs={12} md={3}>
+                <Col xs={12} md={3} className="d-none d-sm-block">
                   {showLinks || showLinks2 ? (
                     <img
                       src={require("../static/icons/arrow.svg")}
@@ -167,7 +170,7 @@ const Home = () => {
                 </Col>
                 <Col xs={12} md={4}>
                   {showLinks || showLinks2 ? (
-                    <>
+                    <BaseLink link="/uxCaseStudy" internal>
                       <Paragraph size="sm" fontcolour="white">
                         Herrd
                       </Paragraph>
@@ -180,7 +183,7 @@ const Home = () => {
                       <Paragraph size="sm" fontcolour="white">
                         EY Hackathon
                       </Paragraph>
-                    </>
+                    </BaseLink>
                   ) : (
                     ""
                   )}

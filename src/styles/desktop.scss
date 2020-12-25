@@ -32,7 +32,7 @@
 
 @mixin h2-desktop {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 32px;
   letter-spacing: 1.1px;
   font-family: "Futura-Medium";
@@ -67,7 +67,7 @@
 }
 @mixin p-desktop-one {
   font-size: 180px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 157px;
   letter-spacing: 1.2px;
   font-family: "Futura-Medium";
@@ -75,7 +75,7 @@
 
 @mixin p-desktop-two {
   font-size: 124px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 106px;
   letter-spacing: 1.2px;
   font-family: "Futura-Book";
@@ -84,7 +84,7 @@
 
 @mixin p-desktop-three {
   font-size: 124px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 157px;
   letter-spacing: 1.24px;
   font-family: "Futura-Book";

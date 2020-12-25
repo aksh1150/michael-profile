@@ -1,14 +1,19 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins.scss";
 .mouse-icon {
   margin: auto;
-  margin-top: 110px;
+  margin-top: 20px;
   border: 1px solid $primary;
   border-radius: 26px;
-  height: 120px;
+  height: 100px;
   width: 10px;
   display: block;
   z-index: 10;
   background-color: $primary;
+  @include respond(md) {
+    margin-top: 110px;
+    height: 120px;
+  }
 }
 .mouse-icon .wheel {
   -webkit-animation-name: drop;
