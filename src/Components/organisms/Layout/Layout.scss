@@ -1,9 +1,13 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 .text-center {
   margin: auto;
 }
 .marginTop {
-  margin-top: 150px;
+  margin-top: 80px;
+  @include respond(md) {
+    margin-top: 150px;
+  }
 }
 .marginTop1 {
   margin-top: 30px;
@@ -44,4 +48,7 @@
 
 .footerContainer {
   padding: 150px 80px;
+}
+img {
+  width: 100%;
 }

@@ -5,6 +5,7 @@
 
 .h1 {
   @include h1-mobile;
+  margin-bottom: 20px;
   @include respond(md) {
     @include h1-desktop;
     margin-bottom: 30px;

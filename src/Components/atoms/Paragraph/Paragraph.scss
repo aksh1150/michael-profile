@@ -27,7 +27,7 @@
 
   &.sm {
     @include p-mobile-four;
-    @include respond(md) {
+    @include respond(lg) {
       @include p-desktop-four;
     }
   }

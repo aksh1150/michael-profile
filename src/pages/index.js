@@ -86,7 +86,7 @@ const Home = () => {
       <Section background="Grey">
         <Container className="darkbg">
           <Row>
-            <Col sm={12} md={8} className>
+            <Col sm={12} lg={8} className>
               <Row>
                 <Col xs={12}>
                   <Heading type="h1" colour="white">
@@ -120,7 +120,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={12} md={4} className="secondLayerHeight">
+            <Col lg={4} className="secondLayerHeight d-none d-lg-block">
               <img
                 src={require("../static/images/michas.png")}
                 alt="Michelle"
