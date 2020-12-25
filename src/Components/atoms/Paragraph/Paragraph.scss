@@ -6,35 +6,35 @@
 .Paragraph {
   &.xl {
     @include p-mobile-one;
-    @include respond(sm) {
+    @include respond(md) {
       @include p-desktop-one;
     }
   }
 
   &.lg {
     @include p-mobile-two;
-    @include respond(sm) {
+    @include respond(md) {
       @include p-desktop-two;
     }
   }
 
   &.md {
     @include p-mobile-three;
-    @include respond(sm) {
+    @include respond(md) {
       @include p-desktop-three;
     }
   }
 
   &.sm {
     @include p-mobile-four;
-    @include respond(sm) {
+    @include respond(md) {
       @include p-desktop-four;
     }
   }
 
   &.xs {
     @include p-desktop-fifth;
-    @include respond(sm) {
+    @include respond(md) {
       @include p-desktop-fifth;
       margin-bottom: 20px;
     }
