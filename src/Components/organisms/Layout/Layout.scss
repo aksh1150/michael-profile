@@ -1,5 +1,16 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins.scss";
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.overflowHidden {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: auto;
+}
 .text-center {
   margin: auto;
 }
@@ -83,7 +94,33 @@ img {
   }
 }
 
+.paddingLeft {
+  padding-left: 15px;
+  @include respond(md) {
+    padding-left: 45px;
+  }
+}
+
 .iconPosition {
   position: absolute;
-  left: 25vw;
+  &.down1 {
+    left: 17%;
+    top: 47%;
+  }
+  &.down2 {
+    top: 80%;
+    left: 4%;
+  }
+  &.line1 {
+    left: 115%;
+    top: -80%;
+  }
+  &.line2 {
+    left: 55%;
+    top: -40%;
+  }
+  &.line3 {
+    left: -55%;
+    top: 150%;
+  }
 }

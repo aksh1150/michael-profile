@@ -11,18 +11,12 @@ const DownArrow = () => (
     animate={{ scale: 2 }}
     transition={{ duration: 0.5 }}
   >
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Landing_static"
         transform="translate(-124.000000, -375.000000)"
         fill="#08598A"
-        fill-rule="nonzero"
+        fillRule="nonzero"
       >
         <g
           id="ic_keyboard_arrow_down_48px"
@@ -47,14 +41,9 @@ const Line = () => (
     xmlns="http://www.w3.org/2000/svg"
     animate={{ scale: 2 }}
     transition={{ duration: 1 }}
+    overflow="hidden"
   >
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Landing_static" transform="translate(148.000000, 461.000000)">
         <g id="Group" transform="translate(-147.574946, -460.348249)">
           <rect
