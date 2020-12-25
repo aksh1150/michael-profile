@@ -24,9 +24,10 @@ const Home = () => {
   const [showLinks2, setShowLinks2] = useState(false)
 
   const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 300], [0, 200])
+  const y1 = useTransform(scrollY, [0, 300], [0, 150])
   const y2 = useTransform(scrollY, [0, 300], [0, -100])
-
+  const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
+  const y4 = useTransform(scrollY, [500, 1000], [0, 500])
   const mouseEnter = () => {
     setShowLinks(true)
     setShowLinks2(false)
@@ -43,7 +44,7 @@ const Home = () => {
     <Layout pagename="Home - Michelle Profile" className="overflowHidden">
       <Section background="Grey">
         <Header />
-        <motion.div className="iconPosition down1" style={{ y: y1, x: -40 }}>
+        <motion.div className="iconPosition down1" style={{ y: y2, x: 40 }}>
           <DownArrow />
         </motion.div>
 
@@ -93,12 +94,12 @@ const Home = () => {
       </Section>
 
       <Section background="Grey">
-        <motion.div className="iconPosition line2" style={{ y: y2, x: 50 }}>
+        <motion.div className="iconPosition line2" style={{ y: y1, x: -50 }}>
           <Line />
         </motion.div>
-        <div className="iconPosition line3">
+        <motion.div className="iconPosition line3" style={{ y: y4, x: -40 }}>
           <Line />
-        </div>
+        </motion.div>
         <Container className="darkbg">
           <Row>
             <Col xs={12} sm={8} className>
@@ -147,9 +148,9 @@ const Home = () => {
       </Section>
 
       <Section background="Primary" className="autoHeight">
-        <div className="iconPosition down2">
+        <motion.div className="iconPosition down2" style={{ y: y3, x: -40 }}>
           <DownArrow />
-        </div>
+        </motion.div>
         <Container>
           <Row>
             <Col xs={12} className="marginTop2 paddingLeft">
