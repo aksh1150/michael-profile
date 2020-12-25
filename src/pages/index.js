@@ -36,12 +36,11 @@ const Home = () => {
     <Layout pagename="Home - Michelle Profile">
       <Section background="Grey">
         <Header />
-
+        <div className="iconPosition">
+          <DownArrow />
+          <Line />
+        </div>
         <Container>
-          <div className="iconPosition">
-            <DownArrow />
-            <Line />
-          </div>
           <Row>
             <Col
               xs={{ span: 0, offset: 0 }}
