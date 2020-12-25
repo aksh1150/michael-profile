@@ -30,9 +30,9 @@
   right: 0;
 }
 .secondLayerHeight {
-  height: 680px;
+  height: 670px;
   @include respond(md) {
-    height: 800px;
+    height: 770px;
   }
   @include respond(lg) {
     height: 750px;
@@ -40,7 +40,7 @@
 }
 .darkbg {
   background-color: $dark;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-left: 40px;
   padding-bottom: 30px;
   min-height: 1020px;
