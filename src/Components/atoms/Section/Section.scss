@@ -9,6 +9,7 @@
   max-width: 1440px;
   height: 1020px;
   min-height: 1020px;
+  position: relative;
   @include respond(sm) {
     height: 750px;
     min-height: 750px;

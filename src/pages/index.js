@@ -1,12 +1,6 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import {
-  Footer,
-  Button,
-  ShareButton,
-  Slider,
-  Header,
-} from "../Components/molecules"
+import { Button, ShareButton, Slider, Header } from "../Components/molecules"
 import {
   Heading,
   Paragraph,
@@ -21,10 +15,19 @@ import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
 import SliderData from "../data/Slider"
+import { DownArrow, Line } from "../static/icons/animate"
+
+import { useViewportScroll, motion, useTransform } from "framer-motion"
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false)
   const [showLinks2, setShowLinks2] = useState(false)
+
+  const { scrollY } = useViewportScroll()
+  const y1 = useTransform(scrollY, [0, 300], [0, 150])
+  const y2 = useTransform(scrollY, [0, 300], [0, -100])
+  const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
+  const y4 = useTransform(scrollY, [500, 1000], [0, 500])
   const mouseEnter = () => {
     setShowLinks(true)
     setShowLinks2(false)
@@ -38,9 +41,13 @@ const Home = () => {
     setShowLinks2(false)
   }
   return (
-    <Layout pagename="Home - Michelle Profile">
+    <Layout pagename="Home - Michelle Profile" className="overflowHidden">
       <Section background="Grey">
         <Header />
+        <motion.div className="iconPosition down1" style={{ y: y2, x: 40 }}>
+          <DownArrow />
+        </motion.div>
+
         <Container>
           <Row>
             <Col
@@ -69,7 +76,7 @@ const Home = () => {
               </Row>
             </Col>
 
-            <Col xs={12} sm={6} lg={6} xl={5}>
+            <Col xs={12} sm={6} lg={6} xl={5} className="paddingLeft">
               <Paragraph size="lg" fontcolour="grey">
                 Product Designer
               </Paragraph>
@@ -87,6 +94,12 @@ const Home = () => {
       </Section>
 
       <Section background="Grey">
+        <motion.div className="iconPosition line2" style={{ y: y1, x: -50 }}>
+          <Line />
+        </motion.div>
+        <motion.div className="iconPosition line3" style={{ y: y4, x: -40 }}>
+          <Line />
+        </motion.div>
         <Container className="darkbg">
           <Row>
             <Col xs={12} sm={8} className>
@@ -135,9 +148,12 @@ const Home = () => {
       </Section>
 
       <Section background="Primary" className="autoHeight">
+        <motion.div className="iconPosition down2" style={{ y: y3, x: -40 }}>
+          <DownArrow />
+        </motion.div>
         <Container>
           <Row>
-            <Col xs={12} className="marginTop2">
+            <Col xs={12} className="marginTop2 paddingLeft">
               <Heading type="h1" colour="white">
                 My Works
               </Heading>
@@ -190,7 +206,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={12} className="marginTop4">
+            <Col xs={12} className="marginTop4 paddingLeft">
               <Slider slideData={SliderData} />
             </Col>
           </Row>

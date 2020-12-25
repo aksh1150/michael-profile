@@ -10,6 +10,7 @@ const Layout = ({
   metaKeywords,
   metaImage,
   title,
+  className,
 }) => {
   return (
     <>
@@ -28,8 +29,7 @@ const Layout = ({
         }
         metaImage={metaImage ? metaImage : ""}
       />
-
-      {children}
+      <div className={className}>{children}</div>
       <Footer />
     </>
   )
