@@ -18,14 +18,12 @@ const Head = ({
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="Michelle Portfolio" />
       <meta property="og:title" content="Michelle Portfolio" />
-      <meta property="og:url" content={window.location.href} />
       <meta property="og:type" content="website" />
       <meta property="og:description" content={metaDescription} />
       <meta name="image" property="og:image" content={metaImage} />
       <meta property="og:image:width" content="1442" />
       <meta property="og:image:height" content="318" />
       <meta itemprop="name" content="Michelle Portfolio" />
-      <meta itemprop="url" content={window.location.href} />
       <meta itemprop="description" content={metaDescription} />
 
       <meta itemprop="thumbnailUrl" content={metaImage} />
