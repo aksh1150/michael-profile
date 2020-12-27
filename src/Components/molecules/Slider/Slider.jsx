@@ -7,13 +7,13 @@ const Slider = ({ slideData }) => {
   return (
     <Carousel>
       {slideData.map(slider => (
-        <Carousel.Item interval={1000} key={slider.name}>
+        <Carousel.Item interval={1000} key={slider.id}>
           <Carousel.Caption>
             <Heading type="h3" colour="white">
-              {slider.name}
+              {slider.title}
             </Heading>
             <Paragraph size="xs" fontcolour="white">
-              {slider.testimonials}
+              {slider.testimonial}
             </Paragraph>
           </Carousel.Caption>
         </Carousel.Item>
