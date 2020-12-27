@@ -10,7 +10,7 @@ const Head = ({
 }) => {
   return (
     <Helmet title={`${pagename} | ${title}`}>
-      <meta name="keyword" content={metaKeywords} />
+      <meta name="keywords" content={metaKeywords} />
       <meta name="description" content={metaDescription} />
       <meta name="language" content="English" />
       <meta name="author" content="Akshit Patel" />
@@ -31,8 +31,6 @@ const Head = ({
       <meta itemprop="thumbnailUrl" content={metaImage} />
       <link rel="image_src" href={metaImage} />
       <meta itemprop="image" content={metaImage} />
-
-      <meta name="description" content={metaDescription} />
 
       <link
         rel="apple-touch-icon"
