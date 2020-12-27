@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Button, ShareButton, Slider, Header } from "../Components/molecules"
 import {
@@ -20,43 +20,45 @@ import { DownArrow, Line } from "../static/icons/animate"
 
 import { useViewportScroll, motion, useTransform } from "framer-motion"
 
-export const query = graphql`
-  query {
-    contentfulHomePage {
-      bannerText1
-      bannerText2
-      bannerSubText
-      bannerText3
-      bannerButtonText
-      aboutMeTitle
-      aboutMePara1 {
-        aboutMePara1
-      }
-      aboutMePara2 {
-        aboutMePara2
-      }
-      aboutMePara3 {
-        aboutMePara3
-      }
-      aboutMeButtonText
-      myWorkTitle
-      footerTitle
-      footerText
-      footerButtonTitle
-      productGraphicsLinksName {
-        id
-        value
-      }
-      testimonialTitle {
-        id
-        title
-        testimonial
+const Home = () => {
+  const query = useStaticQuery(graphql`
+    query {
+      contentfulHomePage {
+        bannerText1
+        bannerText2
+        bannerSubText
+        bannerText3
+        bannerButtonText
+        aboutMeTitle
+        aboutMePara1 {
+          aboutMePara1
+        }
+        aboutMePara2 {
+          aboutMePara2
+        }
+        aboutMePara3 {
+          aboutMePara3
+        }
+        aboutMeButtonText
+        myWorkTitle
+        footerTitle
+        footerText
+        footerButtonTitle
+        productGraphicsLinksName {
+          id
+          value
+        }
+        testimonialTitle {
+          id
+          title
+          testimonial
+        }
       }
     }
-  }
-`
+  `)
 
-const Home = () => {
+  const HomePage = query.contentfulHomePage
+
   const [showLinks, setShowLinks] = useState(false)
   const [showLinks2, setShowLinks2] = useState(false)
 
@@ -95,27 +97,24 @@ const Home = () => {
               xl={{ span: 8, offset: 6 }}
               className="marginTop2"
             >
-              <Paragraph size="xl">Michelle</Paragraph>
+              <Paragraph size="xl">{HomePage.bannerText1}</Paragraph>
               <Paragraph size="xl" className="d-xs-block d-sm-none">
-                Lam
+                {HomePage.bannerText2}
               </Paragraph>
 
               <Row>
                 <Col xs={12} sm={7} lg={6} xl={5}>
-                  <Paragraph size="xs">
-                    Building holistic user-centered experience for digital
-                    products
-                  </Paragraph>
+                  <Paragraph size="xs">{HomePage.bannerSubText}</Paragraph>
                 </Col>
                 <Col xs={12} sm={5} lg={6} xl={7} className="d-none d-sm-block">
-                  <Paragraph size="xl">Lam</Paragraph>
+                  <Paragraph size="xl">{HomePage.bannerText2}</Paragraph>
                 </Col>
               </Row>
             </Col>
 
             <Col xs={12} sm={6} lg={6} xl={5} className="paddingLeft">
               <Paragraph size="lg" fontcolour="grey">
-                Product Designer
+                {HomePage.bannerText3}
               </Paragraph>
             </Col>
             <Col xs={12} sm={1} lg={1} xl={1} className="text-center">
