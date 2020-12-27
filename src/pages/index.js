@@ -191,20 +191,22 @@ const Home = () => {
               </Heading>
               <Row onMouseLeave={mouseLeave}>
                 <Col xs={12} md={5}>
-                  <Paragraph
-                    size="md"
-                    className={`underline ${showLinks ? "hover" : ""}`}
-                    onMouseEnter={mouseEnter}
-                  >
-                    Product
-                  </Paragraph>
-                  <Paragraph
-                    size="md"
-                    className={`underline ${showLinks2 ? "hover" : ""}`}
-                    onMouseEnter={mouseEnter2}
-                  >
-                    Graphic
-                  </Paragraph>
+                  <div onMouseEnter={mouseEnter}>
+                    <Paragraph
+                      size="md"
+                      className={`underline ${showLinks ? "hover" : ""}`}
+                    >
+                      Product
+                    </Paragraph>
+                  </div>
+                  <div onMouseEnter={mouseEnter2}>
+                    <Paragraph
+                      size="md"
+                      className={`underline ${showLinks2 ? "hover" : ""}`}
+                    >
+                      Graphic
+                    </Paragraph>
+                  </div>
                 </Col>
                 <Col xs={12} md={3} className="d-none d-sm-block">
                   {showLinks || showLinks2 ? (
