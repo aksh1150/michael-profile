@@ -191,7 +191,7 @@ const Home = () => {
               </Heading>
               <Row onMouseLeave={mouseLeave}>
                 <Col xs={12} md={5}>
-                  <div onMouseEnter={mouseEnter}>
+                  <div onMouseEnter={mouseEnter} role="button">
                     <Paragraph
                       size="md"
                       className={`underline ${showLinks ? "hover" : ""}`}
@@ -199,7 +199,7 @@ const Home = () => {
                       Product
                     </Paragraph>
                   </div>
-                  <div onMouseEnter={mouseEnter2}>
+                  <div onMouseEnter={mouseEnter2} role="button">
                     <Paragraph
                       size="md"
                       className={`underline ${showLinks2 ? "hover" : ""}`}

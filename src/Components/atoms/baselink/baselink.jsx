@@ -34,6 +34,7 @@ const BaseLink = ({
       target={blankTarget}
       rel={referrer}
       onClick={clickEvent}
+      role="button"
     >
       {children}
     </a>
