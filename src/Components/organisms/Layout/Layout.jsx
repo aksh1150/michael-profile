@@ -1,5 +1,5 @@
 import React from "react"
-import { Header, Footer } from "../../molecules"
+import { Footer } from "../../molecules"
 import { Head } from "../../atoms"
 import "./Layout.scss"
 

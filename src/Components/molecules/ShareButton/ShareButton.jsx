@@ -1,6 +1,5 @@
 import React from "react"
 import "./ShareButton.scss"
-import { BaseLink } from "../../atoms"
 import SocialMedia from "../SocialMedia"
 
 const ShareButton = ({ iconData }) => {
