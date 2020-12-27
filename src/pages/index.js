@@ -15,7 +15,6 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
-import SliderData from "../data/Slider"
 import { DownArrow, Line } from "../static/icons/animate"
 
 import { useViewportScroll, motion, useTransform } from "framer-motion"
@@ -43,7 +42,6 @@ const Home = () => {
         myWorkTitle
         footerTitle
         footerText
-        footerButtonTitle
         productGraphicsLinksName {
           id
           value
@@ -243,9 +241,9 @@ const Home = () => {
         <Row>
           <Col xs={12} sm={8} lg={9}>
             <Heading type="h1" colour="blue">
-              Want to chat?
+              {HomePage.footerTitle}
             </Heading>
-            <Paragraph size="xs">Me too! Can't wait to hear from you</Paragraph>
+            <Paragraph size="xs">{HomePage.footerText}</Paragraph>
           </Col>
           <Col xs={12} sm={4} lg={3}>
             <ShareButton iconData={SocialMediaData} />
