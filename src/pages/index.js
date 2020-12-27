@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Button, ShareButton, Slider, Header } from "../Components/molecules"
 import {
@@ -18,6 +19,42 @@ import SliderData from "../data/Slider"
 import { DownArrow, Line } from "../static/icons/animate"
 
 import { useViewportScroll, motion, useTransform } from "framer-motion"
+
+export const query = graphql`
+  query {
+    contentfulHomePage {
+      bannerText1
+      bannerText2
+      bannerSubText
+      bannerText3
+      bannerButtonText
+      aboutMeTitle
+      aboutMePara1 {
+        aboutMePara1
+      }
+      aboutMePara2 {
+        aboutMePara2
+      }
+      aboutMePara3 {
+        aboutMePara3
+      }
+      aboutMeButtonText
+      myWorkTitle
+      footerTitle
+      footerText
+      footerButtonTitle
+      productGraphicsLinksName {
+        id
+        value
+      }
+      testimonialTitle {
+        id
+        title
+        testimonial
+      }
+    }
+  }
+`
 
 const Home = () => {
   const [showLinks, setShowLinks] = useState(false)
