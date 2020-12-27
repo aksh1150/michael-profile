@@ -84,7 +84,14 @@ const Home = () => {
             <Col xs={12} sm={1} lg={1} xl={1} className="text-center">
               <ScrollDown />
             </Col>
-            <Col xs={12} sm={4} lg={4} xl={5} className="text-center marginTop">
+            <Col
+              xs={12}
+              sm={4}
+              lg={4}
+              xl={5}
+              className="text-center marginTop"
+              style={{ zIndex: 9999 }}
+            >
               <Button link="/uxCaseStudy" internal>
                 UX Case Studies
               </Button>
