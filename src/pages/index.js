@@ -126,7 +126,7 @@ const Home = () => {
               className="text-center marginTop"
               style={{ zIndex: 9999 }}
             >
-              <Button link="/uxCaseStudy" internal>
+              <Button link="/uxCaseStudy" internal size="lg">
                 {HomePage.bannerButtonText}
               </Button>
             </Col>
