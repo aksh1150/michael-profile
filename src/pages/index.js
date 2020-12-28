@@ -81,7 +81,10 @@ const Home = () => {
     <Layout pagename="Home - Michelle Profile" className="overflowHidden">
       <Section background="Grey">
         <Header />
-        <motion.div className="iconPosition down1" style={{ y: y2, x: 40 }}>
+        <motion.div
+          className="iconPosition down1 d-none d-lg-block"
+          style={{ y: y2, x: 40 }}
+        >
           <DownArrow />
         </motion.div>
 
@@ -135,10 +138,16 @@ const Home = () => {
       </Section>
 
       <Section background="Grey">
-        <motion.div className="iconPosition line2" style={{ y: y1, x: -50 }}>
+        <motion.div
+          className="iconPosition line2 d-none d-lg-block"
+          style={{ y: y1, x: -50 }}
+        >
           <Line />
         </motion.div>
-        <motion.div className="iconPosition line3" style={{ y: y4, x: -60 }}>
+        <motion.div
+          className="iconPosition line3 d-none d-lg-block"
+          style={{ y: y4, x: -60 }}
+        >
           <Line />
         </motion.div>
         <Container className="darkbg">
@@ -180,7 +189,10 @@ const Home = () => {
       </Section>
 
       <Section background="Primary" className="autoHeight">
-        <motion.div className="iconPosition down2" style={{ y: y3, x: -40 }}>
+        <motion.div
+          className="iconPosition down2 d-none d-lg-block"
+          style={{ y: y3, x: -40 }}
+        >
           <DownArrow />
         </motion.div>
         <Container>
