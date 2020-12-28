@@ -10,6 +10,7 @@ const Menu = [
   {
     title: "About",
     link: "about",
+    space: "right",
   },
 ]
 

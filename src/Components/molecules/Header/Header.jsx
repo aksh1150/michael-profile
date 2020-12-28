@@ -25,7 +25,7 @@ const Header = () => {
               <BaseLink
                 link={menuItems.link}
                 internal
-                className="navLinks"
+                className={`navLinks ${menuItems.space ? menuItems.space : ""}`}
                 key={menuItems.link}
               >
                 {menuItems.title}

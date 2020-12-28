@@ -11,6 +11,13 @@ body {
   overflow: hidden;
   margin: auto;
 }
+.container {
+  @include respond(lg) {
+    max-width: 1220px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
 .text-center {
   margin: auto;
 }
@@ -101,10 +108,17 @@ img {
   }
 }
 
+.text-right {
+  text-align: left;
+  @include respond(lg) {
+    text-align: right;
+  }
+}
+
 .iconPosition {
   position: absolute;
   &.down1 {
-    left: 14.3%;
+    left: 11.3%;
     top: 47%;
   }
   &.down2 {
@@ -123,4 +137,8 @@ img {
     left: -55%;
     top: 170.3%;
   }
+}
+.noPaddings {
+  padding-left: 7px;
+  padding-right: 7px;
 }

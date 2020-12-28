@@ -90,25 +90,24 @@ const Home = () => {
 
         <Container>
           <Row>
-            <Col
-              xs={{ span: 0, offset: 0 }}
-              sm={{ span: 8, offset: 3 }}
-              md={{ span: 8, offset: 4 }}
-              lg={{ span: 8, offset: 4 }}
-              xl={{ span: 8, offset: 6 }}
-              className="marginTop2"
-            >
-              <Paragraph size="xl">{HomePage.bannerText1}</Paragraph>
+            <Col lg={5}></Col>
+            <Col lg={7} className="marginTop2 noPaddings">
+              <Paragraph size="xl" className="text-right">
+                {HomePage.bannerText1}
+              </Paragraph>
               <Paragraph size="xl" className="d-xs-block d-sm-none">
                 {HomePage.bannerText2}
               </Paragraph>
 
               <Row>
-                <Col xs={12} sm={7} lg={6} xl={5}>
+                <Col xl={1}></Col>
+                <Col xs={12} sm={7} lg={6} xl={6}>
                   <Paragraph size="xs">{HomePage.bannerSubText}</Paragraph>
                 </Col>
-                <Col xs={12} sm={5} lg={6} xl={7} className="d-none d-sm-block">
-                  <Paragraph size="xl">{HomePage.bannerText2}</Paragraph>
+                <Col xs={12} sm={5} lg={6} xl={5} className="d-none d-sm-block">
+                  <Paragraph size="xl" className="text-right">
+                    {HomePage.bannerText2}
+                  </Paragraph>
                 </Col>
               </Row>
             </Col>
