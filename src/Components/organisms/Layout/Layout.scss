@@ -5,6 +5,7 @@ html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
+  background-color: $base-light-grey;
 }
 .overflowHidden {
   max-width: 1440px;
@@ -45,7 +46,7 @@ body {
 .imageBottom {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 20px;
 }
 .secondLayerHeight {
   height: 670px;
@@ -67,7 +68,7 @@ body {
   }
   @include respond(lg) {
     padding-top: 80px;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 }
 
@@ -103,8 +104,8 @@ img {
 
 .paddingLeft {
   padding-left: 15px;
-  @include respond(md) {
-    padding-left: 55px;
+  @include respond(xl) {
+    padding-left: 105px;
   }
 }
 

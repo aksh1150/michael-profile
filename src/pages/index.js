@@ -90,8 +90,8 @@ const Home = () => {
 
         <Container>
           <Row>
-            <Col lg={5}></Col>
-            <Col lg={7} className="marginTop2 noPaddings">
+            <Col sm={5} md={5} lg={4} xl={5}></Col>
+            <Col sm={7} md={7} lg={8} xl={7} className="marginTop2 noPaddings">
               <Paragraph size="xl" className="text-rights p3">
                 {HomePage.bannerText1}
               </Paragraph>
