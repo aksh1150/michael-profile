@@ -7,15 +7,21 @@
   margin: auto;
 
   .navbar {
-    max-width: 1220px;
+    max-width: 1260px;
     margin: auto;
+
     .navLinks {
       margin: 0px 10px;
       @include respond(sm) {
         margin: 0px 10px;
       }
       @include respond(md) {
-        margin: 0px 35px;
+        margin: 0px 42px;
+      }
+      &.right {
+        @include respond(md) {
+          margin-right: 80px;
+        }
       }
     }
 

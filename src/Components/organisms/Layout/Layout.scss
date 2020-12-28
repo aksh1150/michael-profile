@@ -5,11 +5,19 @@ html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
+  background-color: $base-light-grey;
 }
 .overflowHidden {
   max-width: 1440px;
   overflow: hidden;
   margin: auto;
+}
+.container {
+  @include respond(lg) {
+    max-width: 1220px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 .text-center {
   margin: auto;
@@ -38,7 +46,7 @@ body {
 .imageBottom {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 20px;
 }
 .secondLayerHeight {
   height: 670px;
@@ -60,7 +68,7 @@ body {
   }
   @include respond(lg) {
     padding-top: 80px;
-    padding-left: 50px;
+    padding-left: 100px;
   }
 }
 
@@ -96,31 +104,49 @@ img {
 
 .paddingLeft {
   padding-left: 15px;
-  @include respond(md) {
-    padding-left: 45px;
+  @include respond(xl) {
+    padding-left: 105px;
+  }
+}
+
+.text-rights {
+  text-align: left;
+  @include respond(lg) {
+    text-align: right;
   }
 }
 
 .iconPosition {
   position: absolute;
   &.down1 {
-    left: 17%;
-    top: 47%;
+    left: 7.4%;
+    top: 39.3%;
   }
   &.down2 {
     top: 20%;
-    left: 7%;
+    left: -0.5%;
   }
   &.line1 {
-    left: 115%;
-    top: -80%;
+    left: 90%;
+    top: -20%;
   }
   &.line2 {
-    left: 57%;
-    top: -45%;
+    // left: 3%;
+    top: -38%;
   }
   &.line3 {
-    left: -55%;
-    top: 148.1%;
+    left: -32%;
+    top: 48%;
   }
+}
+.noPaddings {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.p3 {
+  padding-right: 35px;
+}
+
+.p2 {
+  padding-right: 10px;
 }

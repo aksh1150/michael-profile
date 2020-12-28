@@ -15,7 +15,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
-import { DownArrow, Line } from "../static/icons/animate"
+import { DownArrow } from "../static/icons/animate"
 
 import { useViewportScroll, motion, useTransform } from "framer-motion"
 
@@ -64,7 +64,8 @@ const Home = () => {
   const y1 = useTransform(scrollY, [0, 300], [0, 150])
   const y2 = useTransform(scrollY, [0, 300], [0, -100])
   const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
-  const y4 = useTransform(scrollY, [500, 1000], [0, 500])
+  const y4 = useTransform(scrollY, [670, 1000], [0, 500])
+  const y5 = useTransform(scrollY, [100, 500], [0, -100])
   const mouseEnter = () => {
     setShowLinks(true)
     setShowLinks2(false)
@@ -81,31 +82,45 @@ const Home = () => {
     <Layout pagename="Home - Michelle Profile" className="overflowHidden">
       <Section background="Grey">
         <Header />
-        <motion.div className="iconPosition down1" style={{ y: y2, x: 40 }}>
+        <motion.div
+          className="iconPosition down1 d-none d-lg-block"
+          initial={{ x: -180 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          style={{ y: y5, x: 40 }}
+        >
           <DownArrow />
+        </motion.div>
+
+        <motion.div
+          className="iconPosition line1 d-none d-lg-block"
+          initial={{ x: 100, y: -100 }}
+          animate={{ x: 0, y: 0, scale: 3 }}
+          transition={{ duration: 2 }}
+          style={{ y: y2, x: 40 }}
+        >
+          <img src={require("../static/icons/line2.png")} alt="Line2" />
         </motion.div>
 
         <Container>
           <Row>
-            <Col
-              xs={{ span: 0, offset: 0 }}
-              sm={{ span: 8, offset: 3 }}
-              md={{ span: 8, offset: 4 }}
-              lg={{ span: 8, offset: 4 }}
-              xl={{ span: 8, offset: 6 }}
-              className="marginTop2"
-            >
-              <Paragraph size="xl">{HomePage.bannerText1}</Paragraph>
+            <Col sm={5} md={5} lg={4} xl={5}></Col>
+            <Col sm={7} md={7} lg={8} xl={7} className="marginTop2 noPaddings">
+              <Paragraph size="xl" className="text-rights p3">
+                {HomePage.bannerText1}
+              </Paragraph>
               <Paragraph size="xl" className="d-xs-block d-sm-none">
                 {HomePage.bannerText2}
               </Paragraph>
 
               <Row>
-                <Col xs={12} sm={7} lg={6} xl={5}>
+                <Col xs={12} sm={7} lg={6} xl={6} style={{ marginTop: 10 }}>
                   <Paragraph size="xs">{HomePage.bannerSubText}</Paragraph>
                 </Col>
-                <Col xs={12} sm={5} lg={6} xl={7} className="d-none d-sm-block">
-                  <Paragraph size="xl">{HomePage.bannerText2}</Paragraph>
+                <Col xs={12} sm={5} lg={6} xl={6} className="d-none d-sm-block">
+                  <Paragraph size="xl" className="text-rights p2">
+                    {HomePage.bannerText2}
+                  </Paragraph>
                 </Col>
               </Row>
             </Col>
@@ -123,10 +138,10 @@ const Home = () => {
               sm={4}
               lg={4}
               xl={5}
-              className="text-center marginTop"
+              className="text-rights marginTop"
               style={{ zIndex: 9999 }}
             >
-              <Button link="/uxCaseStudy" internal>
+              <Button link="/uxCaseStudy" internal size="lg">
                 {HomePage.bannerButtonText}
               </Button>
             </Col>
@@ -135,11 +150,23 @@ const Home = () => {
       </Section>
 
       <Section background="Grey">
-        <motion.div className="iconPosition line2" style={{ y: y1, x: -50 }}>
-          <Line />
+        <motion.div
+          className="iconPosition line2 d-none d-lg-block"
+          initial={{ x: -80, y: 80 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{ duration: 2 }}
+          style={{ y: y1, x: -50 }}
+        >
+          <img src={require("../static/icons/line1.png")} alt="Line1" />
         </motion.div>
-        <motion.div className="iconPosition line3" style={{ y: y4, x: -40 }}>
-          <Line />
+        <motion.div
+          className="iconPosition line3 d-none d-lg-block"
+          initial={{ x: -80, y: 80 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{ duration: 2 }}
+          style={{ y: y4, x: -60 }}
+        >
+          <img src={require("../static/icons/line2.png")} alt="Line2" />
         </motion.div>
         <Container className="darkbg">
           <Row>
@@ -180,7 +207,10 @@ const Home = () => {
       </Section>
 
       <Section background="Primary" className="autoHeight">
-        <motion.div className="iconPosition down2" style={{ y: y3, x: -40 }}>
+        <motion.div
+          className="iconPosition down2 d-none d-lg-block"
+          style={{ y: y3, x: -40 }}
+        >
           <DownArrow />
         </motion.div>
         <Container>
