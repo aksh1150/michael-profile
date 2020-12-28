@@ -104,7 +104,7 @@ img {
 .paddingLeft {
   padding-left: 15px;
   @include respond(md) {
-    padding-left: 45px;
+    padding-left: 55px;
   }
 }
 
@@ -141,4 +141,11 @@ img {
 .noPaddings {
   padding-left: 7px;
   padding-right: 7px;
+}
+.p3 {
+  padding-right: 35px;
+}
+
+.p2 {
+  padding-right: 10px;
 }

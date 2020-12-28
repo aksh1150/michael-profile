@@ -16,11 +16,11 @@
         margin: 0px 10px;
       }
       @include respond(md) {
-        margin: 0px 30px;
+        margin: 0px 42px;
       }
       &.right {
         @include respond(md) {
-          margin-right: 70px;
+          margin-right: 80px;
         }
       }
     }
