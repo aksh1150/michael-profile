@@ -15,7 +15,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Layout } from "../Components/organisms"
 
 import SocialMediaData from "../data/SocialMedia"
-import { DownArrow, Line } from "../static/icons/animate"
+import { DownArrow } from "../static/icons/animate"
 
 import { useViewportScroll, motion, useTransform } from "framer-motion"
 
@@ -64,7 +64,8 @@ const Home = () => {
   const y1 = useTransform(scrollY, [0, 300], [0, 150])
   const y2 = useTransform(scrollY, [0, 300], [0, -100])
   const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
-  const y4 = useTransform(scrollY, [500, 1000], [0, 500])
+  const y4 = useTransform(scrollY, [670, 1000], [0, 500])
+  const y5 = useTransform(scrollY, [300, 500], [0, -100])
   const mouseEnter = () => {
     setShowLinks(true)
     setShowLinks2(false)
@@ -83,9 +84,22 @@ const Home = () => {
         <Header />
         <motion.div
           className="iconPosition down1 d-none d-lg-block"
-          style={{ y: y2, x: 40 }}
+          initial={{ x: -180 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          style={{ y: y5, x: 40 }}
         >
           <DownArrow />
+        </motion.div>
+
+        <motion.div
+          className="iconPosition line1 d-none d-lg-block"
+          initial={{ x: 100, y: -100 }}
+          animate={{ x: 0, y: 0, scale: 3 }}
+          transition={{ duration: 2 }}
+          style={{ y: y2, x: 40 }}
+        >
+          <img src={require("../static/icons/line2.png")} alt="Line2" />
         </motion.div>
 
         <Container>
@@ -138,15 +152,21 @@ const Home = () => {
       <Section background="Grey">
         <motion.div
           className="iconPosition line2 d-none d-lg-block"
+          initial={{ x: -80, y: 80 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{ duration: 2 }}
           style={{ y: y1, x: -50 }}
         >
-          <Line />
+          <img src={require("../static/icons/line1.png")} alt="Line1" />
         </motion.div>
         <motion.div
           className="iconPosition line3 d-none d-lg-block"
+          initial={{ x: -80, y: 80 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{ duration: 2 }}
           style={{ y: y4, x: -60 }}
         >
-          <Line />
+          <img src={require("../static/icons/line2.png")} alt="Line2" />
         </motion.div>
         <Container className="darkbg">
           <Row>
