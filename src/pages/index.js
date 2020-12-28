@@ -138,7 +138,7 @@ const Home = () => {
         <motion.div className="iconPosition line2" style={{ y: y1, x: -50 }}>
           <Line />
         </motion.div>
-        <motion.div className="iconPosition line3" style={{ y: y4, x: -40 }}>
+        <motion.div className="iconPosition line3" style={{ y: y4, x: -60 }}>
           <Line />
         </motion.div>
         <Container className="darkbg">

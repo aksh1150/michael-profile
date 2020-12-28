@@ -39,7 +39,7 @@ const Line = () => (
     viewBox="0 0 1870 1856"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    animate={{ scale: 2 }}
+    animate={{ scale: 2.2 }}
     transition={{ duration: 1 }}
     overflow="hidden"
   >

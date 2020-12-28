@@ -9,6 +9,9 @@
   .navbar {
     max-width: 1220px;
     margin: auto;
+    .navbar-brand {
+      padding-left: 25px;
+    }
     .navLinks {
       margin: 0px 10px;
       @include respond(sm) {
