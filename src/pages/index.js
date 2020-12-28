@@ -65,7 +65,7 @@ const Home = () => {
   const y2 = useTransform(scrollY, [0, 300], [0, -100])
   const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
   const y4 = useTransform(scrollY, [670, 1000], [0, 500])
-  const y5 = useTransform(scrollY, [300, 500], [0, -100])
+  const y5 = useTransform(scrollY, [100, 500], [0, -100])
   const mouseEnter = () => {
     setShowLinks(true)
     setShowLinks2(false)
