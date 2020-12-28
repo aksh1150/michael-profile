@@ -92,7 +92,7 @@ const Home = () => {
           <Row>
             <Col lg={5}></Col>
             <Col lg={7} className="marginTop2 noPaddings">
-              <Paragraph size="xl" className="text-right">
+              <Paragraph size="xl" className="text-rights">
                 {HomePage.bannerText1}
               </Paragraph>
               <Paragraph size="xl" className="d-xs-block d-sm-none">
@@ -105,7 +105,7 @@ const Home = () => {
                   <Paragraph size="xs">{HomePage.bannerSubText}</Paragraph>
                 </Col>
                 <Col xs={12} sm={5} lg={6} xl={5} className="d-none d-sm-block">
-                  <Paragraph size="xl" className="text-right">
+                  <Paragraph size="xl" className="text-rights">
                     {HomePage.bannerText2}
                   </Paragraph>
                 </Col>
