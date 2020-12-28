@@ -155,7 +155,7 @@ const Home = () => {
           initial={{ x: -80, y: 80 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 2 }}
-          style={{ y: y1, x: -50 }}
+          // style={{ y: y1, x: -50 }}
         >
           <img src={require("../static/icons/line1.png")} alt="Line1" />
         </motion.div>
@@ -164,7 +164,7 @@ const Home = () => {
           initial={{ x: -80, y: 80 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 2 }}
-          style={{ y: y4, x: -60 }}
+          // style={{ y: y4, x: -60 }}
         >
           <img src={require("../static/icons/line2.png")} alt="Line2" />
         </motion.div>
