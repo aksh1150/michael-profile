@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("../../../static/fonts/Helvetica-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin h1-desktop {
   font-size: 48px;
   font-weight: 700;
@@ -108,5 +115,5 @@
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 1px;
-  font-family: "Futura-Light";
+  font-family: "Helvetica-Light";
 }
