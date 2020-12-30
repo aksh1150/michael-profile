@@ -29,6 +29,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../../static/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin h1-mobile {
   font-size: 32px;
   font-weight: 700;
@@ -78,17 +85,17 @@
 }
 
 @mixin p-mobile-one {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 700;
-  line-height: 97px;
+  line-height: 87px;
   letter-spacing: 1.2px;
   font-family: "Futura-Light";
 }
 
 @mixin p-mobile-two {
-  font-size: 84px;
+  font-size: 74px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 80px;
   letter-spacing: 1.2px;
   font-family: "Futura-Book";
   color: $base-medium-grey;
@@ -114,5 +121,5 @@
   font-weight: 200;
   line-height: 28px;
   letter-spacing: 1px;
-  font-family: "Helvetica-Light";
+  font-family: "Roboto-Light";
 }
