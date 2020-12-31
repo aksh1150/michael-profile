@@ -9,7 +9,7 @@
   .navbar {
     max-width: 1260px;
     margin: auto;
-
+    padding-top: 50px;
     .navLinks {
       margin: 0px 10px;
       @include respond(sm) {

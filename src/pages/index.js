@@ -188,7 +188,7 @@ const Home = () => {
                     {HomePage.aboutMePara3.aboutMePara3}
                   </Paragraph>
                 </Col>
-                <Col xs={12} className="marginTop1">
+                <Col xs={12} className="marginTop3">
                   <Button link="/uxCaseStudy" internal size="lg">
                     {HomePage.aboutMeButtonText}
                   </Button>
