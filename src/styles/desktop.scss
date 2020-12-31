@@ -84,11 +84,11 @@
   font-size: 180px;
   font-weight: 900;
   line-height: 157px;
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
   font-family: "Futura-Light";
   transform: scale(1);
   @include respond(lg) {
-    transform: scale(1.1);
+    transform: scale(1.07);
   }
 }
 

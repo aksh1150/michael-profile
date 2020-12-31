@@ -2,8 +2,6 @@
 @import "../../../styles/variables";
 
 .Section {
-  padding-top: 20px;
-  padding-bottom: 50px;
   margin: auto;
   width: auto;
   max-width: 1440px;
@@ -15,8 +13,6 @@
     min-height: 750px;
   }
   @include respond(md) {
-    padding-top: 70px;
-    padding-bottom: 70px;
     max-width: 1440px;
     height: 900px;
     min-height: 900px;

@@ -61,10 +61,8 @@ const Home = () => {
   const [showLinks2, setShowLinks2] = useState(false)
 
   const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 300], [0, 150])
   const y2 = useTransform(scrollY, [0, 300], [0, -100])
-  const y3 = useTransform(scrollY, [1000, 2000], [0, 500])
-  const y4 = useTransform(scrollY, [670, 1000], [0, 500])
+  const y3 = useTransform(scrollY, [1200, 2000], [0, 400])
   const y5 = useTransform(scrollY, [100, 500], [0, -100])
   const mouseEnter = () => {
     setShowLinks(true)
@@ -188,7 +186,7 @@ const Home = () => {
                     {HomePage.aboutMePara3.aboutMePara3}
                   </Paragraph>
                 </Col>
-                <Col xs={12} className="marginTop1">
+                <Col xs={12} className="marginTop3">
                   <Button link="/uxCaseStudy" internal size="lg">
                     {HomePage.aboutMeButtonText}
                   </Button>
