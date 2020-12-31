@@ -51,7 +51,7 @@ body {
 .secondLayerHeight {
   height: 670px;
   @include respond(md) {
-    height: 770px;
+    height: 840px;
   }
   @include respond(lg) {
     height: 800px;
