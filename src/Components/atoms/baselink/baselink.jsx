@@ -10,6 +10,7 @@ const BaseLink = ({
   target,
   internal,
   noHoverEffect,
+  InnerLink,
   ...props
 }) => {
   const blankTarget = target ? "_blank" : ""
@@ -17,12 +18,13 @@ const BaseLink = ({
   const newLink = link || null
   const isHover = noHoverEffect ? "isHover" : ""
   const composedClassName = `${className} ${isHover}` || ""
+  const inner = InnerLink ? "isInner" : ""
 
   const events = internal ? (
     <Link
       to={newLink}
       data-testid="id"
-      className={`baselink ${composedClassName}`}
+      className={`baselink ${composedClassName} ${inner}`}
     >
       {children}
     </Link>
@@ -30,7 +32,7 @@ const BaseLink = ({
     <a
       href={newLink}
       data-testid="id"
-      className={`baselink ${composedClassName}`}
+      className={`baselink ${composedClassName} ${inner}`}
       target={blankTarget}
       rel={referrer}
       onClick={clickEvent}
