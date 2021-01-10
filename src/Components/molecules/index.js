@@ -4,5 +4,6 @@ import ShareButton from "./ShareButton"
 import SocialMedia from "./SocialMedia"
 import Slider from "./Slider"
 import Header from "./Header"
+import LinkButton from "./LinkButton"
 
-export { Footer, Button, ShareButton, SocialMedia, Slider, Header }
+export { Footer, Button, ShareButton, SocialMedia, Slider, Header, LinkButton }

@@ -1,9 +1,11 @@
 import React from "react"
 
+import LinkButton from "../../Components/molecules"
+
 const CaseStudies = () => {
   return (
     <div>
-      <h2>Ux Case Studies Page</h2>
+      <LinkButton>Text</LinkButton>
     </div>
   )
 }
