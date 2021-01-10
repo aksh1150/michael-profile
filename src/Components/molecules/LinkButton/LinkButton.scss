@@ -9,13 +9,13 @@
   font-style: normal;
 }
 
-.btns {
-  background-color: $primary;
-  color: $base-white;
+.Linkbtns {
+  background-color: $base-white;
+  color: $spaceship;
   border-radius: 28px;
   z-index: 9999;
   cursor: pointer !important;
-  border-color: $primary;
+  border-color: $spaceship;
   border-style: solid;
   font-family: "Helvetica-Medium";
   border-width: 1px;
@@ -35,8 +35,12 @@
     font-size: 24px;
   }
 
+  &.active {
+    background-color: $spaceship;
+  }
+
   &:hover {
-    background-color: $base-white;
-    color: $primary;
+    background-color: $spaceship;
+    color: $base-white;
   }
 }
