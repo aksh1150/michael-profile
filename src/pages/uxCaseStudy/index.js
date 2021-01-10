@@ -1,6 +1,6 @@
 import React from "react"
 
-import LinkButton from "../../Components/molecules"
+import { LinkButton } from "../../Components/molecules"
 
 const CaseStudies = () => {
   return (
