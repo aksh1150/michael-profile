@@ -10,6 +10,12 @@
     @include h1-desktop;
     margin-bottom: 30px;
   }
+  &.isInner {
+    @include h1-mobile-inner;
+    @include respond(md) {
+      @include h1-desktop-inner;
+    }
+  }
 }
 
 .h2 {
@@ -17,12 +23,24 @@
   @include respond(md) {
     @include h2-desktop;
   }
+  &.isInner {
+    @include h2-mobile-inner;
+    @include respond(md) {
+      @include h2-desktop-inner;
+    }
+  }
 }
 
 .h3 {
   @include h3-mobile;
   @include respond(md) {
     @include h3-desktop;
+  }
+  &.isInner {
+    @include h3-mobile-inner;
+    @include respond(md) {
+      @include h3-desktop-inner;
+    }
   }
 }
 
