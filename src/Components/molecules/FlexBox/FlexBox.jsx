@@ -7,6 +7,6 @@ const FlexBox = ({ children, width }) => {
 }
 FlexBox.propTypes = {
   children: PropTypes.node,
-  width: PropTypes.node.required,
+  width: PropTypes.string.isRequired,
 }
 export default FlexBox
