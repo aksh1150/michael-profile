@@ -8,6 +8,7 @@ import Section from "./Section"
 import HighlightedQuotes from "./HighlightedQuotes"
 import BulletSection from "./BulletSection"
 import Quote from "./Quote"
+import Flex from "./Flex"
 
 export {
   BaseLink,
@@ -20,4 +21,5 @@ export {
   HighlightedQuotes,
   BulletSection,
   Quote,
+  Flex,
 }
