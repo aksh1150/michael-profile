@@ -4,9 +4,11 @@
   font-family: "Century-Gothic";
   src: url("../../../static/fonts/GOTHIC.ttf") format("truetype");
 }
-
-.HighlightedQuotes {
-  font-size: 30px;
-  line-height: 40px;
-  color: $dark;
+p {
+  &.HighlightedQuotes {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    color: $dark;
+  }
 }
