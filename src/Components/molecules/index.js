@@ -7,7 +7,7 @@ import Header from "./Header"
 import LinkButton from "./LinkButton"
 import HeroImage from "./HeroImage"
 import ImageEnlarge from "./ImageEnlarge"
-import Flex800 from "./Flex800"
+import FlexBox from "./FlexBox"
 
 export {
   Footer,
@@ -19,5 +19,5 @@ export {
   LinkButton,
   HeroImage,
   ImageEnlarge,
-  Flex800,
+  FlexBox,
 }

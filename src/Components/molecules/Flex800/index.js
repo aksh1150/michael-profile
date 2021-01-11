@@ -1,3 +1,3 @@
-import Flex800 from "./Flex800"
+import FlexBox from "./FlexBox"
 
-export default Flex800
+export default FlexBox
