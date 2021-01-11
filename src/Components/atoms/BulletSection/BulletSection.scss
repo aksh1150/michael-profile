@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../../static/fonts/Helvetica-Light.ttf") format("truetype");
+}
+p {
+  &.BulletSection {
+    font-size: 18px;
+    line-height: 32px;
+    color: $dark;
+    font-family: "Helvetica";
+
+    &.bold {
+      font-weight: 900;
+    }
+
+    &.largeSize {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,6 +1,11 @@
 import React from "react"
 import { LinkButton } from "../../Components/molecules"
-import { BaseLink, Heading, HighlightedQuotes } from "../../Components/atoms"
+import {
+  BaseLink,
+  Heading,
+  HighlightedQuotes,
+  BulletSection,
+} from "../../Components/atoms"
 
 const CaseStudies = () => {
   return (
@@ -17,6 +22,12 @@ const CaseStudies = () => {
         H3 content
       </Heading>
       <HighlightedQuotes>Hightlighted Quotes</HighlightedQuotes>
+      <BulletSection large bold>
+        Goal
+      </BulletSection>
+      <BulletSection bold>Section Header</BulletSection>
+      <BulletSection>Paragraph</BulletSection>
+      <BulletSection large>Paragraph 2</BulletSection>
     </div>
   )
 }

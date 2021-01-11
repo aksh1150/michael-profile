@@ -6,6 +6,6 @@ const HighlightedQuotes = ({ children }) => {
   return <p className="HighlightedQuotes">{children}</p>
 }
 HighlightedQuotes.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.string,
 }
 export default HighlightedQuotes
