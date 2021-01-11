@@ -5,6 +5,7 @@ import {
   Heading,
   HighlightedQuotes,
   BulletSection,
+  Quote,
 } from "../../Components/atoms"
 
 const CaseStudies = () => {
@@ -27,6 +28,7 @@ const CaseStudies = () => {
       </BulletSection>
       <BulletSection bold>Section Header</BulletSection>
       <BulletSection>Paragraph</BulletSection>
+      <Quote />
       <BulletSection large>Paragraph 2</BulletSection>
     </div>
   )
