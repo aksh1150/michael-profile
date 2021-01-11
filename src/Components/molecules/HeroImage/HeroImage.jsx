@@ -1,7 +1,7 @@
 import React from "react"
 
-const HeroImage = () => {
-  //
+const HeroImage = ({ imageURL }) => {
+  return <img src={require(imageURL)} alt="Hero Image" className="HeroImage" />
 }
 
 export default HeroImage
