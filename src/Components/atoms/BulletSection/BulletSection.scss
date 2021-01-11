@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../../../static/fonts/GOTHIC.ttf") format("truetype");
+}
+p {
+  &.HighlightedQuotes {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    color: $dark;
+  }
+}
