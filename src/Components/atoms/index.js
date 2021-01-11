@@ -7,6 +7,7 @@ import ScrollDown from "./ScrollDown"
 import Section from "./Section"
 import HighlightedQuotes from "./HighlightedQuotes"
 import BulletSection from "./BulletSection"
+import Quote from "./Quote"
 
 export {
   BaseLink,
@@ -18,4 +19,5 @@ export {
   Section,
   HighlightedQuotes,
   BulletSection,
+  Quote,
 }
