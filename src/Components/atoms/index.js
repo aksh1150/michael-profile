@@ -5,5 +5,15 @@ import Logo from "./Logo"
 import Head from "./Head"
 import ScrollDown from "./ScrollDown"
 import Section from "./Section"
+import HighlightedQuotes from "./HighlightedQuotes"
 
-export { BaseLink, Heading, Paragraph, Logo, Head, ScrollDown, Section }
+export {
+  BaseLink,
+  Heading,
+  Paragraph,
+  Logo,
+  Head,
+  ScrollDown,
+  Section,
+  HighlightedQuotes,
+}
