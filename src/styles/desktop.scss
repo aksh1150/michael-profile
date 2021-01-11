@@ -37,12 +37,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../../../static/fonts/GOTHIC.ttf") format("truetype");
+}
+
 @mixin h1-desktop {
   font-size: 48px;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 2px;
   font-family: "Futura-Light";
+}
+
+@mixin h1-desktop-inner {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 1.1px;
+  font-family: "Helvetica-Light";
 }
 
 @mixin h2-desktop {
@@ -53,11 +66,27 @@
   font-family: "Futura-Medium";
 }
 
+@mixin h2-desktop-inner {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: 1.1px;
+  font-family: "Century-Gothic";
+  font-style: italic;
+}
+
 @mixin h3-desktop {
   font-size: 36px;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: 1.2px;
+}
+@mixin h3-desktop-inner {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  font-family: "Helvetica-Light";
 }
 
 @mixin h4-desktop {
