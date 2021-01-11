@@ -1,9 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const BulletSection = ({ children, bold, size }) => {
+const BulletSection = ({ children, bold, large }) => {
   return (
-    <p className={`BulleteSection ${bold ? "bold" : ""} ${size ? "size" : ""}`}>
+    <p
+      className={`BulletSection ${bold ? "bold" : ""} ${
+        large ? "largeSize" : ""
+      }`}
+    >
       {children}
     </p>
   )
