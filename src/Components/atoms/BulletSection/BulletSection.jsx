@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import "./BulletSection.scss"
+
 const BulletSection = ({ children, bold, large }) => {
   return (
     <p
