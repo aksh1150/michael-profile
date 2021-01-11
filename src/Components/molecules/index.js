@@ -6,6 +6,7 @@ import Slider from "./Slider"
 import Header from "./Header"
 import LinkButton from "./LinkButton"
 import HeroImage from "./HeroImage"
+import ImageEnlarge from "./ImageEnlarge"
 
 export {
   Footer,
@@ -16,4 +17,5 @@ export {
   Header,
   LinkButton,
   HeroImage,
+  ImageEnlarge,
 }
