@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../../../static/fonts/GOTHIC.ttf") format("truetype");
+}
+
+span {
+  &.Quote {
+    font-family: "Century-Gothic";
+    font-size: 104px;
+    line-height: 128px;
+    color: $dark;
+  }
+}
