@@ -10,6 +10,11 @@ p {
     line-height: 32px;
     color: $dark;
     font-family: "Helvetica";
+    &.inline {
+      display: inline;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
 
     &.bold {
       font-weight: 900;
