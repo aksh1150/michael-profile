@@ -2,12 +2,13 @@ import React from "react"
 import "./Heading.scss"
 import PropTypes from "prop-types"
 
-const Heading = ({ children, type, className, colour, inner }) => {
+const Heading = ({ children, type, className, colour, inner, italic }) => {
   // const fonttype = type === 'h1' ? <h1>{children}</h1> : <h6>{children}</h6>;
   const composedClassName = className || ""
   const fontcolour = colour || "royal"
   const isInner = inner ? "isInner" : ""
-  const style = `${composedClassName} ${fontcolour} ${isInner}`
+  const italics = italic ? "italic" : ""
+  const style = `${composedClassName} ${fontcolour} ${isInner} ${italics}`
 
   switch (type) {
     case "h1":

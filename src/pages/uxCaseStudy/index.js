@@ -65,7 +65,41 @@ const CaseStudies = () => {
               <BulletSection inline>Academic</BulletSection>
             </FlexBox>
             <FlexBox width="flex-800">
-              <HighlightedQuotes>300</HighlightedQuotes>
+              <Heading type="h2" inner colour="primary" italic>
+                Introduction
+              </Heading>
+              <BulletSection>
+                One evening last year, as I watched the evening news, I watched
+                in disbelief at a report of a 14 yr-old boy stabbed and killed
+                by his bully. To make the matter more disheartening, his mom had
+                witnessed it as it happens. I turned to my husband, sitting next
+                to me at the time, and asked, “Can you imagine yourself going
+                through that?” This sentiment has stuck with me since. Being a
+                mom and a minority living in Canada, I am increasingly concerned
+                about the issue of bullying. As a society, we can do more.
+              </BulletSection>
+              <BulletSection>
+                Join me in my journey of building Herrd, an app that advocates
+                anti-bullying for parents through education and peer support.
+              </BulletSection>
+              <Heading type="h2" inner colour="primary">
+                The Constraints
+              </Heading>
+              <BulletSection bold inline>
+                Technical:
+              </BulletSection>
+              <BulletSection inline>
+                I am responsible for the entirety of the project, so the outcome
+                depends heavily on my understanding of the Design Thinking
+                Principles and UX common practices.
+              </BulletSection>
+              <br />
+              <BulletSection bold inline>
+                Socio-cultural:
+              </BulletSection>{" "}
+              <BulletSection inline>
+                Society doesn’t see bullying as a pressing issue.
+              </BulletSection>
             </FlexBox>
           </Flex>
         </Container>

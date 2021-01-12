@@ -2,6 +2,8 @@ div {
   .FlexBox {
     width: 100%;
     word-wrap: break-word;
+    padding-top: 20px;
+    padding-bottom: 20px;
     &.flex-800 {
       max-width: 800px;
     }
