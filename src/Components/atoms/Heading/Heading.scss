@@ -64,7 +64,9 @@
     @include h6-desktop;
   }
 }
-
+.italic {
+  font-style: italic;
+}
 .primary {
   color: $primary;
 }

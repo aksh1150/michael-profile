@@ -34,4 +34,12 @@
   .leftNoPadding {
     margin-left: 0px;
   }
+  &.inner {
+    height: auto;
+    min-height: auto;
+  }
+  &.heroSection {
+    min-height: 650px;
+    background-color: $base-white;
+  }
 }
