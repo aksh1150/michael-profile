@@ -4,6 +4,9 @@ div {
     word-wrap: break-word;
     padding-top: 20px;
     padding-bottom: 20px;
+    &.flex-900 {
+      max-width: 900px;
+    }
     &.flex-800 {
       max-width: 800px;
     }

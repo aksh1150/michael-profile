@@ -103,6 +103,21 @@ const CaseStudies = () => {
             </FlexBox>
           </Flex>
         </Container>
+
+        <Container>
+          <Flex className="wrap">
+            <FlexBox width="flex-900" className="tex-center">
+              <hr />
+              <LinkButton InnerLink>Discovery</LinkButton>
+
+              <LinkButton InnerLink>Discovery</LinkButton>
+
+              <LinkButton InnerLink>Discovery</LinkButton>
+
+              <LinkButton InnerLink>Discovery</LinkButton>
+            </FlexBox>
+          </Flex>
+        </Container>
       </Section>
     </Layout>
   )

@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 img {
   &.HeroImage {
     display: flex;
@@ -5,5 +6,50 @@ img {
     height: 636px;
     position: absolute;
     top: 0;
+  }
+}
+.wrap {
+  position: relative;
+  .tex-center {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+
+    hr {
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      top: 35%;
+      left: 5%;
+      background-color: $spaceship;
+    }
+    // &:before,
+    // &:after {
+    //   background-color: #000;
+    //   content: "";
+    //   display: inline-block;
+    //   height: 1px;
+    //   position: relative;
+    //   vertical-align: middle;
+    //   width: 100%;
+    // }
+
+    // &:before {
+    //   right: 0.5em;
+    //   margin-left: -50%;
+    // }
+
+    // &:after {
+    //   left: 0.5em;
+    //   margin-right: -50%;
+    // }
+  }
+  .line {
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 80%;
+    top: 50%;
   }
 }
