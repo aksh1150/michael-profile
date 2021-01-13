@@ -96,7 +96,7 @@ const CaseStudies = () => {
               <br />
               <BulletSection bold inline>
                 Socio-cultural:
-              </BulletSection>{" "}
+              </BulletSection>
               <BulletSection inline>
                 Society doesn’t see bullying as a pressing issue.
               </BulletSection>
@@ -115,6 +115,51 @@ const CaseStudies = () => {
               <LinkButton InnerLink>Discovery</LinkButton>
 
               <LinkButton InnerLink>Discovery</LinkButton>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h1" inner colour="spaceship">
+                1. DISCOVERY
+              </Heading>
+              <Heading type="h2" inner italic colour="primary">
+                Problem Space
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                The issue of bullying is very much prevailing in our society,
+                and it is causing physical and mental harm.
+              </Heading>
+            </FlexBox>
+            <FlexBox width="flex-270">
+              <img
+                src={require("../../static/images/herrd/IMG_47percent.svg")}
+                alt="47%"
+                width="200px"
+                className="svgWidth"
+              />
+              <HighlightedQuotes>
+                of Canadians found their children is a victim of bullying
+              </HighlightedQuotes>
+              <BulletSection italic>Source: CBC news</BulletSection>
+            </FlexBox>
+            <FlexBox width="flex-270">
+              <img
+                src={require("../../static/images/herrd/IMG_9th.svg")}
+                alt="9th"
+                width="200px"
+                className="svgWidth"
+              />
+              <HighlightedQuotes>
+                rated ninth of bullying in the 13-yr-olds category out of 35
+                countries
+              </HighlightedQuotes>
+              <BulletSection italic>
+                Source: Canadian Council on Learning — Bullying in Canada: How
+                intimidation affects learning
+              </BulletSection>
             </FlexBox>
           </Flex>
         </Container>

@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 import "./BulletSection.scss"
 
-const BulletSection = ({ children, bold, large, inline }) => {
+const BulletSection = ({ children, bold, large, inline, italic }) => {
   return (
     <p
       className={`BulletSection ${bold ? "bold" : ""} ${
         large ? "largeSize" : ""
-      } ${inline ? "inline" : ""}`}
+      } ${inline ? "inline" : ""} ${italic ? "italic" : ""}`}
     >
       {children}
     </p>

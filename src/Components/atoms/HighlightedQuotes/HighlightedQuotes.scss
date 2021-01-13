@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Century-Gothic";
-  src: url("../../../static/fonts/GOTHIC.ttf") format("truetype");
+  src: url("../../../static/fonts/GOTHIC.TTF") format("truetype");
 }
 p {
   &.HighlightedQuotes {
     font-size: 30px;
     line-height: 40px;
-    font-weight: 300;
+    font-weight: 400;
     color: $dark;
     font-family: "Century-Gothic";
   }
