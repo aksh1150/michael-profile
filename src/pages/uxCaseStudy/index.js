@@ -4,6 +4,7 @@ import {
   Header,
   HeroImage,
   FlexBox,
+  ImageEnlarge,
 } from "../../Components/molecules"
 import {
   BaseLink,
@@ -255,9 +256,36 @@ const CaseStudies = () => {
                 I looked at the government and competitor apps' current
                 offerings.
               </BulletSection>
-              <Heading type="h3" inner>
+              <Heading type="h3" inner colour="dark">
                 High-level Findings
               </Heading>
+              <BulletSection>
+                By comparing their features, I have found that:
+              </BulletSection>
+              <BulletSection>
+                <ol>
+                  <li>There is currently no app designed for Canadians.</li>
+                  <li>
+                    The main functions of these apps are on reporting bullying
+                    incidents and not on prevention and education.
+                  </li>
+                  <li>
+                    The provincial resources' lack of interaction fails to make
+                    the user feel a sense of accomplishment when tackling the
+                    issue only makes them feel overwhelmed.
+                  </li>
+                </ol>
+              </BulletSection>
+            </FlexBox>
+            <FlexBox width="flex-540">
+              <HighlightedQuotes>The Pros & Cons</HighlightedQuotes>
+              <BaseLink InnerLink>
+                Click here for a detailed version of the Competitive Analysis
+              </BaseLink>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_ProCon.png")}
+                alt="Competitive Analysis"
+              />
             </FlexBox>
           </Flex>
         </Container>
