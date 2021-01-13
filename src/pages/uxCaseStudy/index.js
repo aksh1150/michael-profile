@@ -163,6 +163,67 @@ const CaseStudies = () => {
             </FlexBox>
           </Flex>
         </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h2" inner colour="primary" italic>
+                Identifying the Scope-
+                <br /> Landscape Mapping
+              </Heading>
+              <BulletSection>
+                What is this group of stakeholders currently thinking and doing?
+              </BulletSection>
+              <BulletSection>
+                What do the stakeholders want to achieve?
+              </BulletSection>
+              <BulletSection>
+                What might be their future behavior?
+              </BulletSection>
+              <BulletSection bold large>
+                Assumptions
+              </BulletSection>
+              <BulletSection>
+                <ul>
+                  <li>
+                    The current resources available for kids and parents focus
+                    on responding after the fact, not prevention.
+                  </li>
+                  <li>
+                    Parents are left to confront the issue on their own, often
+                    relying solely on online research.
+                  </li>
+                  <li>
+                    Due to the early exposure of digital devices, victims of
+                    cyberbullying are becoming increasingly younger.
+                  </li>
+                  <li>
+                    Despite occasional media coverage and government
+                    intervention to raise awareness, society is not taking a
+                    proactive approach.
+                  </li>
+                </ul>
+              </BulletSection>
+            </FlexBox>
+
+            <FlexBox width="flex-540">
+              <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
+              <img
+                src={require("../../static/images/herrd/IMG_stakeholder.svg")}
+                alt="stakeholder"
+                width="200px"
+                className="svgWidth inline-flex"
+              />
+              <BulletSection inline>
+                Students
+                <br />
+                Parents
+                <br />
+                Caregivers
+              </BulletSection>
+            </FlexBox>
+          </Flex>
+        </Container>
       </Section>
     </Layout>
   )

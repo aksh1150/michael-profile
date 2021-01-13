@@ -15,6 +15,6 @@ const BulletSection = ({ children, bold, large, inline, italic }) => {
   )
 }
 BulletSection.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
 }
 export default BulletSection
