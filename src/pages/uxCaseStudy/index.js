@@ -4,6 +4,7 @@ import {
   Header,
   HeroImage,
   FlexBox,
+  ImageEnlarge,
 } from "../../Components/molecules"
 import {
   BaseLink,
@@ -183,27 +184,26 @@ const CaseStudies = () => {
               <BulletSection bold large>
                 Assumptions
               </BulletSection>
-              <BulletSection>
-                <ul>
-                  <li>
-                    The current resources available for kids and parents focus
-                    on responding after the fact, not prevention.
-                  </li>
-                  <li>
-                    Parents are left to confront the issue on their own, often
-                    relying solely on online research.
-                  </li>
-                  <li>
-                    Due to the early exposure of digital devices, victims of
-                    cyberbullying are becoming increasingly younger.
-                  </li>
-                  <li>
-                    Despite occasional media coverage and government
-                    intervention to raise awareness, society is not taking a
-                    proactive approach.
-                  </li>
-                </ul>
-              </BulletSection>
+
+              <ul>
+                <li>
+                  The current resources available for kids and parents focus on
+                  responding after the fact, not prevention.
+                </li>
+                <li>
+                  Parents are left to confront the issue on their own, often
+                  relying solely on online research.
+                </li>
+                <li>
+                  Due to the early exposure of digital devices, victims of
+                  cyberbullying are becoming increasingly younger.
+                </li>
+                <li>
+                  Despite occasional media coverage and government intervention
+                  to raise awareness, society is not taking a proactive
+                  approach.
+                </li>
+              </ul>
             </FlexBox>
 
             <FlexBox width="flex-540">
@@ -255,9 +255,35 @@ const CaseStudies = () => {
                 I looked at the government and competitor apps' current
                 offerings.
               </BulletSection>
-              <Heading type="h3" inner>
+              <Heading type="h3" inner colour="dark">
                 High-level Findings
               </Heading>
+              <BulletSection>
+                By comparing their features, I have found that:
+              </BulletSection>
+
+              <ol>
+                <li>There is currently no app designed for Canadians.</li>
+                <li>
+                  The main functions of these apps are on reporting bullying
+                  incidents and not on prevention and education.
+                </li>
+                <li>
+                  The provincial resources' lack of interaction fails to make
+                  the user feel a sense of accomplishment when tackling the
+                  issue only makes them feel overwhelmed.
+                </li>
+              </ol>
+            </FlexBox>
+            <FlexBox width="flex-540">
+              <HighlightedQuotes>The Pros & Cons</HighlightedQuotes>
+              <BaseLink InnerLink>
+                Click here for a detailed version of the Competitive Analysis
+              </BaseLink>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_ProCon.png")}
+                alt="Competitive Analysis"
+              />
             </FlexBox>
           </Flex>
         </Container>
@@ -265,5 +291,4 @@ const CaseStudies = () => {
     </Layout>
   )
 }
-
 export default CaseStudies
