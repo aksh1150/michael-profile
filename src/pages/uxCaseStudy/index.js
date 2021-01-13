@@ -243,6 +243,24 @@ const CaseStudies = () => {
             </FlexBox>
           </Flex>
         </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h2" inner colour="primary" italic>
+                Secondary Research:
+                <br /> Competitive Analysis
+              </Heading>
+              <BulletSection>
+                I looked at the government and competitor apps' current
+                offerings.
+              </BulletSection>
+              <Heading type="h3" inner>
+                High-level Findings
+              </Heading>
+            </FlexBox>
+          </Flex>
+        </Container>
       </Section>
     </Layout>
   )
