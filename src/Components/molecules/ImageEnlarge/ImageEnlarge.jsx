@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import Image from "react-image-enlarger"
 import PropTypes from "prop-types"
 
+import "./ImageEnlarge.scss"
+
 const ImageEnlarge = ({ src, alt }) => {
   const [zoomed, setZoomed] = useState(false)
   return (
