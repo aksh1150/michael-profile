@@ -291,5 +291,4 @@ const CaseStudies = () => {
     </Layout>
   )
 }
-
 export default CaseStudies
