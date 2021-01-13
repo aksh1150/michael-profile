@@ -96,7 +96,7 @@ const CaseStudies = () => {
               <br />
               <BulletSection bold inline>
                 Socio-cultural:
-              </BulletSection>{" "}
+              </BulletSection>
               <BulletSection inline>
                 Society doesn’t see bullying as a pressing issue.
               </BulletSection>
@@ -115,6 +115,149 @@ const CaseStudies = () => {
               <LinkButton InnerLink>Discovery</LinkButton>
 
               <LinkButton InnerLink>Discovery</LinkButton>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h1" inner colour="spaceship">
+                1. DISCOVERY
+              </Heading>
+              <Heading type="h2" inner italic colour="primary">
+                Problem Space
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                The issue of bullying is very much prevailing in our society,
+                and it is causing physical and mental harm.
+              </Heading>
+            </FlexBox>
+            <FlexBox width="flex-270">
+              <img
+                src={require("../../static/images/herrd/IMG_47percent.svg")}
+                alt="47%"
+                width="200px"
+                className="svgWidth"
+              />
+              <HighlightedQuotes>
+                of Canadians found their children is a victim of bullying
+              </HighlightedQuotes>
+              <BulletSection italic>Source: CBC news</BulletSection>
+            </FlexBox>
+            <FlexBox width="flex-270">
+              <img
+                src={require("../../static/images/herrd/IMG_9th.svg")}
+                alt="9th"
+                width="200px"
+                className="svgWidth"
+              />
+              <HighlightedQuotes>
+                rated ninth of bullying in the 13-yr-olds category out of 35
+                countries
+              </HighlightedQuotes>
+              <BulletSection italic>
+                Source: Canadian Council on Learning — Bullying in Canada: How
+                intimidation affects learning
+              </BulletSection>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h2" inner colour="primary" italic>
+                Identifying the Scope-
+                <br /> Landscape Mapping
+              </Heading>
+              <BulletSection>
+                What is this group of stakeholders currently thinking and doing?
+              </BulletSection>
+              <BulletSection>
+                What do the stakeholders want to achieve?
+              </BulletSection>
+              <BulletSection>
+                What might be their future behavior?
+              </BulletSection>
+              <BulletSection bold large>
+                Assumptions
+              </BulletSection>
+              <BulletSection>
+                <ul>
+                  <li>
+                    The current resources available for kids and parents focus
+                    on responding after the fact, not prevention.
+                  </li>
+                  <li>
+                    Parents are left to confront the issue on their own, often
+                    relying solely on online research.
+                  </li>
+                  <li>
+                    Due to the early exposure of digital devices, victims of
+                    cyberbullying are becoming increasingly younger.
+                  </li>
+                  <li>
+                    Despite occasional media coverage and government
+                    intervention to raise awareness, society is not taking a
+                    proactive approach.
+                  </li>
+                </ul>
+              </BulletSection>
+            </FlexBox>
+
+            <FlexBox width="flex-540">
+              <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
+              <img
+                src={require("../../static/images/herrd/IMG_stakeholder.svg")}
+                alt="stakeholder"
+                width="200px"
+                className="svgWidth "
+              />
+              <BulletSection className="inline-flex">
+                Students
+                <br />
+                Parents
+                <br />
+                Caregivers
+              </BulletSection>
+              <BulletSection bold large>
+                Goal
+              </BulletSection>
+              <BulletSection>
+                Victims affected by bullying to feel empowered in tackling
+                bullying from the key features of the app.
+              </BulletSection>
+              <BulletSection bold large>
+                Hypothesis
+              </BulletSection>
+              <BulletSection>
+                I believe bullying victims internalize their suffering because
+                they think no one cares, and they feel alone and defenseless
+                against their bully. I will know I am right when I see a
+                significant number of downloads plus if the Ontario School Board
+                will recommend this app download to all parents and school
+                counselors. These will be the indications that users are finding
+                help with the app.
+              </BulletSection>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h2" inner colour="primary" italic>
+                Secondary Research:
+                <br /> Competitive Analysis
+              </Heading>
+              <BulletSection>
+                I looked at the government and competitor apps' current
+                offerings.
+              </BulletSection>
+              <Heading type="h3" inner>
+                High-level Findings
+              </Heading>
             </FlexBox>
           </Flex>
         </Container>

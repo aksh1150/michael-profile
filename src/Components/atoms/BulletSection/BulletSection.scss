@@ -23,5 +23,9 @@ p {
     &.largeSize {
       font-size: 24px;
     }
+
+    &.italic {
+      font-style: italic;
+    }
   }
 }

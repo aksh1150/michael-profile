@@ -25,26 +25,6 @@ img {
       left: 5%;
       background-color: $spaceship;
     }
-    // &:before,
-    // &:after {
-    //   background-color: #000;
-    //   content: "";
-    //   display: inline-block;
-    //   height: 1px;
-    //   position: relative;
-    //   vertical-align: middle;
-    //   width: 100%;
-    // }
-
-    // &:before {
-    //   right: 0.5em;
-    //   margin-left: -50%;
-    // }
-
-    // &:after {
-    //   left: 0.5em;
-    //   margin-right: -50%;
-    // }
   }
   .line {
     border-bottom: 1px solid #000;
@@ -52,4 +32,12 @@ img {
     width: 80%;
     top: 50%;
   }
+}
+.svgWidth {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.inline-flex {
+  display: inline-flex;
 }

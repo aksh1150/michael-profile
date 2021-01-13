@@ -3,18 +3,25 @@ import PropTypes from "prop-types"
 
 import "./BulletSection.scss"
 
-const BulletSection = ({ children, bold, large, inline }) => {
+const BulletSection = ({
+  children,
+  bold,
+  large,
+  inline,
+  italic,
+  className,
+}) => {
   return (
     <p
       className={`BulletSection ${bold ? "bold" : ""} ${
         large ? "largeSize" : ""
-      } ${inline ? "inline" : ""}`}
+      } ${inline ? "inline" : ""} ${italic ? "italic" : ""} ${className}`}
     >
       {children}
     </p>
   )
 }
 BulletSection.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
 }
 export default BulletSection
