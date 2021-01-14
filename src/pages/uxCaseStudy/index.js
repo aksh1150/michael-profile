@@ -109,13 +109,15 @@ const CaseStudies = () => {
           <Flex className="wrap">
             <FlexBox width="flex-900" className="tex-center">
               <hr />
-              <LinkButton InnerLink>Discovery</LinkButton>
+              <LinkButton InnerLink active>
+                Discovery
+              </LinkButton>
 
-              <LinkButton InnerLink>Discovery</LinkButton>
+              <LinkButton InnerLink>Define</LinkButton>
 
-              <LinkButton InnerLink>Discovery</LinkButton>
+              <LinkButton InnerLink>Develop</LinkButton>
 
-              <LinkButton InnerLink>Discovery</LinkButton>
+              <LinkButton InnerLink>Deliver</LinkButton>
             </FlexBox>
           </Flex>
         </Container>
@@ -336,12 +338,87 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/IMG_quote_1.jpg")}
                 alt="Quote 1"
               />
+              <img
+                src={require("../../static/images/herrd/IMG_interview_legend.png")}
+                alt="color"
+                style={{ marginTop: "50px", width: "85%" }}
+              />
             </FlexBox>
             <FlexBox width="flex=540">
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_2.jpg")}
                 alt="Quote 2"
               />
+              <BulletSection italic className="mt-7">
+                I planned on conducting user testing on the same group of
+                participants. Assigning a color to each participant made
+                locating a specific comment easier when I am doing a comparison
+                between rounds of testings.
+              </BulletSection>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h3" inner colour="dark">
+                Key Research Insights
+              </Heading>
+              <BulletSection>
+                From my secondary research, I discovered 50% of the parents are
+                beginning to normalize the problem due to the lack of knowledge
+                in bullying classification. They begin to accept the inevitable
+                likelihood of it happening to their children. This reality is
+                very concerning.
+              </BulletSection>
+              <BulletSection>
+                Based on these insights, I synthesized them into themes:
+              </BulletSection>
+            </FlexBox>
+
+            <FlexBox width="flex-540">
+              <Heading type="h3" inner colour="dark">
+                Themes
+              </Heading>
+              <BulletSection>
+                <b>Bullying Classification</b>-Parents have an ambiguous
+                definition of what classify as bullying.
+              </BulletSection>
+              <BulletSection>
+                <b>Guidance and Support</b>-Parents are overwhelmed by resources
+                found through different channels and the lack of guided support.
+              </BulletSection>
+              <BulletSection>
+                <b>Likelihood of Bullying</b>-Parents think bullying is common
+                and will likely happen to their child at one point.
+              </BulletSection>
+              <Heading type="h2" inner italic colour="primary">
+                Up Next...
+              </Heading>
+              <BulletSection>
+                In the Define stage, I will further synthesis the data collected
+                from my researches and insights, while leveraging the methods
+                and artifacts I have used to identify the Pain Points,
+                Motivations, and Behaviors of my users.
+              </BulletSection>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex className="wrap">
+            <FlexBox width="flex-900" className="tex-center">
+              <hr />
+              <LinkButton InnerLink>Discovery</LinkButton>
+
+              <LinkButton InnerLink active>
+                Define
+              </LinkButton>
+
+              <LinkButton InnerLink>Develop</LinkButton>
+
+              <LinkButton InnerLink>Deliver</LinkButton>
             </FlexBox>
           </Flex>
         </Container>
