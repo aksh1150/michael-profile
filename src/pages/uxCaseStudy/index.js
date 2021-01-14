@@ -437,14 +437,18 @@ const CaseStudies = () => {
                 space.
               </Heading>
             </FlexBox>
-
-            <FlexBox width="flex-800">
+            <FlexBox width="flex-50" className="mt-5">
+              <Quote />
+            </FlexBox>
+            <FlexBox width="flex-700">
               <HighlightedQuotes className="mt-10">
-                <span>"</span>How might we educate parents on how to identify
-                the signs of bullying, so they have the confidence to tackle
-                bullying, with the support of a counselor in a safe space?
-                <span>"</span>
+                How might we educate parents on how to identify the signs of
+                bullying, so they have the confidence to tackle bullying, with
+                the support of a counselor in a safe space?
               </HighlightedQuotes>
+            </FlexBox>
+            <FlexBox width="flex-50" className="mt-200">
+              <Quote />
             </FlexBox>
           </Flex>
         </Container>
