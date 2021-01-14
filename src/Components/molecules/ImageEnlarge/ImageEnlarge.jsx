@@ -1,20 +1,30 @@
 import React, { useState } from "react"
 import Image from "react-image-enlarger"
 import PropTypes from "prop-types"
+import ModalImage from "react-modal-image"
 
 import "./ImageEnlarge.scss"
 
 const ImageEnlarge = ({ src, alt }) => {
   const [zoomed, setZoomed] = useState(false)
   return (
-    <Image
-      style={{ width: "auto", height: "auto" }}
-      zoomed={zoomed}
-      src={src}
-      onClick={() => setZoomed(true)}
-      onRequestClose={() => setZoomed(false)}
+    <ModalImage
+      small={src}
+      medium={src}
       alt={alt}
+      className="ImageLarger"
+      hideDownload
+      imageBackgroundColor="white"
+      hideZoom
     />
+    // <Image
+    //   style={{ width: "auto", height: "auto" }}
+    //   zoomed={zoomed}
+    //   src={src}
+    //   onClick={() => setZoomed(true)}
+    //   onRequestClose={() => setZoomed(false)}
+    //   alt={alt}
+    // />
   )
 }
 
