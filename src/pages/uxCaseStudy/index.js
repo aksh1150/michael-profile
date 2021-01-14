@@ -287,6 +287,47 @@ const CaseStudies = () => {
             </FlexBox>
           </Flex>
         </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-540">
+              <Heading type="h2" inner colour="primary" italic>
+                Primary Research: <br />
+                Investigation interviews
+              </Heading>
+              <BulletSection>
+                To collect qualitative and quantitative data. I will focus on
+                learning what the user does, thinks, needs, and wants.
+              </BulletSection>
+              <Heading type="h3" inner colour="dark">
+                Interviewee Criteria:
+              </Heading>
+              <BulletSection>Parents with in-school children</BulletSection>
+            </FlexBox>
+            <FlexBox width="flex-540">
+              <Heading type="h3" inner colour="dark">
+                Objectives:
+              </Heading>
+              <BulletSection>
+                By asking these open-ended questions and observing their body
+                languages and responses, I want to uncovered three things:
+              </BulletSection>
+              <ol>
+                <li>
+                  1. I want to know if bullying is a concern amongst their
+                  household.
+                </li>
+                <li>
+                  The parents’ current knowledge on bullying and their
+                  definitions.
+                </li>
+                <li>
+                  The likelihood of their children become a bullying victim.
+                </li>
+              </ol>
+            </FlexBox>
+          </Flex>
+        </Container>
       </Section>
     </Layout>
   )
