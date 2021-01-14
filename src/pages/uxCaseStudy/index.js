@@ -21,7 +21,10 @@ import "./index.scss"
 
 const CaseStudies = () => {
   return (
-    <Layout pagename="Home - Michelle Profile" className="overflowHidden">
+    <Layout
+      pagename="Home - Michelle Profile"
+      className="overflowHidden uxDesign"
+    >
       <Section background="White" inner heroSection>
         <Header />
         <img

@@ -3,6 +3,11 @@
   font-family: "Helvetica";
   src: url("../../static/fonts/Helvetica-Light.ttf") format("truetype");
 }
+.uxDesign {
+  img {
+    width: auto;
+  }
+}
 img {
   &.HeroImage {
     display: flex;

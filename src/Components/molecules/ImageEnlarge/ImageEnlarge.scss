@@ -1,11 +1,8 @@
 .ImageLarger {
   margin-top: 10px;
+}
+.__react_modal_image__medium_img {
   width: auto;
-}
-.__react_modal_image__modal_content img,
-.__react_modal_image__modal_content svg {
-}
-
-.__react_modal_image__caption {
-  display: none;
+  height: 700px;
+  max-width: 1200px;
 }
