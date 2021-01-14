@@ -10,11 +10,12 @@ const ImageEnlarge = ({ src, alt }) => {
   return (
     <ModalImage
       small={src}
-      large={src}
+      medium={src}
       alt={alt}
       className="ImageLarger"
       hideDownload
       imageBackgroundColor="white"
+      hideZoom
     />
     // <Image
     //   style={{ width: "auto", height: "auto" }}
