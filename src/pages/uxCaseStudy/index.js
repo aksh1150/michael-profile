@@ -328,6 +328,23 @@ const CaseStudies = () => {
             </FlexBox>
           </Flex>
         </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex=540">
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_quote_1.jpg")}
+                alt="Quote 1"
+              />
+            </FlexBox>
+            <FlexBox width="flex=540">
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_quote_2.jpg")}
+                alt="Quote 2"
+              />
+            </FlexBox>
+          </Flex>
+        </Container>
       </Section>
     </Layout>
   )
