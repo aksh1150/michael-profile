@@ -12,5 +12,10 @@ p {
     font-weight: 400;
     color: $dark;
     font-family: "Century-Gothic";
+
+    span {
+      font-size: 40px;
+      color: $dark;
+    }
   }
 }
