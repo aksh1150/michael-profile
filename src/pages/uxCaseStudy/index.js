@@ -126,7 +126,8 @@ const CaseStudies = () => {
           <Flex>
             <FlexBox width="flex-540">
               <Heading type="h1" inner colour="spaceship">
-                1. DISCOVERY
+                1.
+                <br /> DISCOVERY
               </Heading>
               <Heading type="h2" inner italic colour="primary">
                 Problem Space
@@ -419,6 +420,31 @@ const CaseStudies = () => {
               <LinkButton InnerLink>Develop</LinkButton>
 
               <LinkButton InnerLink>Deliver</LinkButton>
+            </FlexBox>
+          </Flex>
+        </Container>
+
+        <Container>
+          <Flex>
+            <FlexBox width="flex-300">
+              <Heading type="h1" inner colour="spaceship">
+                2.
+                <br /> DEFINE
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                The themes that I have uncovered translates into the How Might
+                We Statement that will guide me to stay focus on the problem
+                space.
+              </Heading>
+            </FlexBox>
+
+            <FlexBox width="flex-800">
+              <HighlightedQuotes className="mt-10">
+                <span>"</span>How might we educate parents on how to identify
+                the signs of bullying, so they have the confidence to tackle
+                bullying, with the support of a counselor in a safe space?
+                <span>"</span>
+              </HighlightedQuotes>
             </FlexBox>
           </Flex>
         </Container>

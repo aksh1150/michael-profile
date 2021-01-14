@@ -2,7 +2,7 @@ import React from "react"
 
 import "./Quote.scss"
 
-const Quote = () => {
-  return <span className="Quote">"</span>
+const Quote = ({ className }) => {
+  return <span className={`Quote ${className}`}>"</span>
 }
 export default Quote
