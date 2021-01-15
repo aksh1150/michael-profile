@@ -20,7 +20,7 @@
   border-width: 1px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  height: 67px;
+  height: 54px;
   &.large {
     width: 320px;
     font-size: 24px;
@@ -30,8 +30,8 @@
     }
   }
   &.small {
-    width: 200px;
-    font-size: 20px;
+    width: 180px;
+    font-size: 18px;
   }
 
   &.active {

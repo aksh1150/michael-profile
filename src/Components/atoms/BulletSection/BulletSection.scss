@@ -6,8 +6,8 @@
 }
 p {
   &.BulletSection {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 26px;
     color: $dark;
     font-family: "Helvetica";
     &.inline {
@@ -21,7 +21,7 @@ p {
     }
 
     &.largeSize {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     &.italic {

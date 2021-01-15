@@ -68,7 +68,7 @@ const CaseStudies = () => {
               </BulletSection>
               <BulletSection inline>Academic</BulletSection>
             </Col>
-            <Col sm={9}>
+            <Col sm={9} className="pl-5">
               <Heading type="h2" inner colour="primary" italic>
                 Introduction
               </Heading>
@@ -112,22 +112,29 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
-              <LinkButton InnerLink active>
-                Discovery
-              </LinkButton>
-
-              <LinkButton InnerLink>Define</LinkButton>
-
-              <LinkButton InnerLink>Develop</LinkButton>
-
-              <LinkButton InnerLink>Deliver</LinkButton>
+              <Row>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink active>
+                    Discovery
+                  </LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Define</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Develop</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Deliver</LinkButton>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
                 1.
                 <br /> DISCOVERY
@@ -173,7 +180,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className="pr-5">
               <Heading type="h2" inner colour="primary" italic>
                 Identifying the Scope-
                 <br /> Landscape Mapping
@@ -252,7 +259,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className="pr-5">
               <Heading type="h2" inner colour="primary" italic>
                 Secondary Research:
                 <br /> Competitive Analysis
@@ -296,7 +303,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className="pr-5">
               <Heading type="h2" inner colour="primary" italic>
                 Primary Research: <br />
                 Investigation interviews
@@ -320,7 +327,7 @@ const CaseStudies = () => {
               </BulletSection>
               <ol>
                 <li>
-                  1. I want to know if bullying is a concern amongst their
+                  I want to know if bullying is a concern amongst their
                   household.
                 </li>
                 <li>
@@ -353,7 +360,7 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/IMG_quote_2.jpg")}
                 alt="Quote 2"
               />
-              <BulletSection italic className="mt-7">
+              <BulletSection italic className="mt-5">
                 I planned on conducting user testing on the same group of
                 participants. Assigning a color to each participant made
                 locating a specific comment easier when I am doing a comparison
@@ -365,7 +372,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className="pr-5">
               <Heading type="h3" inner colour="dark">
                 Key Research Insights
               </Heading>
@@ -414,15 +421,22 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
-              <LinkButton InnerLink>Discovery</LinkButton>
-
-              <LinkButton InnerLink active>
-                Define
-              </LinkButton>
-
-              <LinkButton InnerLink>Develop</LinkButton>
-
-              <LinkButton InnerLink>Deliver</LinkButton>
+              <Row>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Discovery</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink active>
+                    Define
+                  </LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Develop</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Deliver</LinkButton>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
