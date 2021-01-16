@@ -1,7 +1,13 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Button, ShareButton, Slider, Header } from "../Components/molecules"
+import {
+  Button,
+  ShareButton,
+  Slider,
+  Header,
+  Footer,
+} from "../Components/molecules"
 import {
   Heading,
   Paragraph,
@@ -280,6 +286,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </Layout>
   )
 }
