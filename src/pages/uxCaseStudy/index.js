@@ -108,28 +108,28 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="discovery">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
               <Row>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active link="/#discovery" internal>
+                  <LinkButton InnerLink active link="#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink link="/#define" internal>
+                  <LinkButton InnerLink link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink link="/#develop" internal>
+                  <LinkButton InnerLink link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink link="/#deliver">
+                  <LinkButton InnerLink link="#deliver">
                     Deliver
                   </LinkButton>
                 </Col>
@@ -138,7 +138,7 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container id="discovery">
+        <Container>
           <Row>
             <Col sm={6} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
@@ -422,31 +422,37 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="define">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
               <Row>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Discovery</LinkButton>
+                  <LinkButton InnerLink link="#discovery" internal>
+                    Discovery
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
+                  <LinkButton InnerLink active link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Develop</LinkButton>
+                  <LinkButton InnerLink link="#develop" internal>
+                    Develop
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Deliver</LinkButton>
+                  <LinkButton InnerLink link="#deliver">
+                    Deliver
+                  </LinkButton>
                 </Col>
               </Row>
             </Col>
           </Row>
         </Container>
 
-        <Container id="define">
+        <Container>
           <Row>
             <Col sm={3}>
               <Heading type="h1" inner colour="spaceship">
@@ -706,31 +712,37 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="develop">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
               <Row>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Discovery</LinkButton>
+                  <LinkButton InnerLink link="#discovery" internal>
+                    Discovery
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Define</LinkButton>
+                  <LinkButton InnerLink link="#define" internal>
+                    Define
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
+                  <LinkButton InnerLink active link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Deliver</LinkButton>
+                  <LinkButton InnerLink link="#deliver">
+                    Deliver
+                  </LinkButton>
                 </Col>
               </Row>
             </Col>
           </Row>
         </Container>
 
-        <Container id="develop">
+        <Container>
           <Row>
             <Col sm={6} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
@@ -819,22 +831,28 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="deliver">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <hr />
               <Row>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Discovery</LinkButton>
+                  <LinkButton InnerLink link="#discovery" internal>
+                    Discovery
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Define</LinkButton>
+                  <LinkButton InnerLink link="#define" internal>
+                    Define
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Develop</LinkButton>
+                  <LinkButton InnerLink link="#develop" internal>
+                    Develop
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
+                  <LinkButton InnerLink active link="#deliver">
                     Deliver
                   </LinkButton>
                 </Col>
@@ -843,7 +861,7 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container id="deliver">
+        <Container>
           <Row>
             <Col sm={3} className="pr-0">
               <Heading type="h1" inner colour="spaceship">
@@ -1335,6 +1353,18 @@ const CaseStudies = () => {
                 On a final note, it became so apparent to me that, I can only
                 build a holistic user-centered experience by build, test, learn
                 and repeat.
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row className="justify-content-md-center mt-7 text-center">
+            <Col sm={8}>
+              <BulletSection large>
+                Interested in learning more about this casestudy? Or tell me
+                what you don’t like about it? I am all ears. Get in touch with
+                me.
               </BulletSection>
             </Col>
           </Row>

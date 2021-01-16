@@ -1,7 +1,10 @@
 import React from "react"
 import { Head } from "../../atoms"
 import "./Layout.scss"
-
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 const Layout = ({
   pagename,
   children,
