@@ -259,11 +259,15 @@ li {
   p {
     &.HighlightedQuotes {
       line-height: 0px;
-      span {
-        font-size: 30px;
-        text-decoration: line-through;
-        color: $base-medium-grey;
-      }
+    }
+  }
+}
+.justify-content-md-center {
+  .HighlightedQuotes {
+    span {
+      font-size: 30px;
+      text-decoration: line-through;
+      color: $base-medium-grey;
     }
   }
 }

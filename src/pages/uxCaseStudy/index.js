@@ -1110,6 +1110,71 @@ const CaseStudies = () => {
             </Col>
           </Row>
         </Container>
+
+        <Container>
+          <Row>
+            <Col sm={4} className="pr-6">
+              <Heading type="h2" inner italic colour="primary">
+                Inspiration Findings
+              </Heading>
+              <img
+                src={require("../../static/images/herrd/herrd.png")}
+                alt="Herrd"
+                className="mt-7"
+              />
+              <BulletSection italic className="mt-9">
+                Playing off on the similarity in sound. The concept of Herd = a
+                group. Heard = being heard.
+              </BulletSection>
+            </Col>
+            <Col sm={8}>
+              <img
+                src={require("../../static/images/herrd/BrandColor.jpg")}
+                alt="Herrd"
+                className="mt-7"
+              />
+              <BulletSection italic className="mt-4">
+                Brand colors derived from images that convey my brand
+                objectives.
+                <br /> A link to the moodboard can be found{" "}
+                <BaseLink InnerLink>here.</BaseLink>
+              </BulletSection>
+            </Col>
+            <Col sm={8}>
+              <img
+                src={require("../../static/images/herrd/Logo_UI_Color.jpg")}
+                alt="Herrd"
+              />
+            </Col>
+            <Col sm={4} className="mt-7 pl-7">
+              <Heading type="h3" inner colour="dark">
+                Logomark
+              </Heading>
+              <BulletSection>
+                I focused on expressing the emotional and physical connection
+                between parents and their children for the development of
+                Herrd’s visual identity. The final logomark is gender-neutral,
+                with lighthearted typography.
+              </BulletSection>
+            </Col>
+            <Col sm={4} className="pr-6 mt-4">
+              <Heading type="h3" inner colour="dark">
+                Key Graphic Elements
+              </Heading>
+              <BulletSection>
+                I got my inspiration to use illustration as the key graphical
+                component for the 10-Signs-of-Bullying screens. The use of
+                illustrations will put less racial and age associations.
+              </BulletSection>
+            </Col>
+            <Col sm={8} className="mt-4">
+              <img
+                src={require("../../static/images/herrd/illustrations.svg")}
+                alt="illustrations"
+              />
+            </Col>
+          </Row>
+        </Container>
       </Section>
     </Layout>
   )
