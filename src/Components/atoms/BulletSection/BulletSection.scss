@@ -4,9 +4,13 @@
   font-family: "Roboto-Light";
   src: url("../../../static/fonts/Roboto-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("../../../static/fonts/Helvetica-Light.ttf") format("truetype");
+}
 p {
   &.BulletSection {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     color: $dark;
     font-family: "Roboto-Light";
@@ -21,7 +25,8 @@ p {
     }
 
     &.largeSize {
-      font-size: 20px;
+      font-size: 24px;
+      font-family: "Helvetica-Light";
     }
 
     &.italic {

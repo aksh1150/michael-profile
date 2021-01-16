@@ -35,8 +35,8 @@ const CaseStudies = () => {
       </Section>
       <Section background="White" inner>
         <Container>
-          <Row>
-            <Col sm={3}>
+          <Flex>
+            <FlexBox width="flex-300">
               <Heading type="h1" inner colour="spaceship">
                 Herrd
               </Heading>
@@ -67,8 +67,8 @@ const CaseStudies = () => {
                 Type:
               </BulletSection>
               <BulletSection inline>Academic</BulletSection>
-            </Col>
-            <Col sm={9} className="pl-6">
+            </FlexBox>
+            <FlexBox width="flex-800">
               <Heading type="h2" inner colour="primary" italic>
                 Introduction
               </Heading>
@@ -104,37 +104,30 @@ const CaseStudies = () => {
               <BulletSection inline>
                 Society doesn’t see bullying as a pressing issue.
               </BulletSection>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row className="wrap">
-            <Col xs={12} className="tex-center">
+          <Flex className="wrap">
+            <FlexBox width="flex-900" className="tex-center">
               <hr />
-              <Row>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
-                    Discovery
-                  </LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Define</LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Develop</LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Deliver</LinkButton>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+              <LinkButton InnerLink active>
+                Discovery
+              </LinkButton>
+
+              <LinkButton InnerLink>Define</LinkButton>
+
+              <LinkButton InnerLink>Develop</LinkButton>
+
+              <LinkButton InnerLink>Deliver</LinkButton>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6} className="pr-5">
+          <Flex>
+            <FlexBox width="flex-540">
               <Heading type="h1" inner colour="spaceship">
                 1.
                 <br /> DISCOVERY
@@ -146,8 +139,8 @@ const CaseStudies = () => {
                 The issue of bullying is very much prevailing in our society,
                 and it is causing physical and mental harm.
               </Heading>
-            </Col>
-            <Col sm={3}>
+            </FlexBox>
+            <FlexBox width="flex-270">
               <img
                 src={require("../../static/images/herrd/IMG_47percent.svg")}
                 alt="47%"
@@ -158,8 +151,8 @@ const CaseStudies = () => {
                 of Canadians found their children is a victim of bullying
               </HighlightedQuotes>
               <BulletSection italic>Source: CBC news</BulletSection>
-            </Col>
-            <Col sm={3} style={{ paddingLeft: "5px", paddingRight: "5px" }}>
+            </FlexBox>
+            <FlexBox width="flex-270">
               <img
                 src={require("../../static/images/herrd/IMG_9th.svg")}
                 alt="9th"
@@ -174,13 +167,13 @@ const CaseStudies = () => {
                 Source: Canadian Council on Learning — Bullying in Canada: How
                 intimidation affects learning
               </BulletSection>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6} className="pr-5">
+          <Flex>
+            <FlexBox width="flex-540">
               <Heading type="h2" inner colour="primary" italic>
                 Identifying the Scope-
                 <br /> Landscape Mapping
@@ -217,13 +210,14 @@ const CaseStudies = () => {
                   approach.
                 </li>
               </ul>
-            </Col>
+            </FlexBox>
 
-            <Col sm={6}>
+            <FlexBox width="flex-540">
               <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
               <img
                 src={require("../../static/images/herrd/IMG_stakeholder.svg")}
                 alt="stakeholder"
+                width="200px"
                 className="svgWidth "
               />
               <BulletSection className="inline-flex">
@@ -252,13 +246,13 @@ const CaseStudies = () => {
                 counselors. These will be the indications that users are finding
                 help with the app.
               </BulletSection>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6} className="pr-5">
+          <Flex>
+            <FlexBox width="flex-540">
               <Heading type="h2" inner colour="primary" italic>
                 Secondary Research:
                 <br /> Competitive Analysis
@@ -286,8 +280,8 @@ const CaseStudies = () => {
                   issue only makes them feel overwhelmed.
                 </li>
               </ol>
-            </Col>
-            <Col sm={6}>
+            </FlexBox>
+            <FlexBox width="flex-540">
               <HighlightedQuotes>The Pros & Cons</HighlightedQuotes>
               <BaseLink InnerLink>
                 Click here for a detailed version of the Competitive Analysis
@@ -296,13 +290,13 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/IMG_ProCon.png")}
                 alt="Competitive Analysis"
               />
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6} className="pr-5">
+          <Flex>
+            <FlexBox width="flex-540">
               <Heading type="h2" inner colour="primary" italic>
                 Primary Research: <br />
                 Investigation interviews
@@ -315,8 +309,8 @@ const CaseStudies = () => {
                 Interviewee Criteria:
               </Heading>
               <BulletSection>Parents with in-school children</BulletSection>
-            </Col>
-            <Col sm={6}>
+            </FlexBox>
+            <FlexBox width="flex-540">
               <Heading type="h3" inner colour="dark">
                 Objectives:
               </Heading>
@@ -326,7 +320,7 @@ const CaseStudies = () => {
               </BulletSection>
               <ol>
                 <li>
-                  I want to know if bullying is a concern amongst their
+                  1. I want to know if bullying is a concern amongst their
                   household.
                 </li>
                 <li>
@@ -337,13 +331,13 @@ const CaseStudies = () => {
                   The likelihood of their children become a bullying victim.
                 </li>
               </ol>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6}>
+          <Flex>
+            <FlexBox width="flex=540">
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_1.jpg")}
                 alt="Quote 1"
@@ -353,25 +347,25 @@ const CaseStudies = () => {
                 alt="color"
                 style={{ marginTop: "50px", width: "85%" }}
               />
-            </Col>
-            <Col sm={6}>
+            </FlexBox>
+            <FlexBox width="flex=540">
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_2.jpg")}
                 alt="Quote 2"
               />
-              <BulletSection italic className="mt-5">
+              <BulletSection italic className="mt-7">
                 I planned on conducting user testing on the same group of
                 participants. Assigning a color to each participant made
                 locating a specific comment easier when I am doing a comparison
                 between rounds of testings.
               </BulletSection>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={6} className="pr-5">
+          <Flex>
+            <FlexBox width="flex-540">
               <Heading type="h3" inner colour="dark">
                 Key Research Insights
               </Heading>
@@ -385,9 +379,9 @@ const CaseStudies = () => {
               <BulletSection>
                 Based on these insights, I synthesized them into themes:
               </BulletSection>
-            </Col>
+            </FlexBox>
 
-            <Col sm={6}>
+            <FlexBox width="flex-540">
               <Heading type="h3" inner colour="dark">
                 Themes
               </Heading>
@@ -412,37 +406,30 @@ const CaseStudies = () => {
                 and artifacts I have used to identify the Pain Points,
                 Motivations, and Behaviors of my users.
               </BulletSection>
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row className="wrap">
-            <Col xs={12} className="tex-center">
+          <Flex className="wrap">
+            <FlexBox width="flex-900" className="tex-center">
               <hr />
-              <Row>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Discovery</LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
-                    Define
-                  </LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Develop</LinkButton>
-                </Col>
-                <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Deliver</LinkButton>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+              <LinkButton InnerLink>Discovery</LinkButton>
+
+              <LinkButton InnerLink active>
+                Define
+              </LinkButton>
+
+              <LinkButton InnerLink>Develop</LinkButton>
+
+              <LinkButton InnerLink>Deliver</LinkButton>
+            </FlexBox>
+          </Flex>
         </Container>
 
         <Container>
-          <Row>
-            <Col sm={3}>
+          <Flex>
+            <FlexBox width="flex-300">
               <Heading type="h1" inner colour="spaceship">
                 2.
                 <br /> DEFINE
@@ -452,129 +439,21 @@ const CaseStudies = () => {
                 We Statement that will guide me to stay focus on the problem
                 space.
               </Heading>
-            </Col>
-            <Col sm={1} className="mt-5">
+            </FlexBox>
+            <FlexBox width="flex-50" className="mt-5">
               <Quote />
-            </Col>
-            <Col sm={7}>
+            </FlexBox>
+            <FlexBox width="flex-700">
               <HighlightedQuotes className="mt-10">
                 How might we educate parents on how to identify the signs of
                 bullying, so they have the confidence to tackle bullying, with
                 the support of a counselor in a safe space?
               </HighlightedQuotes>
-            </Col>
-            <Col sm={1} className="mt-200">
+            </FlexBox>
+            <FlexBox width="flex-50" className="mt-200">
               <Quote />
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row>
-            <Col sm={12}>
-              <Heading type="h2" inner italic colour="primary">
-                Empathy Map
-              </Heading>
-              <BulletSection>
-                I categorized the notes into 4 quadrants: says, thinks, feels,
-                and does.
-              </BulletSection>
-              <ImageEnlarge
-                src={require("../../static/images/herrd/IMG_Empathy_Map.jpg")}
-                alt="Empathy map"
-                className="mx-auto d-block"
-              />
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row>
-            <Col sm={4}>
-              <Heading type="h3" inner colour="dark">
-                Pain Points
-              </Heading>
-              <ul>
-                <li>Unsure how to differentiate from child play to bullying</li>
-                <li>
-                  Overwhelmed by online resources, in need of a single
-                  descriptive guided approach
-                </li>
-                <li>Bullying is inevitable</li>
-              </ul>
-            </Col>
-            <Col sm={4}>
-              <Heading type="h3" inner colour="dark">
-                Motivations
-              </Heading>
-              <ul>
-                <li>
-                  Getting support from other parents who have gone through this
-                  before
-                </li>
-                <li>Finding all extra resources in one consolidated space</li>
-                <li>
-                  Additional resources on the importance of early-on education
-                  and preventions
-                </li>
-              </ul>
-            </Col>
-            <Col sm={4}>
-              <Heading type="h3" inner colour="dark">
-                Behaviors
-              </Heading>
-              <ul>
-                <li>
-                  Sometimes parents worried they are overreacting and wondered
-                  if they should report to the school Question the child’s
-                  credibility
-                </li>
-                <li>
-                  Try to undermine the incident due to the stigma of being a
-                  “snitch” and the integrity of the claim
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row>
-            <Col sm={3}>
-              <Heading type="h2" inner italic colour="primary">
-                Personas
-              </Heading>
-              <Heading type="h3" inner colour="dark">
-                What better ways to conceptualize my user’s pain than through
-                the use of Personas?
-              </Heading>
-              <BulletSection>
-                Primary Persona, Don, is a stay-at-home mom who suspects her son
-                might be getting bullied in school, but she is not sure. She is
-                feeling very anxious because her son doesn’t want to talk about
-                it.
-              </BulletSection>
-            </Col>
-            <Col sm={9} className="pl-5">
-              <ImageEnlarge
-                src={require("../../static/images/herrd/Persona_1.jpg")}
-                alt="Persona 1"
-              />
-            </Col>
-            <Col sm={3}>
-              <BulletSection>
-                Secondary Persona, Lulu, is a mom, that has gone through the
-                agony of her son as a victim of bullying. She advocates the
-                importance of prevention and wants to share her past experience.
-              </BulletSection>
-            </Col>
-            <Col sm={9} className="pl-5">
-              <ImageEnlarge
-                src={require("../../static/images/herrd/Persona_2.jpg")}
-                alt="Persona 2"
-              />
-            </Col>
-          </Row>
+            </FlexBox>
+          </Flex>
         </Container>
       </Section>
     </Layout>
