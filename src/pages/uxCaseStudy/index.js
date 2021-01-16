@@ -1175,6 +1175,20 @@ const CaseStudies = () => {
             </Col>
           </Row>
         </Container>
+
+        <Container>
+          <Row>
+            <Col sm={4}>
+              <iframe
+                width="442"
+                height="935"
+                src="//invis.io/53XRYLBXWM8"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </Col>
+          </Row>
+        </Container>
       </Section>
     </Layout>
   )
