@@ -576,6 +576,241 @@ const CaseStudies = () => {
             </Col>
           </Row>
         </Container>
+
+        <Container>
+          <Row>
+            <Col sm={6} className="pr-5">
+              <Heading type="h2" inner colour="primary">
+                Opportunity Selection:
+                <br /> Experience Map
+              </Heading>
+              <BulletSection>
+                I need to visualise the channels and touchpoints Don might go
+                through in the attempt to get help on bullying. The area of
+                opportunity will be uncovered by pinpointing at which channel
+                and touchpoint Don is experiencing most frustration.
+              </BulletSection>
+            </Col>
+            <Col sm={1}></Col>
+            <Col sm={2} className="text-center">
+              <img
+                src={require("../../static/images/herrd/Pain_Reliever.svg")}
+                alt="Pain Reliever"
+                className="mx-auto d-block"
+              />
+              <HighlightedQuotes>Pain</HighlightedQuotes>
+            </Col>
+            <Col sm={2} className="text-center">
+              <img
+                src={require("../../static/images/herrd/Pain_Reliever.svg")}
+                alt="Pain Reliever"
+                className="mx-auto d-block"
+              />
+              <HighlightedQuotes>Goal</HighlightedQuotes>
+            </Col>
+            <Col sm={1}></Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_ExperienceMap.jpg")}
+                alt="Don William"
+              />
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={4} className="pr-5">
+              <Heading type="h2" italic inner colour="primary">
+                Opportunity Selection:
+                <br /> Value Proposition Canvas
+              </Heading>
+              <BulletSection>
+                I use the
+                <BaseLink InnerLink> Value Proposition Canvas</BaseLink> to
+                explore ways to alleviate my persona’s pains while ideatating on
+                app features.
+              </BulletSection>
+              <BulletSection>
+                I believe these features here, address to my stakeholder’s
+                needs. They seemed to also to do the job in answering the
+                <BaseLink InnerLink> How Might We Statement</BaseLink> I
+                defined.
+              </BulletSection>
+            </Col>
+            <Col sm={8} className="pl-5">
+              <Heading type="h3" inner colour="dark">
+                Chosen Key Features
+              </Heading>
+              <Row>
+                <Col sm={4}>
+                  <img
+                    src={require("../../static/images/herrd/Product_Services.svg")}
+                    alt="Product Services"
+                  />
+                  <HighlightedQuotes>Product & Services</HighlightedQuotes>
+                  <BulletSection>
+                    Step-by-step bullying sign identification guide
+                  </BulletSection>
+                </Col>
+
+                <Col sm={4}>
+                  <img
+                    src={require("../../static/images/herrd/Pain_Reliever.svg")}
+                    alt="Pain Reliever"
+                  />
+                  <HighlightedQuotes>
+                    Pain
+                    <br /> Reliever
+                  </HighlightedQuotes>
+                  <BulletSection>
+                    Chat and connect with other parents
+                  </BulletSection>
+                </Col>
+
+                <Col sm={4}>
+                  <img
+                    src={require("../../static/images/herrd/Gain_Creator.svg")}
+                    alt="Gain Creator"
+                  />
+                  <HighlightedQuotes>
+                    Gain <br />
+                    Creator
+                  </HighlightedQuotes>
+                  <BulletSection>Live counselor support</BulletSection>
+                </Col>
+
+                <Col sm={12} className="pl-7">
+                  <Heading type="h2" italic inner colour="primary">
+                    Up Next...
+                  </Heading>
+                  <BulletSection>
+                    The Develop stage is where I will begin to ideate the
+                    features and how I can relieve the pains and the task to be
+                    done by the user.
+                  </BulletSection>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row className="wrap">
+            <Col xs={12} className="tex-center">
+              <hr />
+              <Row>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Discovery</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Define</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink active>
+                    Develop
+                  </LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Deliver</LinkButton>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={6} className="pr-5">
+              <Heading type="h1" inner colour="spaceship">
+                3.
+                <br /> DEVELOP
+              </Heading>
+              <Heading type="h2" inner italic colour="primary">
+                Epic & User Stories Selection
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                Epic
+              </Heading>
+              <BulletSection>
+                Generating an action plan to get guided help in tackling
+                bullying.
+              </BulletSection>
+
+              <Heading type="h3" inner colour="dark">
+                Main Task Flow
+              </Heading>
+              <BulletSection>
+                Upon completing the main task flow, Don could determine her
+                son’s current condition, while generating a tailored action plan
+                to guide her in tackling bullying.
+              </BulletSection>
+
+              <Heading type="h3" inner colour="dark">
+                Supplementary Task Flow
+              </Heading>
+              <BulletSection>
+                Supplementary task flow will enhance the user experience of a
+                busy mom who is always multi-tasking.
+              </BulletSection>
+            </Col>
+            <Col sm={6} className="pl-6 mt-10 ">
+              <div className="shadowBox">
+                <BulletSection>
+                  As a Parents, I want to generate an action plan, so that I can
+                  walk away knowing what to do.
+                </BulletSection>
+              </div>
+              <div className="shadowBox">
+                <BulletSection>
+                  As a Parents, I want to keep my viewing history, so that I can
+                  track my progress from the step-by-step guide.
+                </BulletSection>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_task_flow_diagram.jpg")}
+                alt="Don William"
+              />
+            </Col>
+            <Col sm={12}>
+              <Row>
+                <Col sm={8}>
+                  <Heading type="h3" inner colour="dark">
+                    Task Flow Diagram
+                  </Heading>
+                  <BulletSection>
+                    My prototype was built from the elelements I have mapped out
+                    here. It provided a clear visualization of the user and the
+                    system interaction within the chosen User Stories.
+                  </BulletSection>
+                </Col>
+                <Col sm={5}></Col>
+                <Col sm={7} className="pl-5">
+                  <Heading type="h2" inner italic colour="primary">
+                    Up Next...
+                  </Heading>
+                  <BulletSection>
+                    The Develop stage is where I will begin to ideate the
+                    features and how I can relieve the pains and the task to be
+                    done by the user.
+                  </BulletSection>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
       </Section>
     </Layout>
   )
