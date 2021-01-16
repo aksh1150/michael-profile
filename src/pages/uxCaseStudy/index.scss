@@ -271,39 +271,3 @@ li {
     }
   }
 }
-
-.mobile-skin.iphoneX-portrait .mobile-status-bar.black,
-.mobile-skin.iphoneX-portrait .mobile-status-bar.dark {
-  background-size: 280px 38px;
-}
-
-.mobile-skin.iphoneX-portrait .mobile-status-bar {
-  top: 20px;
-  width: 280px;
-  height: 38px;
-  position: absolute;
-  border-radius: 0;
-  background-size: 375px 44px;
-}
-.mobile-skin.iphoneX-portrait .mobile-viewport,
-.mobile-skin.iphoneX-portrait .simulated-loading-screen {
-  height: 640px;
-}
-.mobile-skin.iphoneX-portrait .fixed-element.footer,
-.mobile-skin.iphoneX-portrait .fixed-element.header,
-.mobile-skin.iphoneX-portrait .mobile-status-bar,
-.mobile-skin.iphoneX-portrait .mobile-viewport,
-.mobile-skin.iphoneX-portrait .simulated-loading-screen {
-  width: 280px;
-  left: 20px;
-  top: 0px;
-}
-.mobile-skin.iphoneX-portrait {
-  position: relative;
-  background-size: 100% !important;
-  background-position: center !important;
-  background: 0 0;
-  background-size: 100%;
-  width: 320px !important;
-  height: 665px !important;
-}

@@ -1,5 +1,4 @@
 import React from "react"
-import { Footer } from "../../molecules"
 import { Head } from "../../atoms"
 import "./Layout.scss"
 
@@ -30,7 +29,6 @@ const Layout = ({
         metaImage={metaImage ? metaImage : ""}
       />
       <div className={className}>{children}</div>
-      <Footer />
     </>
   )
 }

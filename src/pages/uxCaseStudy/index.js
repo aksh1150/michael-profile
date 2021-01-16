@@ -114,25 +114,31 @@ const CaseStudies = () => {
               <hr />
               <Row>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink active>
+                  <LinkButton InnerLink active link="/#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Define</LinkButton>
+                  <LinkButton InnerLink link="/#define" internal>
+                    Define
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Develop</LinkButton>
+                  <LinkButton InnerLink link="/#develop" internal>
+                    Develop
+                  </LinkButton>
                 </Col>
                 <Col sm={3} xs={12}>
-                  <LinkButton InnerLink>Deliver</LinkButton>
+                  <LinkButton InnerLink link="/#deliver">
+                    Deliver
+                  </LinkButton>
                 </Col>
               </Row>
             </Col>
           </Row>
         </Container>
 
-        <Container>
+        <Container id="discovery">
           <Row>
             <Col sm={6} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
@@ -440,7 +446,7 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="define">
           <Row>
             <Col sm={3}>
               <Heading type="h1" inner colour="spaceship">
@@ -724,7 +730,7 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="develop">
           <Row>
             <Col sm={6} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
@@ -837,7 +843,7 @@ const CaseStudies = () => {
           </Row>
         </Container>
 
-        <Container>
+        <Container id="deliver">
           <Row>
             <Col sm={3} className="pr-0">
               <Heading type="h1" inner colour="spaceship">
@@ -1178,14 +1184,158 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={4}>
+            <Col sm={5}>
               <iframe
                 width="442"
-                height="935"
+                height="900"
                 src="//invis.io/53XRYLBXWM8"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
+              <BulletSection italic className="text-center">
+                Test out the invision prototype
+              </BulletSection>
+            </Col>
+            <Col sm={7}>
+              <Heading type="h2" inner italic colour="primary">
+                Hi-fi Prototype
+              </Heading>
+              <BulletSection>
+                With all the elements established, I began to put all the pieces
+                together for my hi-fi prototype. In reference to my persona, Don
+                will play the role of a returning user, logging back from her
+                last visit, and continue on with identifying the bullying signs
+                her son is exhibiting. Once completed, she will generate an
+                action plan that will guide her closer to helping her child.
+              </BulletSection>
+
+              <video width="100%" height="430px" controls className="mt-7">
+                <source
+                  src={require("../../static/video/video.mp4")}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <BulletSection italic className="mt-4">
+                Click to play a demo of the main task flow.
+              </BulletSection>
+            </Col>
+            <Col sm={5}>
+              <img
+                src={require("../../static/images/herrd/ipad.png")}
+                alt="ipad"
+              />
+              <BulletSection italic className="mt-4 text-center">
+                UI design on ipad.
+              </BulletSection>
+            </Col>
+            <Col sm={7}>
+              <Heading type="h3" inner colour="dark">
+                Multi-platform Adaptation
+              </Heading>
+              <BulletSection>
+                As a busy mom of three, Don is constantly distracted and pulled
+                from many directions. Herrd needs to adapt to Don’s lifestyle.
+                With an ipad, Don can have the flexibility to use Herrd for when
+                she really want to focus on her action plan and reading up on
+                more resources shared by other parents.
+              </BulletSection>
+              <Heading type="h2" inner italic colour="primary" className="mt-7">
+                Marketing Site
+              </Heading>
+              <BulletSection>
+                A marketing site will introduce Herrd's value proposition to
+                desperate parents with it’s vision to eradicate bullying through
+                learning, support, and guidance. It needs to showcase the key
+                features to its target audience as it is possibly the first
+                channel someone would learn about the app before downloading.
+              </BulletSection>
+              <BulletSection>
+                I will be using this as an MVP to collect metric such as; number
+                of download. A subscribe function is also incorporated for a
+                user like my secondary persona Lulu, who is interested in
+                contributing to the peer support resources to start creating a
+                community.
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={9} className="mt-4">
+              <img
+                src={require("../../static/images/herrd/MarketingSite.gif")}
+                alt="Marketing site"
+                height="520"
+              />
+              <BulletSection className="mt-4" italic>
+                Test out the desktop version
+              </BulletSection>
+            </Col>
+            <Col sm={3} className="pl-5">
+              <img
+                src={require("../../static/images/herrd/marketing_mobile.gif")}
+                alt="Marketing site"
+                height="540"
+              />
+              <BulletSection className="mt-4" italic>
+                Test out the mobile version
+              </BulletSection>
+            </Col>
+            <Col sm={8}>
+              <Heading type="h2" inner italic colour="primary">
+                Design Impact
+              </Heading>
+              <BulletSection>
+                I would like to see the act of bullying eradicated through
+                early-on education. Herrd will help raise awareness for the
+                issue. With enough interest, government will delegate more
+                funding to prevention and education in other sectors. Most
+                importantly, parents will feel confident from the knowledge they
+                gained to tackle bullying with their children.
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={8}>
+              <Heading type="h1" colour="spaceship" inner>
+                Key Learning
+              </Heading>
+              <Heading type="h3" colour="dark" inner>
+                Key Project Learnings
+              </Heading>
+              <BulletSection>
+                Developing an unbiased and problem-orientated problem space was
+                very hard. Bullying is an issue I am very passionate about so I
+                had to keep reminding myself not to assume every parent cared
+                about it as well at the Discovery Stage. I relied on qualitative
+                and quantitative data to support my assumptions.
+              </BulletSection>
+              <BulletSection>
+                While conducting investigation interviews, I learned that I
+                would get a much more insightful result if I can delegate the
+                task of note-taking to one other person. This way, I can better
+                observe the interviewees' emotions and body language to really
+                empathize with them.
+              </BulletSection>
+              <BulletSection>
+                Furthermore, I am designing for the user, not myself. What was
+                intuitive to me in the UI and UX design was not always the case
+                for my users. The importance of information hierarchy is
+                crucial; users will benefit from being shown only the relevant
+                content in one digestible piece at a time. Giving back the user
+                the control of how information comes to them improves
+                engagement.
+              </BulletSection>
+              <BulletSection>
+                On a final note, it became so apparent to me that, I can only
+                build a holistic user-centered experience by build, test, learn
+                and repeat.
+              </BulletSection>
             </Col>
           </Row>
         </Container>
