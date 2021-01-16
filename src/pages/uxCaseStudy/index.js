@@ -147,7 +147,7 @@ const CaseStudies = () => {
                 and it is causing physical and mental harm.
               </Heading>
             </Col>
-            <Col sm={3}>
+            <Col sm={3} className="pl-5">
               <img
                 src={require("../../static/images/herrd/IMG_47percent.svg")}
                 alt="47%"
@@ -159,7 +159,7 @@ const CaseStudies = () => {
               </HighlightedQuotes>
               <BulletSection italic>Source: CBC news</BulletSection>
             </Col>
-            <Col sm={3}>
+            <Col sm={3} className="pl-5">
               <img
                 src={require("../../static/images/herrd/IMG_9th.svg")}
                 alt="9th"
@@ -224,7 +224,6 @@ const CaseStudies = () => {
               <img
                 src={require("../../static/images/herrd/IMG_stakeholder.svg")}
                 alt="stakeholder"
-                width="200px"
                 className="svgWidth "
               />
               <BulletSection className="inline-flex">
@@ -466,6 +465,114 @@ const CaseStudies = () => {
             </Col>
             <Col sm={1} className="mt-200">
               <Quote />
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <Heading type="h2" inner italic colour="primary">
+                Empathy Map
+              </Heading>
+              <BulletSection>
+                I categorized the notes into 4 quadrants: says, thinks, feels,
+                and does.
+              </BulletSection>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_Empathy_Map.jpg")}
+                alt="Empathy map"
+                className="mx-auto d-block"
+              />
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={4}>
+              <Heading type="h3" inner colour="dark">
+                Pain Points
+              </Heading>
+              <ul>
+                <li>Unsure how to differentiate from child play to bullying</li>
+                <li>
+                  Overwhelmed by online resources, in need of a single
+                  descriptive guided approach
+                </li>
+                <li>Bullying is inevitable</li>
+              </ul>
+            </Col>
+            <Col sm={4}>
+              <Heading type="h3" inner colour="dark">
+                Motivations
+              </Heading>
+              <ul>
+                <li>
+                  Getting support from other parents who have gone through this
+                  before
+                </li>
+                <li>Finding all extra resources in one consolidated space</li>
+                <li>
+                  Additional resources on the importance of early-on education
+                  and preventions
+                </li>
+              </ul>
+            </Col>
+            <Col sm={4}>
+              <Heading type="h3" inner colour="dark">
+                Behaviors
+              </Heading>
+              <ul>
+                <li>
+                  Sometimes parents worried they are overreacting and wondered
+                  if they should report to the school Question the child’s
+                  credibility
+                </li>
+                <li>
+                  Try to undermine the incident due to the stigma of being a
+                  “snitch” and the integrity of the claim
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={3}>
+              <Heading type="h2" inner italic colour="primary">
+                Personas
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                What better ways to conceptualize my user’s pain than through
+                the use of Personas?
+              </Heading>
+              <BulletSection>
+                Primary Persona, Don, is a stay-at-home mom who suspects her son
+                might be getting bullied in school, but she is not sure. She is
+                feeling very anxious because her son doesn’t want to talk about
+                it.
+              </BulletSection>
+            </Col>
+            <Col sm={9} className="pl-5">
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Persona_1.jpg")}
+                alt="Persona 1"
+              />
+            </Col>
+            <Col sm={3}>
+              <BulletSection>
+                Secondary Persona, Lulu, is a mom, that has gone through the
+                agony of her son as a victim of bullying. She advocates the
+                importance of prevention and wants to share her past experience.
+              </BulletSection>
+            </Col>
+            <Col sm={9} className="pl-5">
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Persona_2.jpg")}
+                alt="Persona 2"
+              />
             </Col>
           </Row>
         </Container>
