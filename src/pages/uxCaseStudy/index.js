@@ -947,7 +947,7 @@ const CaseStudies = () => {
               <Heading type="h3" inner colour="dark">
                 Navaigating the 10 Signs
               </Heading>
-              <BulletSection>
+              <BulletSection className="mt-4">
                 <b>Navigational Issue:</b>
                 <br />
                 80% of tester failed to notice the Yes/Skip/No buttons and try
@@ -961,6 +961,152 @@ const CaseStudies = () => {
                 description, and I removed the side arrows, which made them
                 engage only with the 3 options on the bottom to advance.
               </BulletSection>
+            </Col>
+
+            <Col sm={6}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Mid-fi_2.jpg")}
+                alt="Mid fi 2"
+              />
+            </Col>
+            <Col sm={6}>
+              <HighlightedQuotes className="mt-5">
+                Bullying Sign Identified Result
+              </HighlightedQuotes>
+              <Heading type="h3" inner colour="dark">
+                Using the Action Plan
+              </Heading>
+              <BulletSection className="mt-4">
+                <b>Information Architecture Issue:</b>
+                <br /> All testers expressed the content on V2 is very hard to
+                read.
+              </BulletSection>
+              <BulletSection>
+                <b>Revisions:</b>
+                <br /> By adding information hiearchy tester now can easily
+                digest the content, furthermore, I planned on incorporating a
+                checklist style interface to enhance user interaction and add a
+                sense of accomplishment in the hi-fi prototype.
+              </BulletSection>
+            </Col>
+
+            <Col sm={6}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Mid-fi_3.jpg")}
+                alt="Mid fi 3"
+              />
+            </Col>
+            <Col sm={6}>
+              <HighlightedQuotes>Main Menu</HighlightedQuotes>
+              <Heading type="h3" inner colour="dark">
+                Interacting the App’s Core Features
+              </Heading>
+              <BulletSection bold className="mt-4">
+                Failure to meet user’s need, two issues were identified:
+              </BulletSection>
+              <ol>
+                <li>
+                  Some testers are confused about the profile picture and what
+                  this section is for by the terminology used. Once explained
+                  that it correlates with the chat feature, they showed concern
+                  about the privacy issue.
+                </li>
+                <li>
+                  Skepticism is expressed on the Find a Counselor function.
+                  Testers are concern about delays in getting help when
+                  counseling service is only available by schedule and its
+                  effectiveness in a virtual setting.
+                </li>
+              </ol>
+              <BulletSection bold className="mt-4">
+                Revisions:
+              </BulletSection>
+              <ol>
+                <li>
+                  Improved terminology used to make it more intuitive, option to
+                  hide profile in chat function added in hi-fi prototype.
+                </li>
+                <li>
+                  Replacing Find a Counselor section with More Resource section
+                  in hi-fi prototype to offer a more immediate help 24/7.
+                  Content for the function will be generated and shared by other
+                  parents.
+                </li>
+              </ol>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <Heading type="h2" inner colour="primary">
+                Customer-Need Pivot
+              </Heading>
+            </Col>
+            <Col sm={6} className="pr-5">
+              <label className="circle">
+                <HighlightedQuotes>1</HighlightedQuotes>
+              </label>
+              <Heading type="h3" colour="dark">
+                Removal of Virtual Counseling
+              </Heading>
+              <BulletSection>
+                Counseling is inherently more effective in person, as testers
+                point out for two reasons: kids are reluctant to talk about
+                their feeling, and parents would want to monitor the video call,
+                which might lead to a prolonged wait to seek out help.
+              </BulletSection>
+            </Col>
+            <Col sm={6}>
+              <label className="circle">
+                <HighlightedQuotes>2</HighlightedQuotes>
+              </label>
+              <Heading type="h3" colour="dark">
+                Desire for support from other parents
+              </Heading>
+              <BulletSection>
+                Instead of support from a counselor, testers express having a
+                chat function with other parents will provide better support.
+                Parents who have gone through the issue of bullying in the past,
+                are interested in sharing their experience.
+              </BulletSection>
+            </Col>
+            <Col sm={12}>
+              <Row className="justify-content-md-center">
+                <Col sm={1} className="mt-5">
+                  <Quote />
+                </Col>
+                <Col sm={7}>
+                  <HighlightedQuotes className="mt-10">
+                    How might we educate parents on how to identify the signs of
+                    bullying,{" "}
+                    <span>
+                      so they have the confidence to tackle bullying, with the
+                      support of a counselor in a safe space?
+                    </span>
+                  </HighlightedQuotes>
+                </Col>
+                <Col sm={1} className="mt-200">
+                  <Quote />
+                </Col>
+              </Row>
+              <Row className="justify-content-md-center">
+                <Col sm={1} className="mt-5">
+                  <Quote />
+                </Col>
+                <Col sm={7}>
+                  <HighlightedQuotes className="mt-10">
+                    How might we educate parents on how to identify the signs of
+                    bullying with a clear action plan, meanwhile, find support
+                    from other parents and consolidate the resources in one
+                    space.
+                  </HighlightedQuotes>
+                </Col>
+                <Col sm={1} className="mt-200">
+                  <Quote />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
