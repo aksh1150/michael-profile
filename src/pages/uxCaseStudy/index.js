@@ -602,7 +602,7 @@ const CaseStudies = () => {
             </Col>
             <Col sm={2} className="text-center">
               <img
-                src={require("../../static/images/herrd/Pain_Reliever.svg")}
+                src={require("../../static/images/herrd/Pain.svg")}
                 alt="Pain Reliever"
                 className="mx-auto d-block"
               />
@@ -685,7 +685,7 @@ const CaseStudies = () => {
                   <BulletSection>Live counselor support</BulletSection>
                 </Col>
 
-                <Col sm={12} className="pl-7">
+                <Col sm={12} className="pl-9">
                   <Heading type="h2" italic inner colour="primary">
                     Up Next...
                   </Heading>
@@ -796,18 +796,171 @@ const CaseStudies = () => {
                     system interaction within the chosen User Stories.
                   </BulletSection>
                 </Col>
-                <Col sm={5}></Col>
-                <Col sm={7} className="pl-5">
+                <Col sm={6}></Col>
+                <Col sm={6}>
                   <Heading type="h2" inner italic colour="primary">
                     Up Next...
                   </Heading>
                   <BulletSection>
-                    The Develop stage is where I will begin to ideate the
-                    features and how I can relieve the pains and the task to be
-                    done by the user.
+                    In the Deliver stage, I will built, test, and iterate
+                    rapidly to ensure the UI and UX will serve to address my
+                    user’s needs. As well as other go-to-market components
+                    needed leading up to the launch.
                   </BulletSection>
                 </Col>
               </Row>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row className="wrap">
+            <Col xs={12} className="tex-center">
+              <hr />
+              <Row>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Discovery</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Define</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink>Develop</LinkButton>
+                </Col>
+                <Col sm={3} xs={12}>
+                  <LinkButton InnerLink active>
+                    Deliver
+                  </LinkButton>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={3} className="pr-0">
+              <Heading type="h1" inner colour="spaceship">
+                4.
+                <br /> DELIVER
+              </Heading>
+              <Heading type="h2" inner italic colour="primary">
+                The Core Features
+              </Heading>
+              <BulletSection>
+                The hurdles that Don goes through in her search for help
+                comprises of 4 main psychological states that I translated into
+                the 4 core features:
+              </BulletSection>
+              <BulletSection>
+                With these features conceptualized, I began ideation by rapid
+                sketching.
+              </BulletSection>
+            </Col>
+            <Col sm={9}>
+              <Row>
+                <Col sm={6}>
+                  <ImageEnlarge
+                    src={require("../../static/images/herrd/Core1_2.svg")}
+                    alt="Core 1 2"
+                  />
+                </Col>
+                <Col sm={6}>
+                  <ImageEnlarge
+                    src={require("../../static/images/herrd/Core3_4.svg")}
+                    alt="Core 3 4"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={3} className="pr-0">
+              <Heading type="h2" inner italic colour="primary">
+                Ideation
+              </Heading>
+              <Heading type="h3" inner>
+                Concept Sketches
+              </Heading>
+              <BulletSection>
+                The purpose of these sketches is to explore ways of how a user
+                will start on the 10 Signs of Bullying Guide. I ideated how
+                imageries interact with navigational elements.
+              </BulletSection>
+              <BulletSection>
+                From these sketches, and based on the dot voting result, I
+                decided to let user explore the guide with one sign at a time,
+                this way the user will feel a sense of accomplishment as she
+                answers each identification to advance to the next.
+              </BulletSection>
+            </Col>
+            <Col sm={9}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Concept_sketch.jpg")}
+                alt="Concept Sketch"
+              />
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={6}>
+              <Heading type="h2" inner italic colour="primary">
+                Usability Testing
+              </Heading>
+              <Heading type="h3" inner colour="dark">
+                Mid-fi Prototype
+              </Heading>
+              <BulletSection>
+                <b>Objective:</b> Testing overall usability of a returned user
+                going through the task of identifying the signs of bullying and
+                to generate an action plan at the end.
+              </BulletSection>
+            </Col>
+            <Col sm={6}>
+              <BulletSection className="mt-8">
+                The mid-fi prototype went through 3 versions with two rounds of
+                usability testing by 5 participants. Detailed session one
+                testing result overview can be found{" "}
+                <BaseLink InnerLink>here.</BaseLink>
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col sm={6}>
+              <ImageEnlarge
+                src={require("../../static/images/herrd/Mid-fi_1.jpg")}
+                alt="Mid fi"
+              />
+            </Col>
+            <Col sm={6}>
+              <HighlightedQuotes>
+                Step-by-Step Guide(Sign no.7)
+              </HighlightedQuotes>
+              <Heading type="h3" inner colour="dark">
+                Navaigating the 10 Signs
+              </Heading>
+              <BulletSection>
+                <b>Navigational Issue:</b>
+                <br />
+                80% of tester failed to notice the Yes/Skip/No buttons and try
+                to advanced by clicking the side arrows and pagination dots.
+              </BulletSection>
+              <BulletSection>
+                <b>Revisions:</b>
+                <br />
+                By understanding cognitively users digest information from top
+                to bottom, on V3 I led the user to first read the sign
+                description, and I removed the side arrows, which made them
+                engage only with the 3 options on the bottom to advance.
+              </BulletSection>
             </Col>
           </Row>
         </Container>
