@@ -82,6 +82,12 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .svgWidth {
+    width: 160px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
 }
 img {
   &.HeroImage {
@@ -117,11 +123,7 @@ img {
     top: 50%;
   }
 }
-.svgWidth {
-  width: 200px;
-  height: 100px;
-  margin-bottom: 20px;
-}
+
 .inline-flex {
   display: inline-flex;
 }
