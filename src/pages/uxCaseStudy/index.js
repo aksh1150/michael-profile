@@ -1142,7 +1142,7 @@ const CaseStudies = () => {
                 Inspiration Findings
               </Heading>
               <img
-                src={require("../../static/images/herrd/herrd.png")}
+                src={require("../../static/images/herrd/Herrd.png")}
                 alt="Herrd"
                 className="mt-7"
               />
