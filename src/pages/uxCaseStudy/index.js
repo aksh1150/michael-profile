@@ -20,7 +20,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import "./index.scss"
 
 const CaseStudies = () => {
-  const [displayControls, setDisplayControls] = false
+  const [displayControls, setDisplayControls] = useState(false)
   return (
     <Layout
       pagename="Home - Michelle Profile"
