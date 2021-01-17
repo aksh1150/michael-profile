@@ -21,6 +21,9 @@ import "./index.scss"
 
 const CaseStudies = () => {
   const [displayControls, setDisplayControls] = useState(false)
+  const handleClick = () => {
+    setDisplayControls(true)
+  }
   return (
     <Layout
       pagename="Home - Michelle Profile"
@@ -1235,7 +1238,7 @@ const CaseStudies = () => {
                 height="430px"
                 controls={displayControls}
                 className="mt-7"
-                onClick={setDisplayControls(true)}
+                onClick={handleClick}
               >
                 <source
                   src={require("../../static/video/video.mp4")}
