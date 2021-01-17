@@ -27,7 +27,7 @@ const CaseStudies = () => {
   return (
     <Layout
       pagename="Home - Michelle Profile"
-      className="overflowHidden uxDesign"
+      className="overflowHidden uxDesign globalStyle"
     >
       <Section background="White" inner heroSection>
         <Header />
