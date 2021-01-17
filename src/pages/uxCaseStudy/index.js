@@ -1,11 +1,5 @@
 import React, { useState } from "react"
-import {
-  LinkButton,
-  Header,
-  HeroImage,
-  FlexBox,
-  ImageEnlarge,
-} from "../../Components/molecules"
+import { LinkButton, Header, ImageEnlarge } from "../../Components/molecules"
 import {
   BaseLink,
   Heading,
@@ -13,7 +7,6 @@ import {
   BulletSection,
   Quote,
   Section,
-  Flex,
 } from "../../Components/atoms"
 import { Layout } from "../../Components/organisms"
 import { Container, Row, Col } from "react-bootstrap"
