@@ -1229,7 +1229,7 @@ const CaseStudies = () => {
                 action plan that will guide her closer to helping her child.
               </BulletSection>
 
-              <video width="100%" height="430px" controls className="mt-7">
+              <video width="100%" height="430px" className="mt-7">
                 <source
                   src={require("../../static/video/video.mp4")}
                   type="video/mp4"
