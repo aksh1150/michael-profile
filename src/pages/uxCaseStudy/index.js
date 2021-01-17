@@ -1213,8 +1213,8 @@ const CaseStudies = () => {
                 src="//invis.io/53XRYLBXWM8"
                 frameborder="0"
                 allowfullscreen
-                data-embed="true"
                 tabIndex="0"
+                data-embed="true"
               ></iframe>
               <BulletSection italic className="text-center">
                 Test out the invision prototype
