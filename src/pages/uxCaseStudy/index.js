@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   LinkButton,
   Header,
@@ -20,6 +20,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import "./index.scss"
 
 const CaseStudies = () => {
+  const [displayControls, setDisplayControls] = false
   return (
     <Layout
       pagename="Home - Michelle Profile"
@@ -1229,7 +1230,13 @@ const CaseStudies = () => {
                 action plan that will guide her closer to helping her child.
               </BulletSection>
 
-              <video width="100%" height="430px" className="mt-7">
+              <video
+                width="100%"
+                height="430px"
+                controls={displayControls}
+                className="mt-7"
+                onClick={setDisplayControls(true)}
+              >
                 <source
                   src={require("../../static/video/video.mp4")}
                   type="video/mp4"
