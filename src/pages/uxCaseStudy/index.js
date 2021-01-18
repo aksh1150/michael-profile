@@ -65,11 +65,11 @@ const CaseStudies = () => {
               </BulletSection>
               <BulletSection inline>Academic</BulletSection>
             </Col>
-            <Col sm={9} className="pl-6">
+            <Col sm={9} className="pl-6 mt-2">
               <Heading type="h2" inner colour="primary" italic>
                 Introduction
               </Heading>
-              <BulletSection>
+              <BulletSection className="mt-33">
                 One evening last year, as I watched the evening news, I watched
                 in disbelief at a report of a 14 yr-old boy stabbed and killed
                 by his bully. To make the matter more disheartening, his mom had
@@ -83,7 +83,7 @@ const CaseStudies = () => {
                 Join me in my journey of building Herrd, an app that advocates
                 anti-bullying for parents through education and peer support.
               </BulletSection>
-              <Heading type="h2" inner colour="primary">
+              <Heading type="h2" inner italic colour="primary">
                 The Constraints
               </Heading>
               <BulletSection bold inline>
@@ -190,14 +190,12 @@ const CaseStudies = () => {
               </Heading>
               <BulletSection>
                 What is this group of stakeholders currently thinking and doing?
-              </BulletSection>
-              <BulletSection>
+                <br />
                 What do the stakeholders want to achieve?
-              </BulletSection>
-              <BulletSection>
+                <br />
                 What might be their future behavior?
               </BulletSection>
-              <BulletSection bold large>
+              <BulletSection bold large className="mt-5">
                 Assumptions
               </BulletSection>
 
@@ -223,19 +221,27 @@ const CaseStudies = () => {
             </Col>
 
             <Col sm={6}>
-              <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
-              <img
-                src={require("../../static/images/herrd/IMG_stakeholder.svg")}
-                alt="stakeholder"
-                className="svgWidth "
-              />
-              <BulletSection className="inline-flex">
-                Students
-                <br />
-                Parents
-                <br />
-                Caregivers
-              </BulletSection>
+              <Row>
+                <Col sm={3}>
+                  <img
+                    src={require("../../static/images/herrd/IMG_stakeholder.svg")}
+                    alt="stakeholder"
+                    className="svgWidth "
+                  />
+                </Col>
+                <Col sm={9}>
+                  <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
+
+                  <BulletSection>
+                    Students
+                    <br />
+                    Parents
+                    <br />
+                    Caregivers
+                  </BulletSection>
+                </Col>
+              </Row>
+
               <BulletSection bold large>
                 Goal
               </BulletSection>
@@ -406,6 +412,8 @@ const CaseStudies = () => {
                 <b>Likelihood of Bullying</b>-Parents think bullying is common
                 and will likely happen to their child at one point.
               </BulletSection>
+            </Col>
+            <Col sm={6}>
               <Heading type="h2" inner italic colour="primary">
                 Up Next...
               </Heading>
@@ -693,18 +701,17 @@ const CaseStudies = () => {
                   </HighlightedQuotes>
                   <BulletSection>Live counselor support</BulletSection>
                 </Col>
-
-                <Col sm={12} className="pl-9">
-                  <Heading type="h2" italic inner colour="primary">
-                    Up Next...
-                  </Heading>
-                  <BulletSection>
-                    The Develop stage is where I will begin to ideate the
-                    features and how I can relieve the pains and the task to be
-                    done by the user.
-                  </BulletSection>
-                </Col>
               </Row>
+            </Col>
+            <Col sm={6}>
+              <Heading type="h2" italic inner colour="primary">
+                Up Next...
+              </Heading>
+              <BulletSection>
+                The Develop stage is where I will begin to ideate the features
+                and how I can relieve the pains and the task to be done by the
+                user.
+              </BulletSection>
             </Col>
           </Row>
         </Container>
@@ -811,7 +818,6 @@ const CaseStudies = () => {
                     system interaction within the chosen User Stories.
                   </BulletSection>
                 </Col>
-                <Col sm={6}></Col>
                 <Col sm={6}>
                   <Heading type="h2" inner italic colour="primary">
                     Up Next...

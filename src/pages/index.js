@@ -219,7 +219,7 @@ const Home = () => {
         </motion.div>
         <Container>
           <Row>
-            <Col xs={12} className="marginTop2 paddingLeft">
+            <Col xs={12} className="marginTop3 paddingLeft">
               <Heading type="h1" colour="white">
                 {HomePage.myWorkTitle}
               </Heading>

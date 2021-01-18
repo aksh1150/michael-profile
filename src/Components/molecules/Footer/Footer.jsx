@@ -4,10 +4,12 @@ import "./Footer.scss"
 const Footer = () => {
   return (
     <footer>
-      <Paragraph size="xs">
+      <Paragraph size="xs" className="footer-paragraph">
         Copyright by{" "}
-        <BaseLink link="https://designmicha.com">designmicha.com</BaseLink> @
-        {new Date().getFullYear()}. All rights reserved.
+        <BaseLink link="https://designmicha.com" className="footer-link">
+          designmicha.com
+        </BaseLink>{" "}
+        @{new Date().getFullYear()}. All rights reserved.
       </Paragraph>
     </footer>
   )

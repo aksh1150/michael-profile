@@ -3,4 +3,10 @@ footer {
   max-width: 1440px;
   text-align: center;
   margin: auto;
+  .footer-paragraph {
+    font-size: 12px !important;
+  }
+  .footer-link {
+    font-size: 12px;
+  }
 }
