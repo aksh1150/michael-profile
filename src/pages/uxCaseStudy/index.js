@@ -611,7 +611,7 @@ const CaseStudies = () => {
             </Col>
             <Col sm={2} className="text-center">
               <img
-                src={require("../../static/images/herrd/Pain.svg")}
+                src={require("../../static/images/herrd/Goal.svg")}
                 alt="Pain Reliever"
                 className="mx-auto d-block"
               />
@@ -1203,7 +1203,7 @@ const CaseStudies = () => {
               <iframe
                 width="442"
                 height="900"
-                src="//invis.io/53XRYLBXWM8"
+                src="https://invis.io/53XRYLBXWM8"
                 frameborder="0"
                 allowfullscreen
                 data-embed="true"
