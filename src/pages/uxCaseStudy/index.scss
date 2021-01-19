@@ -1,5 +1,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/global-style.scss";
+@import "../../styles/mixins.scss";
 @font-face {
   font-family: "Helvetica";
   src: url("../../static/fonts/Helvetica-Light.ttf") format("truetype");
@@ -27,9 +28,12 @@
       position: absolute;
       width: 90%;
       height: 1px;
-      top: 40%;
+      top: 38%;
       left: 5%;
       background-color: $spaceship;
+      @include respond(lg) {
+        top: 40%;
+      }
     }
   }
   .line {

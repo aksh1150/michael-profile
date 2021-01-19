@@ -33,7 +33,7 @@ const CaseStudies = () => {
       <Section background="White" inner>
         <Container>
           <Row>
-            <Col sm={3}>
+            <Col lg={3} md={10}>
               <Heading type="h1" inner colour="spaceship">
                 Herrd
               </Heading>
@@ -65,7 +65,7 @@ const CaseStudies = () => {
               </BulletSection>
               <BulletSection inline>Academic</BulletSection>
             </Col>
-            <Col sm={9} className="pl-6 mt-2">
+            <Col lg={9} md={10} className="pl-6 mt-2">
               <Heading type="h2" inner colour="primary" italic>
                 Introduction
               </Heading>
@@ -83,7 +83,7 @@ const CaseStudies = () => {
                 Join me in my journey of building Herrd, an app that advocates
                 anti-bullying for parents through education and peer support.
               </BulletSection>
-              <Heading type="h2" inner italic colour="primary">
+              <Heading type="h2" inner italic colour="primary" className="mt-5">
                 The Constraints
               </Heading>
               <BulletSection bold inline>
@@ -137,7 +137,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
                 1.
                 <br /> DISCOVERY

@@ -30,8 +30,12 @@
     }
   }
   &.small {
-    width: 180px;
-    font-size: 18px;
+    width: 140px;
+    font-size: 16px;
+    @include respond(lg) {
+      width: 180px;
+      font-size: 18px;
+    }
   }
 
   &.active {

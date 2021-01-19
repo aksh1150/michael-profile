@@ -11,7 +11,7 @@
 }
 p {
   &.BulletSection {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: $dark;
     font-family: "Roboto-Light";
@@ -22,7 +22,7 @@ p {
     }
 
     @include respond(md) {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     &.bold {
@@ -30,10 +30,10 @@ p {
     }
 
     &.largeSize {
-      font-size: 24px;
+      font-size: 16px;
       font-family: "Helvetica-Light";
       @include respond(md) {
-        font-size: 16px;
+        font-size: 24px;
       }
     }
 
