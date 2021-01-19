@@ -39,7 +39,13 @@
     min-height: auto;
   }
   &.heroSection {
-    min-height: 650px;
+    min-height: 365px;
     background-color: $base-white;
+    @include respond(md) {
+      height: 465px;
+    }
+    @include respond(lg) {
+      min-height: 650px;
+    }
   }
 }

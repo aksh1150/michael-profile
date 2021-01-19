@@ -33,7 +33,7 @@ const CaseStudies = () => {
       <Section background="White" inner>
         <Container>
           <Row>
-            <Col sm={3}>
+            <Col lg={3} md={10}>
               <Heading type="h1" inner colour="spaceship">
                 Herrd
               </Heading>
@@ -65,7 +65,7 @@ const CaseStudies = () => {
               </BulletSection>
               <BulletSection inline>Academic</BulletSection>
             </Col>
-            <Col sm={9} className="pl-6 mt-2">
+            <Col lg={9} md={10} className="pl-6 mt-2">
               <Heading type="h2" inner colour="primary" italic>
                 Introduction
               </Heading>
@@ -83,7 +83,7 @@ const CaseStudies = () => {
                 Join me in my journey of building Herrd, an app that advocates
                 anti-bullying for parents through education and peer support.
               </BulletSection>
-              <Heading type="h2" inner italic colour="primary">
+              <Heading type="h2" inner italic colour="primary" className="mt-5">
                 The Constraints
               </Heading>
               <BulletSection bold inline>
@@ -137,7 +137,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
                 1.
                 <br /> DISCOVERY
@@ -150,7 +150,7 @@ const CaseStudies = () => {
                 and it is causing physical and mental harm.
               </Heading>
             </Col>
-            <Col sm={3}>
+            <Col lg={3} md={6}>
               <img
                 src={require("../../static/images/herrd/IMG_47percent.svg")}
                 alt="47%"
@@ -162,7 +162,11 @@ const CaseStudies = () => {
               </HighlightedQuotes>
               <BulletSection italic>Source: CBC news</BulletSection>
             </Col>
-            <Col sm={3} style={{ paddingLeft: "5px", paddingRight: "5px" }}>
+            <Col
+              lg={3}
+              md={6}
+              style={{ paddingLeft: "15px", paddingRight: "5px" }}
+            >
               <img
                 src={require("../../static/images/herrd/IMG_9th.svg")}
                 alt="9th"
@@ -183,7 +187,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h2" inner colour="primary" italic>
                 Identifying the Scope-
                 <br /> Landscape Mapping
@@ -220,16 +224,16 @@ const CaseStudies = () => {
               </ul>
             </Col>
 
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Row>
-                <Col sm={3}>
+                <Col lg={3} className="d-lg-block d-md-none">
                   <img
                     src={require("../../static/images/herrd/IMG_stakeholder.svg")}
                     alt="stakeholder"
                     className="svgWidth "
                   />
                 </Col>
-                <Col sm={9}>
+                <Col sm={9} className="d-lg-block d-md-none">
                   <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
 
                   <BulletSection>
@@ -249,7 +253,7 @@ const CaseStudies = () => {
                 Victims affected by bullying to feel empowered in tackling
                 bullying from the key features of the app.
               </BulletSection>
-              <BulletSection bold large>
+              <BulletSection bold large className="mt-ipad">
                 Hypothesis
               </BulletSection>
               <BulletSection>
@@ -267,7 +271,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h2" inner colour="primary" italic>
                 Secondary Research:
                 <br /> Competitive Analysis
@@ -276,7 +280,7 @@ const CaseStudies = () => {
                 I looked at the government and competitor apps' current
                 offerings.
               </BulletSection>
-              <Heading type="h3" inner colour="dark">
+              <Heading type="h3" inner colour="dark" className="mt-ipad">
                 High-level Findings
               </Heading>
               <BulletSection>
@@ -296,7 +300,7 @@ const CaseStudies = () => {
                 </li>
               </ol>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <HighlightedQuotes>The Pros & Cons</HighlightedQuotes>
               <BaseLink InnerLink>
                 Click here for a detailed version of the Competitive Analysis
@@ -311,7 +315,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5 mt-ipad">
               <Heading type="h2" inner colour="primary" italic>
                 Primary Research: <br />
                 Investigation interviews
@@ -320,12 +324,19 @@ const CaseStudies = () => {
                 To collect qualitative and quantitative data. I will focus on
                 learning what the user does, thinks, needs, and wants.
               </BulletSection>
-              <Heading type="h3" inner colour="dark">
+              <Heading
+                type="h3"
+                inner
+                colour="dark"
+                className="d-lg-block d-md-none"
+              >
                 Interviewee Criteria:
               </Heading>
-              <BulletSection>Parents with in-school children</BulletSection>
+              <BulletSection className="d-lg-block d-md-none">
+                Parents with in-school children
+              </BulletSection>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Heading type="h3" inner colour="dark">
                 Objectives:
               </Heading>
@@ -346,27 +357,47 @@ const CaseStudies = () => {
                   The likelihood of their children become a bullying victim.
                 </li>
               </ol>
+              <Heading
+                type="h3"
+                inner
+                colour="dark"
+                className="d-lg-none d-md-block mt-ipad"
+              >
+                Interviewee Criteria:
+              </Heading>
+              <BulletSection className="d-lg-none d-md-block">
+                Parents with in-school children
+              </BulletSection>
             </Col>
           </Row>
         </Container>
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col lg={6} md={12}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_1.jpg")}
                 alt="Quote 1"
+                className="mx-auto d-block"
               />
               <img
                 src={require("../../static/images/herrd/IMG_interview_legend.png")}
                 alt="color"
                 style={{ marginTop: "50px", width: "85%" }}
+                className="d-lg-block d-md-none"
               />
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={12}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_2.jpg")}
                 alt="Quote 2"
+                className="mx-auto d-block"
+              />
+              <img
+                src={require("../../static/images/herrd/IMG_interview_legend.png")}
+                alt="color"
+                style={{ marginTop: "50px", width: "85%" }}
+                className="d-lg-none d-md-block"
               />
               <BulletSection italic className="mt-5">
                 I planned on conducting user testing on the same group of
@@ -380,7 +411,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h3" inner colour="dark">
                 Key Research Insights
               </Heading>
@@ -396,7 +427,7 @@ const CaseStudies = () => {
               </BulletSection>
             </Col>
 
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Heading type="h3" inner colour="dark">
                 Themes
               </Heading>
@@ -413,7 +444,7 @@ const CaseStudies = () => {
                 and will likely happen to their child at one point.
               </BulletSection>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Heading type="h2" inner italic colour="primary">
                 Up Next...
               </Heading>
@@ -459,7 +490,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={3}>
+            <Col lg={3} md={10}>
               <Heading type="h1" inner colour="spaceship">
                 2.
                 <br /> DEFINE
@@ -470,25 +501,29 @@ const CaseStudies = () => {
                 space.
               </Heading>
             </Col>
-            <Col sm={1} className="mt-5">
-              <Quote />
-            </Col>
-            <Col sm={7}>
-              <HighlightedQuotes className="mt-10">
-                How might we educate parents on how to identify the signs of
-                bullying, so they have the confidence to tackle bullying, with
-                the support of a counselor in a safe space?
-              </HighlightedQuotes>
-            </Col>
-            <Col sm={1} className="mt-200">
-              <Quote />
+            <Col lg={9} md={10}>
+              <Row>
+                <Col lg={2} md={1} className="mt-5 noMargin">
+                  <Quote />
+                </Col>
+                <Col lg={8} md={8}>
+                  <HighlightedQuotes className="mt-10">
+                    How might we educate parents on how to identify the signs of
+                    bullying, so they have the confidence to tackle bullying,
+                    with the support of a counselor in a safe space?
+                  </HighlightedQuotes>
+                </Col>
+                <Col lg={2} md={1} className="mt-200">
+                  <Quote />
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
 
         <Container>
           <Row>
-            <Col sm={12}>
+            <Col lg={12} md={12}>
               <Heading type="h2" inner italic colour="primary">
                 Empathy Map
               </Heading>
@@ -507,7 +542,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={4}>
+            <Col lg={4} md={10}>
               <Heading type="h3" inner colour="dark">
                 Pain Points
               </Heading>
@@ -520,7 +555,7 @@ const CaseStudies = () => {
                 <li>Bullying is inevitable</li>
               </ul>
             </Col>
-            <Col sm={4}>
+            <Col lg={4} md={10}>
               <Heading type="h3" inner colour="dark">
                 Motivations
               </Heading>
@@ -536,7 +571,7 @@ const CaseStudies = () => {
                 </li>
               </ul>
             </Col>
-            <Col sm={4}>
+            <Col lg={4} md={10}>
               <Heading type="h3" inner colour="dark">
                 Behaviors
               </Heading>
@@ -557,7 +592,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={3}>
+            <Col lg={3} md={10}>
               <Heading type="h2" inner italic colour="primary">
                 Personas
               </Heading>
@@ -572,20 +607,20 @@ const CaseStudies = () => {
                 it.
               </BulletSection>
             </Col>
-            <Col sm={9} className="pl-5">
+            <Col lg={9} md={12} className="pl-5">
               <ImageEnlarge
                 src={require("../../static/images/herrd/Persona_1.jpg")}
                 alt="Persona 1"
               />
             </Col>
-            <Col sm={3}>
+            <Col lg={3} md={10}>
               <BulletSection>
                 Secondary Persona, Lulu, is a mom, that has gone through the
                 agony of her son as a victim of bullying. She advocates the
                 importance of prevention and wants to share her past experience.
               </BulletSection>
             </Col>
-            <Col sm={9} className="pl-5">
+            <Col lg={9} md={12} className="pl-5">
               <ImageEnlarge
                 src={require("../../static/images/herrd/Persona_2.jpg")}
                 alt="Persona 2"
@@ -596,7 +631,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h2" inner colour="primary">
                 Opportunity Selection:
                 <br /> Experience Map
@@ -608,8 +643,8 @@ const CaseStudies = () => {
                 and touchpoint Don is experiencing most frustration.
               </BulletSection>
             </Col>
-            <Col sm={1}></Col>
-            <Col sm={2} className="text-center">
+            <Col lg={1} className="d-lg-block d-md-none"></Col>
+            <Col sm={2} className="text-center d-lg-block d-md-none">
               <img
                 src={require("../../static/images/herrd/Pain_Reliever.svg")}
                 alt="Pain Reliever"
@@ -617,7 +652,7 @@ const CaseStudies = () => {
               />
               <HighlightedQuotes>Pain</HighlightedQuotes>
             </Col>
-            <Col sm={2} className="text-center">
+            <Col sm={2} className="text-center d-lg-block d-md-none">
               <img
                 src={require("../../static/images/herrd/Goal.svg")}
                 alt="Pain Reliever"
@@ -625,7 +660,7 @@ const CaseStudies = () => {
               />
               <HighlightedQuotes>Goal</HighlightedQuotes>
             </Col>
-            <Col sm={1}></Col>
+            <Col lg={1} className="d-lg-block d-md-none"></Col>
           </Row>
         </Container>
 
@@ -635,6 +670,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_ExperienceMap.jpg")}
                 alt="Don William"
+                className="d-lg-block d-md-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/IMG_ExperienceMap.jpg")}
+                alt="Don William"
+                className="d-lg-none d-md-block"
               />
             </Col>
           </Row>
@@ -642,7 +683,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={4} className="pr-5">
+            <Col lg={4} md={10} className="pr-5">
               <Heading type="h2" italic inner colour="primary">
                 Opportunity Selection:
                 <br /> Value Proposition Canvas
@@ -660,23 +701,26 @@ const CaseStudies = () => {
                 defined.
               </BulletSection>
             </Col>
-            <Col sm={8} className="pl-5">
+            <Col lg={8} md={12} className="pl-5">
               <Heading type="h3" inner colour="dark">
                 Chosen Key Features
               </Heading>
               <Row>
-                <Col sm={4}>
+                <Col lg={4} md={6}>
                   <img
                     src={require("../../static/images/herrd/Product_Services.svg")}
                     alt="Product Services"
                   />
-                  <HighlightedQuotes>Product & Services</HighlightedQuotes>
+                  <HighlightedQuotes>
+                    Product & <br />
+                    Services
+                  </HighlightedQuotes>
                   <BulletSection>
                     Step-by-step bullying sign identification guide
                   </BulletSection>
                 </Col>
 
-                <Col sm={4}>
+                <Col lg={4} md={6}>
                   <img
                     src={require("../../static/images/herrd/Pain_Reliever.svg")}
                     alt="Pain Reliever"
@@ -690,7 +734,7 @@ const CaseStudies = () => {
                   </BulletSection>
                 </Col>
 
-                <Col sm={4}>
+                <Col lg={4} md={6}>
                   <img
                     src={require("../../static/images/herrd/Gain_Creator.svg")}
                     alt="Gain Creator"
@@ -703,7 +747,7 @@ const CaseStudies = () => {
                 </Col>
               </Row>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Heading type="h2" italic inner colour="primary">
                 Up Next...
               </Heading>
@@ -748,7 +792,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <Heading type="h1" inner colour="spaceship">
                 3.
                 <br /> DEVELOP
@@ -781,7 +825,7 @@ const CaseStudies = () => {
                 busy mom who is always multi-tasking.
               </BulletSection>
             </Col>
-            <Col sm={6} className="pl-6 mt-10 ">
+            <Col lg={6} className="pl-6 mt-10 d-lg-block d-md-none">
               <div className="shadowBox">
                 <BulletSection>
                   As a Parents, I want to generate an action plan, so that I can
@@ -800,7 +844,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={12}>
+            <Col lg={12}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_task_flow_diagram.jpg")}
                 alt="Don William"
@@ -808,7 +852,7 @@ const CaseStudies = () => {
             </Col>
             <Col sm={12}>
               <Row>
-                <Col sm={8}>
+                <Col lg={8} md={10}>
                   <Heading type="h3" inner colour="dark">
                     Task Flow Diagram
                   </Heading>
@@ -818,7 +862,7 @@ const CaseStudies = () => {
                     system interaction within the chosen User Stories.
                   </BulletSection>
                 </Col>
-                <Col sm={6}>
+                <Col lg={6} md={10}>
                   <Heading type="h2" inner italic colour="primary">
                     Up Next...
                   </Heading>
@@ -866,7 +910,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={3} className="pr-0">
+            <Col lg={3} md={10} className="pr-0">
               <Heading type="h1" inner colour="spaceship">
                 4.
                 <br /> DELIVER
@@ -884,15 +928,15 @@ const CaseStudies = () => {
                 sketching.
               </BulletSection>
             </Col>
-            <Col sm={9}>
+            <Col lg={9} md={10}>
               <Row>
-                <Col sm={6}>
+                <Col lg={6} md={12}>
                   <ImageEnlarge
                     src={require("../../static/images/herrd/Core1_2.svg")}
                     alt="Core 1 2"
                   />
                 </Col>
-                <Col sm={6}>
+                <Col lg={6} md={12}>
                   <ImageEnlarge
                     src={require("../../static/images/herrd/Core3_4.svg")}
                     alt="Core 3 4"
@@ -905,7 +949,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={3} className="pr-0">
+            <Col lg={3} md={10} className="pr-0">
               <Heading type="h2" inner italic colour="primary">
                 Ideation
               </Heading>
@@ -924,7 +968,7 @@ const CaseStudies = () => {
                 answers each identification to advance to the next.
               </BulletSection>
             </Col>
-            <Col sm={9}>
+            <Col lg={9} md={12}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/Concept_sketch.jpg")}
                 alt="Concept Sketch"
@@ -935,7 +979,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <Heading type="h2" inner italic colour="primary">
                 Usability Testing
               </Heading>
@@ -948,7 +992,7 @@ const CaseStudies = () => {
                 to generate an action plan at the end.
               </BulletSection>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <BulletSection className="mt-8">
                 The mid-fi prototype went through 3 versions with two rounds of
                 usability testing by 5 participants. Detailed session one
@@ -961,14 +1005,17 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={6}>
+            <HighlightedQuotes className="d-md-block d-lg-none">
+              Step-by-Step Guide(Sign no.7)
+            </HighlightedQuotes>
+            <Col lg={6} md={10}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/Mid-fi_1.jpg")}
                 alt="Mid fi"
               />
             </Col>
-            <Col sm={6}>
-              <HighlightedQuotes>
+            <Col lg={6} md={10}>
+              <HighlightedQuotes className="d-lg-block d-md-none">
                 Step-by-Step Guide(Sign no.7)
               </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
@@ -990,14 +1037,17 @@ const CaseStudies = () => {
               </BulletSection>
             </Col>
 
-            <Col sm={6}>
+            <Col lg={6} md={10}>
+              <HighlightedQuotes className="mt-5 mt-ipad2 d-lg-none d-md-block">
+                Bullying Sign Identified Result
+              </HighlightedQuotes>
               <ImageEnlarge
                 src={require("../../static/images/herrd/Mid-fi_2.jpg")}
                 alt="Mid fi 2"
               />
             </Col>
-            <Col sm={6}>
-              <HighlightedQuotes className="mt-5">
+            <Col lg={6} md={10}>
+              <HighlightedQuotes className="mt-5 d-lg-block d-md-none">
                 Bullying Sign Identified Result
               </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
@@ -1017,14 +1067,19 @@ const CaseStudies = () => {
               </BulletSection>
             </Col>
 
-            <Col sm={6}>
+            <Col lg={6} md={10}>
+              <HighlightedQuotes className="d-md-block d-lg-none">
+                Main Menu
+              </HighlightedQuotes>
               <ImageEnlarge
                 src={require("../../static/images/herrd/Mid-fi_3.jpg")}
                 alt="Mid fi 3"
               />
             </Col>
-            <Col sm={6}>
-              <HighlightedQuotes>Main Menu</HighlightedQuotes>
+            <Col lg={6} md={10}>
+              <HighlightedQuotes className="d-lg-block d-md-none">
+                Main Menu
+              </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
                 Interacting the App’s Core Features
               </Heading>
@@ -1071,7 +1126,7 @@ const CaseStudies = () => {
                 Customer-Need Pivot
               </Heading>
             </Col>
-            <Col sm={6} className="pr-5">
+            <Col lg={6} md={10} className="pr-5">
               <label className="circle">
                 <HighlightedQuotes>1</HighlightedQuotes>
               </label>
@@ -1085,7 +1140,7 @@ const CaseStudies = () => {
                 which might lead to a prolonged wait to seek out help.
               </BulletSection>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} md={10}>
               <label className="circle">
                 <HighlightedQuotes>2</HighlightedQuotes>
               </label>
@@ -1099,12 +1154,12 @@ const CaseStudies = () => {
                 are interested in sharing their experience.
               </BulletSection>
             </Col>
-            <Col sm={12}>
+            <Col lg={12} md={10}>
               <Row className="justify-content-md-center">
-                <Col sm={1} className="mt-5">
+                <Col lg={1} md={1} className="mt-5 noMargin">
                   <Quote />
                 </Col>
-                <Col sm={7}>
+                <Col lg={7} md={10}>
                   <HighlightedQuotes className="mt-10">
                     How might we educate parents on how to identify the signs of
                     bullying,{" "}
@@ -1114,15 +1169,15 @@ const CaseStudies = () => {
                     </span>
                   </HighlightedQuotes>
                 </Col>
-                <Col sm={1} className="mt-200">
+                <Col lg={1} md={1} className="mt-200 mt-201">
                   <Quote />
                 </Col>
               </Row>
               <Row className="justify-content-md-center">
-                <Col sm={1} className="mt-5">
+                <Col lg={1} md={1} className="mt-5 noMargin">
                   <Quote />
                 </Col>
-                <Col sm={7}>
+                <Col lg={7} md={10}>
                   <HighlightedQuotes className="mt-10">
                     How might we educate parents on how to identify the signs of
                     bullying with a clear action plan, meanwhile, find support
@@ -1130,7 +1185,7 @@ const CaseStudies = () => {
                     space.
                   </HighlightedQuotes>
                 </Col>
-                <Col sm={1} className="mt-200">
+                <Col lg={1} md={1} className="mt-200 mt-201">
                   <Quote />
                 </Col>
               </Row>
@@ -1140,7 +1195,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={4} className="pr-6">
+            <Col lg={4} md={10} className="pr-6">
               <Heading type="h2" inner italic colour="primary">
                 Inspiration Findings
               </Heading>
@@ -1154,11 +1209,11 @@ const CaseStudies = () => {
                 group. Heard = being heard.
               </BulletSection>
             </Col>
-            <Col sm={8}>
+            <Col lg={8} md={12}>
               <img
                 src={require("../../static/images/herrd/BrandColor.jpg")}
                 alt="Herrd"
-                className="mt-7"
+                className="mt-7 img-fluid"
               />
               <BulletSection italic className="mt-4">
                 Brand colors derived from images that convey my brand
@@ -1167,13 +1222,14 @@ const CaseStudies = () => {
                 <BaseLink InnerLink>here.</BaseLink>
               </BulletSection>
             </Col>
-            <Col sm={8}>
+            <Col lg={8} md={12}>
               <img
                 src={require("../../static/images/herrd/Logo_UI_Color.jpg")}
                 alt="Herrd"
+                className="img-fluid"
               />
             </Col>
-            <Col sm={4} className="mt-7 pl-7">
+            <Col lg={4} md={10} className="mt-7 pl-7">
               <Heading type="h3" inner colour="dark">
                 Logomark
               </Heading>
@@ -1184,7 +1240,7 @@ const CaseStudies = () => {
                 with lighthearted typography.
               </BulletSection>
             </Col>
-            <Col sm={4} className="pr-6 mt-4">
+            <Col lg={4} md={10} className="pr-6 mt-4">
               <Heading type="h3" inner colour="dark">
                 Key Graphic Elements
               </Heading>
@@ -1194,7 +1250,7 @@ const CaseStudies = () => {
                 illustrations will put less racial and age associations.
               </BulletSection>
             </Col>
-            <Col sm={8} className="mt-4">
+            <Col lg={8} md={12} className="mt-4">
               <img
                 src={require("../../static/images/herrd/illustrations.svg")}
                 alt="illustrations"
@@ -1205,7 +1261,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={5}>
+            <Col lg={5} md={10} className="d-lg-block d-md-none">
               <iframe
                 width="442"
                 height="900"
@@ -1219,37 +1275,59 @@ const CaseStudies = () => {
                 Test out the invision prototype
               </BulletSection>
             </Col>
-            <Col sm={7}>
-              <Heading type="h2" inner italic colour="primary">
-                Hi-fi Prototype
-              </Heading>
-              <BulletSection>
-                With all the elements established, I began to put all the pieces
-                together for my hi-fi prototype. In reference to my persona, Don
-                will play the role of a returning user, logging back from her
-                last visit, and continue on with identifying the bullying signs
-                her son is exhibiting. Once completed, she will generate an
-                action plan that will guide her closer to helping her child.
-              </BulletSection>
-
-              <video
-                width="100%"
-                height="430px"
-                controls={displayControls}
-                className="mt-7"
-                onClick={handleClick}
-              >
-                <source
-                  src={require("../../static/video/video.mp4")}
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <BulletSection italic className="mt-4">
-                Click to play a demo of the main task flow.
-              </BulletSection>
+            <Col lg={7}>
+              <Row>
+                <Col lg={12}>
+                  <Heading type="h2" inner italic colour="primary">
+                    Hi-fi Prototype
+                  </Heading>
+                  <BulletSection>
+                    With all the elements established, I began to put all the
+                    pieces together for my hi-fi prototype. In reference to my
+                    persona, Don will play the role of a returning user, logging
+                    back from her last visit, and continue on with identifying
+                    the bullying signs her son is exhibiting. Once completed,
+                    she will generate an action plan that will guide her closer
+                    to helping her child.
+                  </BulletSection>
+                  <Col
+                    lg={5}
+                    md={12}
+                    className="d-lg-none d-md-block text-center"
+                  >
+                    <iframe
+                      width="442"
+                      height="900"
+                      src="https://invis.io/53XRYLBXWM8"
+                      frameborder="0"
+                      allowfullscreen
+                      tabIndex="0"
+                      data-embed="true"
+                    ></iframe>
+                    <BulletSection italic className="text-center">
+                      Test out the invision prototype
+                    </BulletSection>
+                  </Col>
+                  <video
+                    width="100%"
+                    height="430px"
+                    controls={displayControls}
+                    className="mt-7"
+                    onClick={handleClick}
+                  >
+                    <source
+                      src={require("../../static/video/video.mp4")}
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <BulletSection italic className="mt-4">
+                    Click to play a demo of the main task flow.
+                  </BulletSection>
+                </Col>
+              </Row>
             </Col>
-            <Col sm={5}>
+            <Col lg={5} className="d-lg-block d-md-none">
               <img
                 src={require("../../static/images/herrd/ipad.png")}
                 alt="ipad"
@@ -1258,7 +1336,7 @@ const CaseStudies = () => {
                 UI design on ipad.
               </BulletSection>
             </Col>
-            <Col sm={7}>
+            <Col lg={7} md={10}>
               <Heading type="h3" inner colour="dark">
                 Multi-platform Adaptation
               </Heading>
@@ -1269,6 +1347,15 @@ const CaseStudies = () => {
                 she really want to focus on her action plan and reading up on
                 more resources shared by other parents.
               </BulletSection>
+              <Col md={12} className="d-md-block d-lg-none">
+                <img
+                  src={require("../../static/images/herrd/ipad.png")}
+                  alt="ipad"
+                />
+                <BulletSection italic className="mt-4 text-center">
+                  UI design on ipad.
+                </BulletSection>
+              </Col>
               <Heading type="h2" inner italic colour="primary" className="mt-7">
                 Marketing Site
               </Heading>
@@ -1292,17 +1379,18 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={9} className="mt-4">
+            <Col lg={9} md={12} className="mt-4">
               <img
                 src={require("../../static/images/herrd/MarketingSite.gif")}
                 alt="Marketing site"
                 height="520"
+                className="img-fluid"
               />
               <BulletSection className="mt-4" italic>
                 Test out the desktop version
               </BulletSection>
             </Col>
-            <Col sm={3} className="pl-5">
+            <Col lg={3} className="pl-5 d-lg-block d-md-none">
               <img
                 src={require("../../static/images/herrd/marketing_mobile.gif")}
                 alt="Marketing site"
@@ -1312,7 +1400,7 @@ const CaseStudies = () => {
                 Test out the mobile version
               </BulletSection>
             </Col>
-            <Col sm={8}>
+            <Col lg={8} md={10}>
               <Heading type="h2" inner italic colour="primary">
                 Design Impact
               </Heading>
@@ -1330,7 +1418,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col sm={8}>
+            <Col lg={8} md={10}>
               <Heading type="h1" colour="spaceship" inner>
                 Key Learning
               </Heading>
@@ -1371,7 +1459,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row className="justify-content-md-center mt-7 text-center">
-            <Col sm={8}>
+            <Col lg={8} md={10}>
               <BulletSection large>
                 Interested in learning more about this casestudy? Or tell me
                 what you don’t like about it? I am all ears. Get in touch with
