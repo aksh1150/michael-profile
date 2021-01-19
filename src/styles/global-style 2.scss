@@ -1,4 +1,3 @@
-@import "./mixins.scss";
 .globalStyle {
   .col,
   .col-1,
@@ -72,12 +71,8 @@
   .col-xl-auto {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    @include respond(lg) {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .justify-content-md-center {
@@ -160,92 +155,37 @@
     &.HeroImage {
       display: flex;
       width: 100%;
-      height: 360px;
+      height: 636px;
       position: absolute;
       top: 0;
-      @include respond(md) {
-        height: 460px;
-      }
-      @include respond(lg) {
-        height: 636px;
-      }
     }
   }
   .mt-7 {
-    margin-top: 40px;
-    @include respond(lg) {
-      margin-top: 70px;
-    }
+    margin-top: 70px;
   }
   .mt-5 {
     margin-top: 50px;
   }
-  .mt-ipad {
-    margin-top: 40px;
-    @include respond(lg) {
-      margin-top: auto;
-    }
-  }
-  .mt-ipad2 {
-    margin-top: 0px !important;
-    @include respond(lg) {
-      margin-top: auto;
-    }
-  }
   .mt-33 {
-    margin-top: 20px;
-    @include respond(lg) {
-      margin-top: 33px;
-    }
+    margin-top: 33px;
   }
   .mt-10 {
-    margin-top: 50px;
-    @include respond(lg) {
-      margin-top: 100px;
-    }
+    margin-top: 100px;
   }
   .mt-8 {
-    margin-top: 0px;
-    @include respond(lg) {
-      margin-top: 80px;
-    }
+    margin-top: 80px;
   }
   .mt-9 {
-    margin-top: 40px;
-    @include respond(lg) {
-      margin-top: 90px;
-    }
+    margin-top: 90px;
   }
   .mt-200 {
-    margin-top: 340px;
-    padding-bottom: 0px;
-    @include respond(lg) {
-      margin-top: 200px;
-    }
-  }
-  .mt-201 {
-    margin-top: 280px;
-    @include respond(lg) {
-      margin-top: 200px;
-    }
-  }
-  .noMargin {
-    margin-top: 0px !important;
-    @include respond(lg) {
-      margin-top: auto;
-    }
+    margin-top: 200px;
   }
   .pl-6 {
-    padding-left: 1.8rem !important;
-    @include respond(lg) {
-      padding-left: 6.8rem !important;
-    }
+    padding-left: 6.8rem !important;
   }
   .pl-7 {
-    padding-left: 1.8rem !important;
-    @include respond(lg) {
-      padding-left: 7.8rem !important;
-    }
+    padding-left: 7.8rem !important;
   }
   .pl-8 {
     padding-left: 8.8rem !important;
