@@ -226,14 +226,14 @@ const CaseStudies = () => {
 
             <Col lg={6} md={10}>
               <Row>
-                <Col lg={3} className="d-lg-block d-md-none">
+                <Col lg={3} className="d-lg-block d-md-none d-none">
                   <img
                     src={require("../../static/images/herrd/IMG_stakeholder.svg")}
                     alt="stakeholder"
                     className="svgWidth "
                   />
                 </Col>
-                <Col sm={9} className="d-lg-block d-md-none">
+                <Col sm={9} className="d-lg-block d-md-none d-none">
                   <HighlightedQuotes>Stakeholders:</HighlightedQuotes>
 
                   <BulletSection>
@@ -328,11 +328,11 @@ const CaseStudies = () => {
                 type="h3"
                 inner
                 colour="dark"
-                className="d-lg-block d-md-none"
+                className="d-lg-block d-md-none d-none"
               >
                 Interviewee Criteria:
               </Heading>
-              <BulletSection className="d-lg-block d-md-none">
+              <BulletSection className="d-lg-block d-md-none d-none">
                 Parents with in-school children
               </BulletSection>
             </Col>
@@ -384,7 +384,7 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/IMG_interview_legend.png")}
                 alt="color"
                 style={{ marginTop: "50px", width: "85%" }}
-                className="d-lg-block d-md-none"
+                className="d-lg-block d-md-none d-none"
               />
             </Col>
             <Col lg={6} md={12}>
@@ -643,8 +643,8 @@ const CaseStudies = () => {
                 and touchpoint Don is experiencing most frustration.
               </BulletSection>
             </Col>
-            <Col lg={1} className="d-lg-block d-md-none"></Col>
-            <Col sm={2} className="text-center d-lg-block d-md-none">
+            <Col lg={1} className="d-lg-block d-md-none d-none"></Col>
+            <Col sm={2} className="text-center d-lg-block d-md-none d-none">
               <img
                 src={require("../../static/images/herrd/Pain_Reliever.svg")}
                 alt="Pain Reliever"
@@ -652,7 +652,7 @@ const CaseStudies = () => {
               />
               <HighlightedQuotes>Pain</HighlightedQuotes>
             </Col>
-            <Col sm={2} className="text-center d-lg-block d-md-none">
+            <Col sm={2} className="text-center d-lg-block d-md-none d-none">
               <img
                 src={require("../../static/images/herrd/Goal.svg")}
                 alt="Pain Reliever"
@@ -660,7 +660,7 @@ const CaseStudies = () => {
               />
               <HighlightedQuotes>Goal</HighlightedQuotes>
             </Col>
-            <Col lg={1} className="d-lg-block d-md-none"></Col>
+            <Col lg={1} className="d-lg-block d-md-none d-none"></Col>
           </Row>
         </Container>
 
@@ -670,10 +670,10 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_ExperienceMap.jpg")}
                 alt="Don William"
-                className="d-lg-block d-md-none"
+                className="d-lg-block d-md-none d-none"
               />
               <ImageEnlarge
-                src={require("../../static/images/herrd/IMG_ExperienceMap.jpg")}
+                src={require("../../static/images/herrd/Experience_Map_tablet.jpg")}
                 alt="Don William"
                 className="d-lg-none d-md-block"
               />
@@ -825,7 +825,7 @@ const CaseStudies = () => {
                 busy mom who is always multi-tasking.
               </BulletSection>
             </Col>
-            <Col lg={6} className="pl-6 mt-10 d-lg-block d-md-none">
+            <Col lg={6} className="pl-6 mt-10 d-lg-block d-md-none d-none">
               <div className="shadowBox">
                 <BulletSection>
                   As a Parents, I want to generate an action plan, so that I can
@@ -1015,7 +1015,7 @@ const CaseStudies = () => {
               />
             </Col>
             <Col lg={6} md={10}>
-              <HighlightedQuotes className="d-lg-block d-md-none">
+              <HighlightedQuotes className="d-lg-block d-md-none d-none">
                 Step-by-Step Guide(Sign no.7)
               </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
@@ -1047,7 +1047,7 @@ const CaseStudies = () => {
               />
             </Col>
             <Col lg={6} md={10}>
-              <HighlightedQuotes className="mt-5 d-lg-block d-md-none">
+              <HighlightedQuotes className="mt-5 d-lg-block d-md-none d-none">
                 Bullying Sign Identified Result
               </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
@@ -1077,7 +1077,7 @@ const CaseStudies = () => {
               />
             </Col>
             <Col lg={6} md={10}>
-              <HighlightedQuotes className="d-lg-block d-md-none">
+              <HighlightedQuotes className="d-lg-block d-md-none d-none">
                 Main Menu
               </HighlightedQuotes>
               <Heading type="h3" inner colour="dark">
@@ -1261,7 +1261,7 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <Col lg={5} md={10} className="d-lg-block d-md-none">
+            <Col lg={5} md={10} className="d-lg-block d-md-none d-none">
               <iframe
                 width="442"
                 height="900"
@@ -1327,7 +1327,7 @@ const CaseStudies = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={5} className="d-lg-block d-md-none">
+            <Col lg={5} className="d-lg-block d-md-none d-none">
               <img
                 src={require("../../static/images/herrd/ipad.png")}
                 alt="ipad"
@@ -1390,7 +1390,7 @@ const CaseStudies = () => {
                 Test out the desktop version
               </BulletSection>
             </Col>
-            <Col lg={3} className="pl-5 d-lg-block d-md-none">
+            <Col lg={3} className="pl-5 d-lg-block d-md-none d-none">
               <img
                 src={require("../../static/images/herrd/marketing_mobile.gif")}
                 alt="Marketing site"
