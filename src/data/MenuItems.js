@@ -9,7 +9,7 @@ const Menu = [
   },
   {
     title: "About",
-    link: "about",
+    link: "/",
     space: "right",
   },
 ]

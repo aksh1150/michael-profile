@@ -108,7 +108,6 @@ const CaseStudies = () => {
         <Container id="discovery">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
-              <hr />
               <Row>
                 <Col sm={3} xs={12}>
                   <LinkButton InnerLink active link="#discovery" internal>
@@ -461,7 +460,6 @@ const CaseStudies = () => {
         <Container id="define">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
-              <hr />
               <Row>
                 <Col sm={3} xs={12}>
                   <LinkButton InnerLink link="#discovery" internal>
@@ -632,7 +630,7 @@ const CaseStudies = () => {
         <Container>
           <Row>
             <Col lg={6} md={10} className="pr-5">
-              <Heading type="h2" inner colour="primary">
+              <Heading type="h2" inner colour="primary" italic>
                 Opportunity Selection:
                 <br /> Experience Map
               </Heading>
@@ -654,9 +652,9 @@ const CaseStudies = () => {
             </Col>
             <Col sm={2} className="text-center d-lg-block d-md-none d-none">
               <img
-                src={require("../../static/images/herrd/Goal.svg")}
+                src={require("../../static/images/herrd/goal.png")}
                 alt="Pain Reliever"
-                className="mx-auto d-block"
+                className="mx-auto d-block goal"
               />
               <HighlightedQuotes>Goal</HighlightedQuotes>
             </Col>
@@ -763,7 +761,6 @@ const CaseStudies = () => {
         <Container id="develop">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
-              <hr />
               <Row>
                 <Col sm={3} xs={12}>
                   <LinkButton InnerLink link="#discovery" internal>
@@ -881,7 +878,6 @@ const CaseStudies = () => {
         <Container id="deliver">
           <Row className="wrap">
             <Col xs={12} className="tex-center">
-              <hr />
               <Row>
                 <Col sm={3} xs={12}>
                   <LinkButton InnerLink link="#discovery" internal>
@@ -932,13 +928,13 @@ const CaseStudies = () => {
               <Row>
                 <Col lg={6} md={12}>
                   <ImageEnlarge
-                    src={require("../../static/images/herrd/Core1_2.svg")}
+                    src={require("../../static/images/herrd/Core1&2.png")}
                     alt="Core 1 2"
                   />
                 </Col>
                 <Col lg={6} md={12}>
                   <ImageEnlarge
-                    src={require("../../static/images/herrd/Core3_4.svg")}
+                    src={require("../../static/images/herrd/Core3&4.png")}
                     alt="Core 3 4"
                   />
                 </Col>
@@ -1387,17 +1383,17 @@ const CaseStudies = () => {
                 className="img-fluid"
               />
               <BulletSection className="mt-4" italic>
-                Test out the desktop version
+                Desktop version
               </BulletSection>
             </Col>
-            <Col lg={3} className="pl-5 d-lg-block d-md-none d-none">
+            <Col lg={3} md={12} className="pl-5">
               <img
                 src={require("../../static/images/herrd/marketing_mobile.gif")}
                 alt="Marketing site"
                 height="540"
               />
               <BulletSection className="mt-4" italic>
-                Test out the mobile version
+                Mobile version
               </BulletSection>
             </Col>
             <Col lg={8} md={10}>
@@ -1422,9 +1418,9 @@ const CaseStudies = () => {
               <Heading type="h1" colour="spaceship" inner>
                 Key Learning
               </Heading>
-              <Heading type="h3" colour="dark" inner>
+              {/* <Heading type="h3" colour="dark" inner>
                 Key Project Learnings
-              </Heading>
+              </Heading> */}
               <BulletSection>
                 Developing an unbiased and problem-orientated problem space was
                 very hard. Bullying is an issue I am very passionate about so I

@@ -35,7 +35,10 @@ body {
   margin-top: 50px;
 }
 .marginTop3 {
-  margin-top: 100px;
+  margin-top: 80px;
+  @include respond(md) {
+    margin-top: 100px;
+  }
 }
 .marginTop4 {
   margin-top: 120px;
@@ -80,9 +83,12 @@ body {
 }
 
 .footerContainer {
-  padding: 100px 15px;
-  @include respond(sm) {
+  padding: 100px 30px;
+  @include respond(lg) {
     padding: 150px 80px;
+  }
+  h1 {
+    margin-bottom: 0px;
   }
 }
 img {
@@ -110,7 +116,7 @@ img {
 }
 
 .text-rights {
-  text-align: left;
+  text-align: right;
   @include respond(lg) {
     text-align: right;
   }
