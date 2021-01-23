@@ -630,7 +630,7 @@ const CaseStudies = () => {
         <Container>
           <Row>
             <Col lg={6} md={10} className="pr-5">
-              <Heading type="h2" inner colour="primary">
+              <Heading type="h2" inner colour="primary" italic>
                 Opportunity Selection:
                 <br /> Experience Map
               </Heading>
@@ -1383,17 +1383,17 @@ const CaseStudies = () => {
                 className="img-fluid"
               />
               <BulletSection className="mt-4" italic>
-                Test out the desktop version
+                Desktop version
               </BulletSection>
             </Col>
-            <Col lg={3} className="pl-5 d-lg-block d-md-none d-none">
+            <Col lg={3} md={12} className="pl-5">
               <img
                 src={require("../../static/images/herrd/marketing_mobile.gif")}
                 alt="Marketing site"
                 height="540"
               />
               <BulletSection className="mt-4" italic>
-                Test out the mobile version
+                Mobile version
               </BulletSection>
             </Col>
             <Col lg={8} md={10}>

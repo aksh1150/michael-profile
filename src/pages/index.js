@@ -182,13 +182,13 @@ const Home = () => {
                   </Heading>
                 </Col>
                 <Col xs={12}>
-                  <Paragraph size="xs" fontcolour="white">
+                  <Paragraph size="xs" fontcolour="white" thin>
                     {HomePage.aboutMePara1.aboutMePara1}
                   </Paragraph>
-                  <Paragraph size="xs" fontcolour="white">
+                  <Paragraph size="xs" fontcolour="white" thin>
                     {HomePage.aboutMePara2.aboutMePara2}
                   </Paragraph>
-                  <Paragraph size="xs" fontcolour="white">
+                  <Paragraph size="xs" fontcolour="white" thin>
                     {HomePage.aboutMePara3.aboutMePara3}
                   </Paragraph>
                 </Col>

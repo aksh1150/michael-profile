@@ -3,6 +3,11 @@
 @import "../../../styles/mobile.scss";
 @import "../../../styles/mixins.scss";
 
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../../static/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+
 .Paragraph {
   &.xl {
     @include p-mobile-one;
@@ -37,6 +42,10 @@
     @include respond(md) {
       @include p-desktop-fifth;
       margin-bottom: 20px;
+    }
+
+    &.thin {
+      font-family: "Roboto-Thin";
     }
   }
 

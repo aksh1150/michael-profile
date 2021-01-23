@@ -12,29 +12,31 @@
 @font-face {
   font-family: "Futura-Medium";
   src: url("../../../static/fonts/FuturaPTLight.otf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Futura-Book";
   src: url("../../../static/fonts/FuturaPTBook.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica-Light";
   src: url("../../../static/fonts/Helvetica-Light.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto-Light";
-  src: url("../../../static/fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../../../static/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../../static/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../../static/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
 }
 
 @font-face {
@@ -55,7 +57,7 @@
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 1.1px;
-  font-family: "Helvetica-Light";
+  font-family: "Futura-Light";
 }
 
 @mixin h2-desktop {
@@ -68,10 +70,10 @@
 
 @mixin h2-desktop-inner {
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 34px;
   letter-spacing: 1.1px;
-  font-family: "Century-Gothic";
+  font-family: "Roboto-Bold";
 }
 
 @mixin h3-desktop {
@@ -82,10 +84,10 @@
 }
 @mixin h3-desktop-inner {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 32px;
   letter-spacing: 1.2px;
-  font-family: "Helvetica-Light";
+  font-family: "Roboto-Bold";
 }
 
 @mixin h4-desktop {

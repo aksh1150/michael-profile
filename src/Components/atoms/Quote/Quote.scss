@@ -1,13 +1,13 @@
 @import "../../../styles/variables.scss";
 
 @font-face {
-  font-family: "Century-Gothic";
-  src: url("../../../static/fonts/CGothic.ttf") format("truetype");
+  font-family: "Roboto-Medium";
+  src: url("../../../static/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 span {
   &.Quote {
-    font-family: "Century-Gothic";
+    font-family: "Roboto-Medium";
     font-size: 104px;
     color: $dark;
   }
