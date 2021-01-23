@@ -108,8 +108,8 @@ const Home = () => {
 
         <Container>
           <Row>
-            <Col sm={5} md={5} lg={4} xl={5}></Col>
-            <Col sm={7} md={7} lg={8} xl={7} className="marginTop2 noPaddings">
+            <Col sm={6} md={6} lg={4} xl={5}></Col>
+            <Col sm={6} md={6} lg={8} xl={7} className="marginTop2 noPaddings">
               <Paragraph size="xl" className="text-rights p3">
                 {HomePage.bannerText1}
               </Paragraph>
@@ -118,10 +118,10 @@ const Home = () => {
               </Paragraph>
 
               <Row>
-                <Col xs={12} sm={7} lg={6} xl={6} style={{ marginTop: 10 }}>
+                <Col xs={12} sm={6} lg={6} xl={6} style={{ marginTop: 10 }}>
                   <Paragraph size="xs">{HomePage.bannerSubText}</Paragraph>
                 </Col>
-                <Col xs={12} sm={5} lg={6} xl={6} className="d-none d-sm-block">
+                <Col xs={12} sm={6} lg={6} xl={6} className="d-none d-sm-block">
                   <Paragraph size="xl" className="text-rights p2">
                     {HomePage.bannerText2}
                   </Paragraph>

@@ -35,8 +35,8 @@
 }
 
 @font-face {
-  font-family: "Roboto-Thin";
-  src: url("../../../static/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  font-family: "Roboto-Medium";
+  src: url("../../../static/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -86,8 +86,8 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 1.2px;
-  font-family: "Roboto-Bold";
+  letter-spacing: 1px;
+  font-family: "Roboto-Medium";
 }
 
 @mixin h4-desktop {
@@ -148,7 +148,7 @@
 }
 
 @mixin p-desktop-fifth {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   line-height: 28px;
   letter-spacing: 1px;
