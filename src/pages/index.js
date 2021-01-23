@@ -267,7 +267,7 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={12} className="marginTop4 paddingLeft">
+            <Col xs={12} className="marginTop2 paddingLeft">
               <Slider slideData={HomePage.testimonialTitle} />
             </Col>
           </Row>
