@@ -129,19 +129,19 @@ const Home = () => {
               </Row>
             </Col>
 
-            <Col xs={12} sm={6} lg={6} xl={5} className="paddingLeft">
+            <Col xs={12} sm={6} lg={6} xl={6} className="paddingLeft">
               <Paragraph size="lg" fontcolour="grey">
                 {HomePage.bannerText3}
               </Paragraph>
             </Col>
-            <Col xs={12} sm={1} lg={1} xl={1} className="text-center">
+            {/* <Col xs={12} sm={1} lg={1} xl={1} className="text-center">
               <ScrollDown />
-            </Col>
+            </Col> */}
             <Col
               xs={12}
-              sm={4}
-              lg={4}
-              xl={5}
+              sm={6}
+              lg={6}
+              xl={6}
               className="text-rights marginTop"
               style={{ zIndex: 9999 }}
             >
