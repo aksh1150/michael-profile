@@ -10,12 +10,16 @@ const BulletSection = ({
   inline,
   italic,
   className,
+  caption,
+  template,
 }) => {
   return (
     <p
       className={`BulletSection ${bold ? "bold" : ""} ${
         large ? "largeSize" : ""
-      } ${inline ? "inline" : ""} ${italic ? "italic" : ""} ${className}`}
+      } ${inline ? "inline" : ""} ${italic ? "italic" : ""} ${
+        template ? "template" : ""
+      } ${caption ? "caption" : ""}  ${className}`}
     >
       {children}
     </p>

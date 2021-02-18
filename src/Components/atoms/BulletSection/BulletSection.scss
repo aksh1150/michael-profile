@@ -40,6 +40,16 @@ p {
       }
     }
 
+    &.template {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &.caption {
+      font-size: 14px;
+      font-style: italic;
+      line-height: 22px;
+    }
+
     &.italic {
       font-style: italic;
     }
