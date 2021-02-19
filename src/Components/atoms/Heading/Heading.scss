@@ -25,7 +25,7 @@
   }
   &.isInner {
     @include h2-mobile-inner;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     @include respond(md) {
       @include h2-desktop-inner;
     }

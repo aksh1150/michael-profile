@@ -30,8 +30,13 @@
     }
   }
   &.small {
-    width: 140px;
-    font-size: 16px;
+    width: 70px;
+    font-size: 12px;
+    height: 30px;
+
+    @include respond(sm) {
+      width: 140px;
+    }
     @include respond(lg) {
       width: 180px;
       font-size: 18px;

@@ -59,9 +59,9 @@
 }
 
 @mixin h1-mobile-inner {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 28px;
   letter-spacing: 1.2px;
   font-family: "Helvetica-Light";
 }
@@ -74,9 +74,9 @@
   font-family: "Futura-Medium";
 }
 @mixin h2-mobile-inner {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 26px;
   letter-spacing: 1.2px;
   font-family: "Roboto-Medium";
 }
@@ -89,9 +89,9 @@
 }
 
 @mixin h3-mobile-inner {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 36px;
+  line-height: 26px;
   letter-spacing: 1.2px;
   font-family: "Roboto-Medium";
 }

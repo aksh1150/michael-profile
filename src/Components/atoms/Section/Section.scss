@@ -39,8 +39,11 @@
     min-height: auto;
   }
   &.heroSection {
-    min-height: 365px;
+    min-height: 215px;
     background-color: $base-white;
+    @include respond(sm) {
+      min-height: 365px;
+    }
     @include respond(md) {
       height: 465px;
     }

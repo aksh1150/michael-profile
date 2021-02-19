@@ -27,7 +27,12 @@ const CaseStudies = () => {
         <img
           src={require("../../static/images/herrd/IMG_Hero_image.jpg")}
           alt="Hero Image"
-          className="HeroImage"
+          className="HeroImage  d-md-block d-none"
+        />
+        <img
+          src={require("../../static/images/herrd/mobile/IMG_Hero_image.png")}
+          alt="Hero Image"
+          className="HeroImage  d-md-none d-block"
         />
       </Section>
       <Section background="White" inner>
@@ -109,22 +114,22 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <Row>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink active link="#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#deliver">
                     Deliver
                   </LinkButton>
@@ -191,7 +196,7 @@ const CaseStudies = () => {
                 Identifying the Scope-
                 <br /> Landscape Mapping
               </Heading>
-              <BulletSection>
+              <BulletSection className="d-sm-block d-none">
                 What is this group of stakeholders currently thinking and doing?
                 <br />
                 What do the stakeholders want to achieve?
@@ -307,6 +312,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_ProCon.png")}
                 alt="Competitive Analysis"
+                className="d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/IMG_ProCon_mobile.png")}
+                alt="Competitive Analysis"
+                className="d-sm-none d-block"
               />
             </Col>
           </Row>
@@ -377,7 +388,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_1.jpg")}
                 alt="Quote 1"
-                className="mx-auto d-block"
+                className="mx-auto d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/IMG_quotes_mobile.png")}
+                alt="Quote 1"
+                className="mx-auto d-sm-none d-block"
               />
               <img
                 src={require("../../static/images/herrd/IMG_interview_legend.png")}
@@ -390,13 +406,13 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_quote_2.jpg")}
                 alt="Quote 2"
-                className="mx-auto d-block"
+                className="mx-auto d-sm-block d-none"
               />
               <img
                 src={require("../../static/images/herrd/IMG_interview_legend.png")}
                 alt="color"
                 style={{ marginTop: "50px", width: "85%" }}
-                className="d-lg-none d-md-block"
+                className="d-lg-none d-md-block d-none"
               />
               <BulletSection italic className="mt-5">
                 I planned on conducting user testing on the same group of
@@ -461,22 +477,22 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <Row>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink active link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#deliver">
                     Deliver
                   </LinkButton>
@@ -532,7 +548,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_Empathy_Map.jpg")}
                 alt="Empathy map"
-                className="mx-auto d-block"
+                className="mx-auto d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/empathy map_mobile.png")}
+                alt="Empathy map"
+                className="mx-auto d-sm-none d-block"
               />
             </Col>
           </Row>
@@ -609,6 +630,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/Persona_1.jpg")}
                 alt="Persona 1"
+                className="d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/Persona_1.png")}
+                alt="Persona 1"
+                className="d-sm-none d-block"
               />
             </Col>
             <Col lg={3} md={10}>
@@ -622,6 +649,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/Persona_2.jpg")}
                 alt="Persona 2"
+                className="d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/Persona_2.png")}
+                alt="Persona 2"
+                className="d-sm-none d-block"
               />
             </Col>
           </Row>
@@ -673,7 +706,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/Experience_Map_tablet.jpg")}
                 alt="Don William"
-                className="d-lg-none d-md-block"
+                className="d-lg-none d-md-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/IMG_ExperienceMap_mobile.png")}
+                alt="Don William"
+                className="d-lg-none d-md-none d-block"
               />
             </Col>
           </Row>
@@ -709,6 +747,7 @@ const CaseStudies = () => {
                     src={require("../../static/images/herrd/Product_Services.svg")}
                     alt="Product Services"
                   />
+
                   <HighlightedQuotes>
                     Product & <br />
                     Services
@@ -762,22 +801,22 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <Row>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink active link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#deliver">
                     Deliver
                   </LinkButton>
@@ -845,11 +884,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/IMG_task_flow_diagram.jpg")}
                 alt="Don William"
+                className="d-sm-block d-none"
               />
             </Col>
             <Col sm={12}>
               <Row>
-                <Col lg={8} md={10}>
+                <Col lg={8} md={10} className="d-sm-block d-none">
                   <Heading type="h3" inner colour="dark">
                     Task Flow Diagram
                   </Heading>
@@ -879,22 +919,22 @@ const CaseStudies = () => {
           <Row className="wrap">
             <Col xs={12} className="tex-center">
               <Row>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#discovery" internal>
                     Discovery
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#define" internal>
                     Define
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink link="#develop" internal>
                     Develop
                   </LinkButton>
                 </Col>
-                <Col sm={3} xs={12}>
+                <Col sm={3} xs={3}>
                   <LinkButton InnerLink active link="#deliver">
                     Deliver
                   </LinkButton>
@@ -968,6 +1008,12 @@ const CaseStudies = () => {
               <ImageEnlarge
                 src={require("../../static/images/herrd/Concept_sketch.jpg")}
                 alt="Concept Sketch"
+                className="d-sm-block d-none"
+              />
+              <ImageEnlarge
+                src={require("../../static/images/herrd/mobile/Concept_sketch_mobile.png")}
+                alt="Concept Sketch"
+                className="d-sm-none d-block"
               />
             </Col>
           </Row>
@@ -1001,9 +1047,12 @@ const CaseStudies = () => {
 
         <Container>
           <Row>
-            <HighlightedQuotes className="d-md-block d-lg-none">
-              Step-by-Step Guide(Sign no.7)
-            </HighlightedQuotes>
+            <Col md={10} sm={12} className="d-md-block d-lg-none">
+              <HighlightedQuotes>
+                Step-by-Step Guide(Sign no.7)
+              </HighlightedQuotes>
+            </Col>
+
             <Col lg={6} md={10}>
               <ImageEnlarge
                 src={require("../../static/images/herrd/Mid-fi_1.jpg")}
@@ -1250,6 +1299,7 @@ const CaseStudies = () => {
               <img
                 src={require("../../static/images/herrd/illustrations.svg")}
                 alt="illustrations"
+                className="img-fluid"
               />
             </Col>
           </Row>
@@ -1347,6 +1397,7 @@ const CaseStudies = () => {
                 <img
                   src={require("../../static/images/herrd/ipad.png")}
                   alt="ipad"
+                  className="img-fluid mr-auto mx-auto"
                 />
                 <BulletSection italic className="mt-4 text-center">
                   UI design on ipad.
@@ -1380,9 +1431,9 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/MarketingSite.gif")}
                 alt="Marketing site"
                 height="520"
-                className="img-fluid"
+                className="img-fluid d-sm-block d-none"
               />
-              <BulletSection className="mt-4" italic>
+              <BulletSection className="mt-4 d-sm-block d-none" italic>
                 Desktop version
               </BulletSection>
             </Col>
@@ -1391,6 +1442,7 @@ const CaseStudies = () => {
                 src={require("../../static/images/herrd/marketing_mobile.gif")}
                 alt="Marketing site"
                 height="540"
+                className="d-block mr-auto mx-auto"
               />
               <BulletSection className="mt-4" italic>
                 Mobile version

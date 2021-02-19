@@ -66,8 +66,11 @@ li {
 }
 .circle {
   border: 2px solid $dark;
-  padding: 22px 15px 8px;
+  padding: 15px 10px 1px;
   border-radius: 50%;
+  @include respond(sm) {
+    padding: 22px 15px 8px;
+  }
   p {
     &.HighlightedQuotes {
       line-height: 0px;

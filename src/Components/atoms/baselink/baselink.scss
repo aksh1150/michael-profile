@@ -1,5 +1,6 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/desktop.scss";
+@import "../../../styles/mixins.scss";
 
 @font-face {
   font-family: "Helvetica-Light";
@@ -28,10 +29,13 @@
   }
 
   &.isInner {
-    font-size: 18px;
+    font-size: 13px;
     line-height: 21px;
     color: $spaceship;
     text-decoration: underline;
+    @include respond(sm) {
+      font-size: 18px;
+    }
     &:hover,
     &:active {
       text-decoration: underline;
