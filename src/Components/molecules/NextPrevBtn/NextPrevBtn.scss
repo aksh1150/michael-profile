@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/desktop.scss";
+@import "../../../styles/mixins.scss";
+
+@font-face {
+  font-family: "Helvetica-Medium";
+  src: url("../../../static/fonts/Helvetica-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.NextPrev {
+  font-size: 18px;
+  text-decoration: none !important;
+  svg {
+    height: 30px;
+    padding: 0px 5px;
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}

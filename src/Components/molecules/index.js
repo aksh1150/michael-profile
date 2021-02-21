@@ -8,6 +8,7 @@ import LinkButton from "./LinkButton"
 import HeroImage from "./HeroImage"
 import ImageEnlarge from "./ImageEnlarge"
 import FlexBox from "./FlexBox"
+import NextPrevBtn from "./NextPrevBtn"
 
 export {
   Footer,
@@ -20,4 +21,5 @@ export {
   HeroImage,
   ImageEnlarge,
   FlexBox,
+  NextPrevBtn,
 }

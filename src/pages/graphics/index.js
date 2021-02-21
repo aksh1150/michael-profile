@@ -4,6 +4,7 @@ import {
   Header,
   ImageEnlarge,
   ShareButton,
+  NextPrevBtn,
 } from "../../Components/molecules"
 import {
   BaseLink,
@@ -224,6 +225,18 @@ const Graphics = () => {
             <Col lg={3} md={12} />
             <Col lg={4} md={12}>
               <ShareButton iconData={SocialMediaData} />
+            </Col>
+
+            <Col sm={12} className="border-top pt-5 mt-5">
+              <Row>
+                <Col lg={2} md={3}>
+                  <NextPrevBtn>Name of Left Case Study</NextPrevBtn>
+                </Col>
+                <Col lg={8} md={6} />
+                <Col lg={2} md={3}>
+                  <NextPrevBtn rightArrow>Name of Right Case Study</NextPrevBtn>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
