@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Logo, BaseLink } from "../../atoms"
 
 import SocialMedia from "../SocialMedia"
@@ -9,13 +9,39 @@ import Menu from "../../../data/MenuItems"
 import "./Header.scss"
 
 const Header = () => {
+  const [isToggle, setIsToggle] = useState(false)
+
+  const toggled = () => {
+    setIsToggle(!isToggle)
+    // const el = document.querySelector("#responsive-navbar-nav")
+
+    // el.classList.add("show")
+  }
+
+  const toggledHide = () => {
+    setIsToggle(!isToggle)
+    const el = document.querySelector("#responsive-navbar-nav")
+    if (el.classList.contains("show")) {
+      el.classList.remove("show")
+    }
+  }
   return (
     <div className="newNav">
-      <Navbar collapseOnSelect expand="sm">
-        <Navbar.Brand href="/">
+      <Navbar collapseOnSelect expand="sm" variant="dark">
+        <Navbar.Brand href="/" className="d-sm-block d-none">
           <Logo />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
+        {isToggle ? (
+          <BaseLink className="btn-outline-dark" clickEvent={toggledHide}>
+            X
+          </BaseLink>
+        ) : (
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={toggled}
+          />
+        )}
         <Navbar.Collapse
           className="justify-content-end"
           id="responsive-navbar-nav"

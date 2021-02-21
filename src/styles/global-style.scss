@@ -162,11 +162,12 @@
     &.HeroImage {
       display: flex;
       width: 100%;
-      height: 210px;
+      height: 215px;
       position: absolute;
-      top: 0;
+      top: 30px;
       @include respond(sm) {
         height: 360px;
+        top: 0;
       }
       @include respond(md) {
         height: 460px;

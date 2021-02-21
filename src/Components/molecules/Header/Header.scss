@@ -10,7 +10,49 @@
     max-width: 1260px;
     margin: auto;
     padding-top: 10px;
+
+    .btn-outline-dark {
+      z-index: 99 !important;
+      position: absolute;
+      right: 8%;
+      top: 35%;
+      color: $base-white;
+      border-color: $base-white;
+    }
+    .navbar-toggler {
+      background-color: $dark;
+      z-index: 99 !important;
+      padding: 0.25rem 0.3rem;
+      position: absolute;
+      left: 7%;
+      top: 8%;
+    }
+
+    .navbar-collapse {
+      background-color: $dark;
+      z-index: 9 !important;
+      position: absolute;
+      top: 0px;
+      padding: 2rem 0.3rem;
+      width: 100%;
+      left: 0;
+      padding-top: 80px;
+      a {
+        color: $base-white;
+      }
+    }
+
     @include respond(sm) {
+      .navbar-collapse {
+        background-color: transparent;
+
+        position: relative;
+        width: auto;
+        padding-top: auto;
+        a {
+          color: $dark;
+        }
+      }
       padding-top: 50px;
     }
     .navLinks {
