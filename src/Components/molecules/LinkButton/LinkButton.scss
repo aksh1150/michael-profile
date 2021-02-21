@@ -36,10 +36,13 @@
 
     @include respond(sm) {
       width: 140px;
+      height: 54px;
+      font-size: 18px;
     }
     @include respond(lg) {
       width: 180px;
       font-size: 18px;
+      height: 54px;
     }
   }
 
