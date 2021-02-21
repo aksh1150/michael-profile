@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Logo, BaseLink } from "../../atoms"
-
 import SocialMedia from "../SocialMedia"
 import { Navbar, Nav } from "react-bootstrap"
 import SocialMediaData from "../../../data/SocialMedia"
