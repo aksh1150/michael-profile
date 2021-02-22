@@ -1,6 +1,11 @@
 .template {
-  .HeroImage {
-    height: 436px !important;
+  .center-img {
+    display: flex;
+    justify-content: center;
+    .HeroImage {
+      height: 436px !important;
+      width: 1190px;
+    }
   }
 
   .placeHolder {

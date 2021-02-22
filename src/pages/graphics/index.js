@@ -1,19 +1,6 @@
 import React, { useState } from "react"
-import {
-  LinkButton,
-  Header,
-  ImageEnlarge,
-  ShareButton,
-  NextPrevBtn,
-} from "../../Components/molecules"
-import {
-  BaseLink,
-  Heading,
-  HighlightedQuotes,
-  BulletSection,
-  Quote,
-  Section,
-} from "../../Components/atoms"
+import { Header, ShareButton, NextPrevBtn } from "../../Components/molecules"
+import { Heading, BulletSection, Section } from "../../Components/atoms"
 import { Layout } from "../../Components/organisms"
 
 import SocialMediaData from "../../data/SocialMedia"
@@ -28,8 +15,10 @@ const Graphics = () => {
     >
       <Section background="White" inner heroSection>
         <Header />
-        <div className="HeroImage placeHolder">
-          <Heading type="h2">Hero Image</Heading>
+        <div className="center-img">
+          <div className="HeroImage placeHolder">
+            <Heading type="h2">Hero Image</Heading>
+          </div>
         </div>
       </Section>
       <Section background="White" inner>
