@@ -1,11 +1,11 @@
 const Menu = [
   {
     title: "UX Case Studies",
-    link: "uxCaseStudy",
+    link: "/uxCaseStudy",
   },
   {
     title: "Graphics",
-    link: "graphics",
+    link: "/graphics",
   },
   {
     title: "About",
