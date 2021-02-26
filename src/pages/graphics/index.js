@@ -25,7 +25,7 @@ const Graphics = () => {
         <Container className="t-mt-84">
           <Row>
             <Col lg={4} md={10} className="t-pr-55">
-              <Heading type="h1" inner>
+              <Heading type="h1" inner colour="dark">
                 H1 head
               </Heading>
               <BulletSection template>
@@ -40,7 +40,7 @@ const Graphics = () => {
               </BulletSection>
             </Col>
             <Col lg={8} md={12} className="pl-6 mt-2 t-pl-55">
-              <Heading type="h2" inner italic>
+              <Heading type="h2" inner italic colour="dark">
                 H2 heading
               </Heading>
               <BulletSection template>
@@ -74,13 +74,13 @@ const Graphics = () => {
         <Container className="t-mt-100">
           <Row>
             <Col lg={6} md={12} className="t-pr-50">
-              <Heading type="h1" inner>
+              <Heading type="h1" inner colour="dark">
                 H1 heading
               </Heading>
-              <Heading type="h2" inner italic>
+              <Heading type="h2" inner italic colour="dark">
                 H2 heading
               </Heading>
-              <Heading type="h3" inner>
+              <Heading type="h3" inner colour="dark">
                 H3 heading
               </Heading>
               <BulletSection template>
@@ -95,13 +95,13 @@ const Graphics = () => {
               </BulletSection>
             </Col>
             <Col lg={6} md={12} className="t-pl-50">
-              <Heading type="h1" inner>
+              <Heading type="h1" inner colour="dark">
                 H1 heading
               </Heading>
-              <Heading type="h2" inner italic>
+              <Heading type="h2" inner italic colour="dark">
                 H2 heading
               </Heading>
-              <Heading type="h3" inner>
+              <Heading type="h3" inner colour="dark">
                 H3 heading
               </Heading>
               <BulletSection template>
@@ -160,13 +160,13 @@ const Graphics = () => {
         <Container className="t-mt-100">
           <Row>
             <Col lg={9} md={12}>
-              <Heading type="h1" inner>
+              <Heading type="h1" inner colour="dark">
                 H1 heading
               </Heading>
-              <Heading type="h2" inner italic>
+              <Heading type="h2" inner italic colour="dark">
                 H2 heading
               </Heading>
-              <Heading type="h3" inner>
+              <Heading type="h3" inner colour="dark">
                 H3 heading
               </Heading>
               <BulletSection template>
