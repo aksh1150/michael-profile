@@ -1,0 +1,49 @@
+.template {
+  .center-img {
+    display: flex;
+    justify-content: center;
+    .HeroImage {
+      height: 436px !important;
+      width: 1190px;
+    }
+  }
+  .secondImg {
+    background-color: #f0f0f0;
+    height: 200px;
+  }
+
+  .placeHolder {
+    padding: 35px;
+    background-color: #f0f0f0;
+  }
+  .t-mt-84 {
+    margin-top: 84px;
+  }
+  .t-mt-87 {
+    margin-top: 87px;
+  }
+  .t-mt-100 {
+    margin-top: 78px;
+  }
+  .t-mb-100 {
+    margin-bottom: 100px;
+  }
+  .t-mt-20 {
+    margin-top: 15px;
+  }
+  .t-pr-55 {
+    padding-right: 55px;
+  }
+  .t-pl-55 {
+    padding-left: 55px;
+  }
+  .t-pl-50 {
+    padding-left: 45px;
+  }
+  .t-pr-50 {
+    padding-right: 45px;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+}
