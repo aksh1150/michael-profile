@@ -1316,6 +1316,7 @@ const CaseStudies = () => {
                 allowfullscreen
                 tabIndex="0"
                 data-embed="true"
+                title="Mobile view"
               ></iframe>
               <BulletSection italic className="text-center">
                 Test out the invision prototype

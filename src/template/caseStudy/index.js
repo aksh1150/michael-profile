@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import { Header, ShareButton, NextPrevBtn } from "../../Components/molecules"
 import { Heading, BulletSection, Section } from "../../Components/atoms"
@@ -8,6 +8,60 @@ import SocialMediaData from "../../data/SocialMedia"
 import { Container, Row, Col } from "react-bootstrap"
 import "./index.scss"
 
+// query {
+//   allContentfulCaseStudy(sort: { fields: createdAt, order: DESC }) {
+//     edges {
+//       node {
+//         h1Heading
+//         slug
+//         bannerImage {
+//           fluid {
+//             src
+//           }
+//         }
+//         h1Heading
+//         firstH2Heading
+//         firstParagraph {
+//           firstParagraph
+//         }
+//         firstLayerH2FirstParagraph {
+//           firstLayerH2FirstParagraph
+//         }
+//         firstLayerH2SecondParagraph {
+//           firstLayerH2SecondParagraph
+//         }
+//         secondLayerLeftH1Heading
+//         secondLayerLeftH2Heading
+//         secondLayerLeftH3Heading
+//         secondLayerRightH1Heading
+//         secondLayerRightH2Heading
+//         secondLayerRightH3Heading
+//         secondLayerRightParagraph {
+//           secondLayerRightParagraph
+//         }
+//         secondLayerLeftParagraph {
+//           secondLayerLeftParagraph
+//         }
+//         thirdLayerParagraph {
+//           thirdLayerParagraph
+//         }
+//         thirdLayerCaption
+//         fourthLayerImage {
+//           fluid {
+//             src
+//           }
+//         }
+//         fourthLayerCaption
+//         fifthLayerH1Heading
+//         fifthLayerH2Heading
+//         fifthLayerH3Heading
+//         fifthLayerParagraph {
+//           fifthLayerParagraph
+//         }
+//       }
+//     }
+//   }
+// }
 export const query = graphql`
   query($slug: String!) {
     contentfulCaseStudy(slug: { eq: $slug }) {
@@ -59,6 +113,7 @@ export const query = graphql`
     allContentfulCaseStudy(sort: { fields: createdAt, order: DESC }) {
       edges {
         node {
+          h1Heading
           slug
         }
       }
@@ -71,9 +126,57 @@ const Graphics = props => {
 
   const nextCaseStudy = props.data.allContentfulCaseStudy.edges
 
-  nextCaseStudy.forEach((val, index) => {
-    console.log(index, val.node.slug)
+  let newCaseStudies = []
+
+  nextCaseStudy.map(val => {
+    if (val.node.h1Heading !== caseStudy.h1Heading) {
+      newCaseStudies.push({
+        title: val.node.h1Heading,
+        slug: val.node.slug,
+      })
+    }
   })
+
+  let i = 0
+
+  function nextItem() {
+    i = i + 1 // increase i by one
+    i = i % newCaseStudies.length // if we've gone too high, start from `0` again\
+
+    return newCaseStudies[i] // give us back the item of where we are now
+  }
+
+  function prevItem() {
+    if (i === 0) {
+      // i would become 0
+      i = newCaseStudies.length // so put it at the other end of the array
+    }
+    i = i - 1 // decrease by one
+
+    return newCaseStudies[i] // give us back the item of where we are now
+  }
+  console.log("Next", nextItem())
+  console.log("Prev", prevItem())
+  // window.addEventListener("load", function () {
+  //   document.getElementById("output").textContent = newCaseStudies[0].title // initial value
+  //   // document.getElementById("next_button").innerText = newCaseStudies[1].t
+  //   document.getElementById("prev_button").addEventListener(
+  //     "click", // we want to listen for a click
+  //     function (e) {
+  //       // the e here is the event itself
+  //       document.getElementById("output").textContent = prevItem()
+  //     }
+  //   )
+
+  //   document.getElementById("next_button").addEventListener(
+  //     "click", // we want to listen for a click
+  //     function (e) {
+  //       // the e here is the event itself
+  //       document.getElementById("output").textContent = nextItem()
+  //       document.getElementById("next_button").innerText = nextItem()
+  //     }
+  //   )
+  // })
 
   return (
     <Layout
@@ -242,11 +345,19 @@ const Graphics = props => {
             <Col sm={12} className="border-top t-mt-87">
               <Row className="t-mt-100 t-mb-100">
                 <Col lg={2} md={3}>
-                  <NextPrevBtn>Name of Left Case Study</NextPrevBtn>
+                  <NextPrevBtn link={`/caseStudy/${prevItem().slug}`} internal>
+                    {prevItem().title}
+                  </NextPrevBtn>
                 </Col>
                 <Col lg={8} md={6} />
                 <Col lg={2} md={3}>
-                  <NextPrevBtn rightArrow>Name of Right Case Study</NextPrevBtn>
+                  <NextPrevBtn
+                    rightArrow
+                    link={`/caseStudy/${nextItem().slug}`}
+                    internal
+                  >
+                    {nextItem().title}
+                  </NextPrevBtn>
                 </Col>
               </Row>
             </Col>
