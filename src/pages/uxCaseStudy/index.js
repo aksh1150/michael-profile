@@ -1148,11 +1148,11 @@ const CaseStudies = () => {
                 <PopUp
                   show={modalShow4}
                   onHide={() => setModalShow4(false)}
-                  heading="Secondary Persona"
+                  heading="User Testing"
                 >
                   <img
                     src={require("../../static/images/herrd/UserTesting_zoom.jpg")}
-                    alt="Secondary Person"
+                    alt="User Testing"
                     className="d-sm-block d-none img-fluid mt-4"
                   />
                 </PopUp>
@@ -1380,7 +1380,13 @@ const CaseStudies = () => {
                 Brand colors derived from images that convey my brand
                 objectives.
                 <br /> A link to the moodboard can be found{" "}
-                <BaseLink InnerLink>here.</BaseLink>
+                <BaseLink
+                  InnerLink
+                  target
+                  link="https://projects.invisionapp.com/boards/NW3ZHX5MZXC/"
+                >
+                  here.
+                </BaseLink>
               </BulletSection>
             </Col>
             <Col lg={8} md={12}>
