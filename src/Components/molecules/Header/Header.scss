@@ -11,14 +11,6 @@
     margin: auto;
     padding-top: 10px;
 
-    .btn-outline-dark {
-      z-index: 99 !important;
-      position: absolute;
-      right: 8%;
-      top: 35%;
-      color: $base-white;
-      border-color: $base-white;
-    }
     .navbar-toggler {
       background-color: $dark;
       z-index: 99 !important;
