@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Logo, BaseLink } from "../../atoms"
 import SocialMedia from "../SocialMedia"
 import { Navbar, Nav } from "react-bootstrap"
@@ -8,27 +8,6 @@ import Menu from "../../../data/MenuItems"
 import "./Header.scss"
 
 const Header = () => {
-  const [isToggle, setIsToggle] = useState(false)
-
-  // const toggled = () => {
-  //   setIsToggle(!isToggle)
-  //   // const el = document.querySelector("#responsive-navbar-nav")
-
-  //   // el.classList.add("show")
-  //   const el = document.querySelector("#responsive-navbar-nav")
-
-  //   el.classList.add("show")
-  // }
-
-  // const toggledHide = () => {
-  //   setIsToggle(!isToggle)
-
-  //   const el = document.querySelector("#responsive-navbar-nav")
-  //   if (el.classList.contains("show")) {
-  //     el.classList.remove("show")
-  //   }
-  // }
-
   const handleCollapse = () => {
     const el = document.querySelector(".navbar .navbar-toggler")
 
