@@ -10,6 +10,8 @@ import BulletSection from "./BulletSection"
 import Quote from "./Quote"
 import Flex from "./Flex"
 
+import PopUp from "./PopUp"
+
 export {
   BaseLink,
   Heading,
@@ -22,4 +24,5 @@ export {
   BulletSection,
   Quote,
   Flex,
+  PopUp,
 }

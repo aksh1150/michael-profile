@@ -8,60 +8,6 @@ import SocialMediaData from "../../data/SocialMedia"
 import { Container, Row, Col } from "react-bootstrap"
 import "./index.scss"
 
-// query {
-//   allContentfulCaseStudy(sort: { fields: createdAt, order: DESC }) {
-//     edges {
-//       node {
-//         h1Heading
-//         slug
-//         bannerImage {
-//           fluid {
-//             src
-//           }
-//         }
-//         h1Heading
-//         firstH2Heading
-//         firstParagraph {
-//           firstParagraph
-//         }
-//         firstLayerH2FirstParagraph {
-//           firstLayerH2FirstParagraph
-//         }
-//         firstLayerH2SecondParagraph {
-//           firstLayerH2SecondParagraph
-//         }
-//         secondLayerLeftH1Heading
-//         secondLayerLeftH2Heading
-//         secondLayerLeftH3Heading
-//         secondLayerRightH1Heading
-//         secondLayerRightH2Heading
-//         secondLayerRightH3Heading
-//         secondLayerRightParagraph {
-//           secondLayerRightParagraph
-//         }
-//         secondLayerLeftParagraph {
-//           secondLayerLeftParagraph
-//         }
-//         thirdLayerParagraph {
-//           thirdLayerParagraph
-//         }
-//         thirdLayerCaption
-//         fourthLayerImage {
-//           fluid {
-//             src
-//           }
-//         }
-//         fourthLayerCaption
-//         fifthLayerH1Heading
-//         fifthLayerH2Heading
-//         fifthLayerH3Heading
-//         fifthLayerParagraph {
-//           fifthLayerParagraph
-//         }
-//       }
-//     }
-//   }
-// }
 export const query = graphql`
   query($slug: String!) {
     contentfulCaseStudy(slug: { eq: $slug }) {
@@ -155,28 +101,6 @@ const Graphics = props => {
 
     return newCaseStudies[i] // give us back the item of where we are now
   }
-  console.log("Next", nextItem())
-  console.log("Prev", prevItem())
-  // window.addEventListener("load", function () {
-  //   document.getElementById("output").textContent = newCaseStudies[0].title // initial value
-  //   // document.getElementById("next_button").innerText = newCaseStudies[1].t
-  //   document.getElementById("prev_button").addEventListener(
-  //     "click", // we want to listen for a click
-  //     function (e) {
-  //       // the e here is the event itself
-  //       document.getElementById("output").textContent = prevItem()
-  //     }
-  //   )
-
-  //   document.getElementById("next_button").addEventListener(
-  //     "click", // we want to listen for a click
-  //     function (e) {
-  //       // the e here is the event itself
-  //       document.getElementById("output").textContent = nextItem()
-  //       document.getElementById("next_button").innerText = nextItem()
-  //     }
-  //   )
-  // })
 
   return (
     <Layout

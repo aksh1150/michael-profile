@@ -1,0 +1,15 @@
+.modal-lg,
+.modal-xl {
+  max-width: 1200px !important;
+  height: 700px !important;
+}
+.modal-content {
+  height: 780px;
+  .modal-body {
+    margin: auto;
+    .img-fluid {
+      width: auto;
+      height: 650px;
+    }
+  }
+}

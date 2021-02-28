@@ -7,6 +7,7 @@ import {
   BulletSection,
   Quote,
   Section,
+  PopUp,
 } from "../../Components/atoms"
 import { Layout } from "../../Components/organisms"
 import { Container, Row, Col } from "react-bootstrap"
@@ -14,6 +15,11 @@ import "./index.scss"
 
 const CaseStudies = () => {
   const [displayControls, setDisplayControls] = useState(false)
+  const [modalShow, setModalShow] = useState(false)
+  const [modalShow1, setModalShow1] = useState(false)
+  const [modalShow2, setModalShow2] = useState(false)
+  const [modalShow3, setModalShow3] = useState(false)
+  const [modalShow4, setModalShow4] = useState(false)
   const handleClick = () => {
     setDisplayControls(true)
   }
@@ -38,6 +44,20 @@ const CaseStudies = () => {
       <Section background="White" inner>
         <Container>
           <Row>
+            {/* <Col lg={12}>
+              <Button variant="primary" clickEvent={() => setModalShow(true)}>
+                Open ABCD
+              </Button>
+              <PopUp show={modalShow} onHide={() => setModalShow(false)}>
+                <Heading type="h1">ABCD</Heading>
+              </PopUp>
+              <Button variant="primary" clickEvent={() => setModalShow1(true)}>
+                Open XYZ
+              </Button>
+              <PopUp show={modalShow1} onHide={() => setModalShow1(false)}>
+                <Heading type="h1">XYZ</Heading>
+              </PopUp>
+            </Col> */}
             <Col lg={3} md={10}>
               <Heading type="h1" inner colour="spaceship">
                 Herrd
@@ -76,13 +96,21 @@ const CaseStudies = () => {
               </Heading>
               <BulletSection className="mt-33">
                 One evening last year, as I watched the evening news, I watched
-                in disbelief at a report of a 14 yr-old boy stabbed and killed
-                by his bully. To make the matter more disheartening, his mom had
-                witnessed it as it happens. I turned to my husband, sitting next
-                to me at the time, and asked, “Can you imagine yourself going
-                through that?” This sentiment has stuck with me since. Being a
-                mom and a minority living in Canada, I am increasingly concerned
-                about the issue of bullying. As a society, we can do more.
+                in disbelief at a{" "}
+                <BaseLink
+                  link="https://www.cbc.ca/news/opinion/opinion-bullying-rob-benn-frenette-1.5335031"
+                  target
+                  InnerLink
+                >
+                  report
+                </BaseLink>{" "}
+                of a 14 yr-old boy stabbed and killed by his bully. To make the
+                matter more disheartening, his mom had witnessed it as it
+                happens. I turned to my husband, sitting next to me at the time,
+                and asked, “Can you imagine yourself going through that?” This
+                sentiment has stuck with me since. Being a mom and a minority
+                living in Canada, I am increasingly concerned about the issue of
+                bullying. As a society, we can do more.
               </BulletSection>
               <BulletSection>
                 Join me in my journey of building Herrd, an app that advocates
@@ -306,18 +334,30 @@ const CaseStudies = () => {
             </Col>
             <Col lg={6} md={10}>
               <HighlightedQuotes>The Pros & Cons</HighlightedQuotes>
-              <BaseLink InnerLink>
+
+              <BaseLink InnerLink clickEvent={() => setModalShow(true)}>
                 Click here for a detailed version of the Competitive Analysis
               </BaseLink>
-              <ImageEnlarge
+              <PopUp
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                heading="Competitive Analysis"
+              >
+                <img
+                  src={require("../../static/images/herrd/IMG_competitvie_analysis.jpg")}
+                  alt="Competitive Analysis"
+                  className="d-sm-block d-none img-fluid mt-4"
+                />
+              </PopUp>
+              <img
                 src={require("../../static/images/herrd/IMG_ProCon.png")}
                 alt="Competitive Analysis"
-                className="d-sm-block d-none"
+                className="d-sm-block d-none img-fluid mt-4"
               />
-              <ImageEnlarge
+              <img
                 src={require("../../static/images/herrd/mobile/IMG_ProCon_mobile.png")}
                 alt="Competitive Analysis"
-                className="d-sm-none d-block"
+                className="d-sm-none d-block img-fluid"
               />
             </Col>
           </Row>
@@ -627,16 +667,37 @@ const CaseStudies = () => {
               </BulletSection>
             </Col>
             <Col lg={9} md={12} className="pl-5">
-              <ImageEnlarge
+              <img
                 src={require("../../static/images/herrd/Persona_1.jpg")}
                 alt="Persona 1"
-                className="d-sm-block d-none"
+                className="d-sm-block d-none img-fluid"
               />
-              <ImageEnlarge
+
+              <img
                 src={require("../../static/images/herrd/mobile/Persona_1.png")}
                 alt="Persona 1"
-                className="d-sm-none d-block"
+                className="d-sm-none d-block img-fluid"
               />
+              <div
+                style={{ textAlign: "right", paddingRight: "40px" }}
+                className="mt-3"
+              >
+                <BaseLink InnerLink clickEvent={() => setModalShow1(true)}>
+                  Click to enlarge
+                </BaseLink>
+              </div>
+
+              <PopUp
+                show={modalShow1}
+                onHide={() => setModalShow1(false)}
+                heading="Primary Persona"
+              >
+                <img
+                  src={require("../../static/images/herrd/Persona_1.jpg")}
+                  alt="Primary Person"
+                  className="d-sm-block d-none img-fluid mt-4"
+                />
+              </PopUp>
             </Col>
             <Col lg={3} md={10}>
               <BulletSection>
@@ -646,16 +707,37 @@ const CaseStudies = () => {
               </BulletSection>
             </Col>
             <Col lg={9} md={12} className="pl-5">
-              <ImageEnlarge
+              <img
                 src={require("../../static/images/herrd/Persona_2.jpg")}
                 alt="Persona 2"
-                className="d-sm-block d-none"
+                className="d-sm-block d-none img-fluid"
               />
-              <ImageEnlarge
+              <img
                 src={require("../../static/images/herrd/mobile/Persona_2.png")}
                 alt="Persona 2"
-                className="d-sm-none d-block"
+                className="d-sm-none d-block img-fluid"
               />
+
+              <div
+                style={{ textAlign: "right", paddingRight: "40px" }}
+                className="mt-3"
+              >
+                <BaseLink InnerLink clickEvent={() => setModalShow2(true)}>
+                  Click to enlarge
+                </BaseLink>
+              </div>
+
+              <PopUp
+                show={modalShow2}
+                onHide={() => setModalShow2(false)}
+                heading="Secondary Persona"
+              >
+                <img
+                  src={require("../../static/images/herrd/Persona_2.jpg")}
+                  alt="Secondary Person"
+                  className="d-sm-block d-none img-fluid mt-4"
+                />
+              </PopUp>
             </Col>
           </Row>
         </Container>
@@ -726,15 +808,36 @@ const CaseStudies = () => {
               </Heading>
               <BulletSection>
                 I use the
-                <BaseLink InnerLink> Value Proposition Canvas</BaseLink> to
-                explore ways to alleviate my persona’s pains while ideatating on
-                app features.
+                <BaseLink InnerLink clickEvent={() => setModalShow3(true)}>
+                  {" "}
+                  Value Proposition Canvas
+                </BaseLink>{" "}
+                <PopUp
+                  show={modalShow3}
+                  onHide={() => setModalShow3(false)}
+                  heading="Value Proposition Canvas"
+                >
+                  <img
+                    src={require("../../static/images/herrd/IMG_Value_Prop.jpg")}
+                    alt="Value Proposition Canvas"
+                    className="d-sm-block d-none img-fluid mt-4"
+                  />
+                </PopUp>
+                to explore ways to alleviate my persona’s pains while ideatating
+                on app features.
               </BulletSection>
               <BulletSection>
                 I believe these features here, address to my stakeholder’s
                 needs. They seemed to also to do the job in answering the
-                <BaseLink InnerLink> How Might We Statement</BaseLink> I
-                defined.
+                <div className="tooltip">
+                  How Might We Statement
+                  <span className="tooltiptext">
+                    How might we educate parents on how to identify the signs of
+                    bullying, so they have the confidence to tackle bullying,
+                    with the support of a counselor in a safe space?
+                  </span>
+                </div>{" "}
+                I defined.
               </BulletSection>
             </Col>
             <Col lg={8} md={12} className="pl-5">
@@ -1039,7 +1142,20 @@ const CaseStudies = () => {
                 The mid-fi prototype went through 3 versions with two rounds of
                 usability testing by 5 participants. Detailed session one
                 testing result overview can be found{" "}
-                <BaseLink InnerLink>here.</BaseLink>
+                <BaseLink InnerLink clickEvent={() => setModalShow4(true)}>
+                  here.
+                </BaseLink>
+                <PopUp
+                  show={modalShow4}
+                  onHide={() => setModalShow4(false)}
+                  heading="Secondary Persona"
+                >
+                  <img
+                    src={require("../../static/images/herrd/UserTesting_zoom.jpg")}
+                    alt="Secondary Person"
+                    className="d-sm-block d-none img-fluid mt-4"
+                  />
+                </PopUp>
               </BulletSection>
             </Col>
           </Row>
@@ -1314,7 +1430,6 @@ const CaseStudies = () => {
                 src="https://invis.io/53XRYLBXWM8"
                 frameborder="0"
                 allowfullscreen
-                tabIndex="0"
                 data-embed="true"
                 title="Mobile view"
               ></iframe>
@@ -1348,8 +1463,8 @@ const CaseStudies = () => {
                       src="https://invis.io/53XRYLBXWM8"
                       frameborder="0"
                       allowfullscreen
-                      tabIndex="0"
                       data-embed="true"
+                      title="Mobile view"
                     ></iframe>
                     <BulletSection italic className="text-center">
                       Test out the invision prototype
@@ -1492,10 +1607,11 @@ const CaseStudies = () => {
                 Furthermore, I am designing for the user, not myself. What was
                 intuitive to me in the UI and UX design was not always the case
                 for my users. The importance of information hierarchy is
-                crucial; users will benefit from being shown only the relevant
-                content in one digestible piece at a time. Giving back the user
-                the control of how information comes to them improves
-                engagement.
+                crucial; users wilimport PopUp from
+                '../../Components/atoms/PopUp/index'; l benefit from being shown
+                only the relevant content in one digestible piece at a time.
+                Giving back the user the control of how information comes to
+                them improves engagement.
               </BulletSection>
               <BulletSection>
                 On a final note, it became so apparent to me that, I can only

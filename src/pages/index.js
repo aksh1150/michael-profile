@@ -8,13 +8,7 @@ import {
   Header,
   Footer,
 } from "../Components/molecules"
-import {
-  Heading,
-  Paragraph,
-  ScrollDown,
-  Section,
-  BaseLink,
-} from "../Components/atoms"
+import { Heading, Paragraph, Section, BaseLink } from "../Components/atoms"
 
 import { Container, Row, Col } from "react-bootstrap"
 
