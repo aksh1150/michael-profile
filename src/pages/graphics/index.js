@@ -1,11 +1,26 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import { Header, ShareButton, NextPrevBtn } from "../../Components/molecules"
-import { Heading, BulletSection, Section } from "../../Components/atoms"
+import {
+  Heading,
+  BulletSection,
+  Section,
+  BaseLink,
+} from "../../Components/atoms"
 import { Layout } from "../../Components/organisms"
 
 import SocialMediaData from "../../data/SocialMedia"
 import { Container, Row, Col } from "react-bootstrap"
+
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import {
+  BLOCKS,
+  INLINES,
+  Heading1,
+  Heading2,
+  Heading3,
+} from "@contentful/rich-text-types"
+
 import "./index.scss"
 
 export const query = graphql`
@@ -59,11 +74,29 @@ export const query = graphql`
           fifthLayerParagraph {
             fifthLayerParagraph
           }
+          test {
+            raw
+          }
         }
       }
     }
   }
 `
+const RICHTEXT_OPTIONS = {
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => {
+      return <BulletSection template>{children}</BulletSection>
+    },
+    [INLINES.HYPERLINK]: (node, children) => {
+      console.log(node)
+      return (
+        <BaseLink inner template link={node.data.uri}>
+          {children}
+        </BaseLink>
+      )
+    },
+  },
+}
 
 const Graphics = props => {
   const nextCaseStudy = props.data.allContentfulCaseStudy.edges
@@ -100,7 +133,7 @@ const Graphics = props => {
   const [fifthLayerH2Heading, setFifthLayerH2Heading] = useState("")
   const [fifthLayerH3Heading, setFifthLayerH3Heading] = useState("")
   const [fifthLayerParagraph, setFifthLayerParagraph] = useState("")
-
+  const [htmlContent, setHtmlContent] = useState([])
   function setStates(caseStudy) {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
@@ -176,6 +209,8 @@ const Graphics = props => {
   useEffect(() => {
     const initialSates = nextCaseStudy[0].node
     setStates(initialSates)
+    console.log(JSON.parse(initialSates.test.raw))
+    setHtmlContent(JSON.parse(initialSates.test.raw))
   }, [])
 
   const handleNextProject = () => {
@@ -344,6 +379,9 @@ const Graphics = props => {
             <Col lg={3} md={12} />
             <Col lg={4} md={12}>
               <ShareButton iconData={SocialMediaData} />
+            </Col>
+            <Col md={12}>
+              {documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)}
             </Col>
             <Col sm={12} className="border-top t-mt-87">
               <Row className="t-mt-100 t-mb-100">
