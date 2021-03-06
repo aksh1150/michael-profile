@@ -82,21 +82,21 @@ export const query = graphql`
     }
   }
 `
-// const RICHTEXT_OPTIONS = {
-//   renderNode: {
-//     [BLOCKS.PARAGRAPH]: (node, children) => {
-//       return <BulletSection template>{children}</BulletSection>
-//     },
-//     [INLINES.HYPERLINK]: (node, children) => {
-//       console.log(node)
-//       return (
-//         <BaseLink template link={node.data.uri}>
-//           {children}
-//         </BaseLink>
-//       )
-//     },
-//   },
-// }
+const RICHTEXT_OPTIONS = {
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (node, children) => {
+      return <BulletSection template>{children}</BulletSection>
+    },
+    [INLINES.HYPERLINK]: (node, children) => {
+      console.log(node)
+      return (
+        <BaseLink template link={node.data.uri}>
+          {children}
+        </BaseLink>
+      )
+    },
+  },
+}
 
 const Graphics = props => {
   const nextCaseStudy = props.data.allContentfulCaseStudy.edges
@@ -393,12 +393,12 @@ const Graphics = props => {
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
                 <Col md={12}>
-                  {/* {htmlContent.length > 0
+                  {htmlContent.length > 0
                     ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
-                    : ""} */}
-                  {setTimeout(() => {
+                    : ""}
+                  {/* {setTimeout(() => {
                     documentToReactComponents(htmlContent)
-                  }, 5000)}
+                  }, 5000)} */}
                 </Col>
                 <Col sm={12} className="border-top t-mt-87">
                   <Row className="t-mt-100 t-mb-100">
