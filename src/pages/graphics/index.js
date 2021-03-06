@@ -208,11 +208,13 @@ const Graphics = props => {
   }
   async function set() {
     const initialSates = await nextCaseStudy[0].node
-    await setHtmlContent(JSON.parse(initialSates.test.raw))
+    console.log(JSON.parse(initialSates.test.raw))
+    await setHtmlContent(initialSates.test.raw)
     await setStates(initialSates)
+    console.log(htmlContent)
   }
   useEffect(() => {
-    set().then(setLoading(false), console.log(htmlContent))
+    set().then(setLoading(false))
   }, [])
 
   const handleNextProject = () => {
@@ -394,7 +396,10 @@ const Graphics = props => {
                 </Col>
                 <Col md={12}>
                   {htmlContent.length > 0
-                    ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
+                    ? documentToReactComponents(
+                        JSON.parse(htmlContent),
+                        RICHTEXT_OPTIONS
+                      )
                     : ""}
                   {/* {setTimeout(() => {
                     documentToReactComponents(htmlContent)
