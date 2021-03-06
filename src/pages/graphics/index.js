@@ -87,10 +87,34 @@ const RICHTEXT_OPTIONS = {
     [BLOCKS.PARAGRAPH]: (node, children) => {
       return <BulletSection template>{children}</BulletSection>
     },
-    [INLINES.HYPERLINK]: (node, children) => {
-      console.log(node)
+    [BLOCKS.HEADING_1]: (node, children) => {
       return (
-        <BaseLink template link={node.data.uri}>
+        <Heading type="h2" inner colour="dark">
+          {children}
+        </Heading>
+      )
+    },
+    [BLOCKS.HEADING_2]: (node, children) => {
+      return (
+        <Heading type="h2" inner italic colour="dark">
+          {children}
+        </Heading>
+      )
+    },
+    [BLOCKS.HEADING_3]: (node, children) => {
+      return (
+        <Heading type="h3" inner colour="dark">
+          {children}
+        </Heading>
+      )
+    },
+    [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+      console.log("Block", node)
+      console.log("Children", children)
+    },
+    [INLINES.HYPERLINK]: (node, children) => {
+      return (
+        <BaseLink inner template link={node.data.uri}>
           {children}
         </BaseLink>
       )
@@ -394,7 +418,7 @@ const Graphics = props => {
                 <Col lg={4} md={12}>
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
-                <Col md={12}>
+                <Col md={12} className="t-mt-87">
                   {htmlContent.length > 0
                     ? documentToReactComponents(
                         JSON.parse(htmlContent),

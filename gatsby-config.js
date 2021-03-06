@@ -10,6 +10,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_API_KEY,
+        downloadLocal: true,
       },
     },
     "gatsby-plugin-sass",
