@@ -75,7 +75,7 @@ export const query = graphql`
             fifthLayerParagraph
           }
           test {
-            raw
+            json
           }
         }
       }
@@ -232,8 +232,8 @@ const Graphics = props => {
   }
   async function set() {
     const initialSates = await nextCaseStudy[0].node
-    console.log(JSON.parse(initialSates.test.raw))
-    await setHtmlContent(initialSates.test.raw)
+    console.log(initialSates.test.json)
+    await setHtmlContent(initialSates.test.json)
     await setStates(initialSates)
     console.log(htmlContent)
   }
@@ -420,10 +420,7 @@ const Graphics = props => {
                 </Col>
                 <Col md={12} className="t-mt-87">
                   {htmlContent.length > 0
-                    ? documentToReactComponents(
-                        JSON.parse(htmlContent),
-                        RICHTEXT_OPTIONS
-                      )
+                    ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
                     : ""}
                   {/* {setTimeout(() => {
                     documentToReactComponents(htmlContent)
