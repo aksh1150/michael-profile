@@ -165,9 +165,10 @@ const Graphics = props => {
   const [fifthLayerParagraph, setFifthLayerParagraph] = useState("")
   const [htmlContent, setHtmlContent] = useState([])
   const [loading, setLoading] = useState(true)
-  function setStates(caseStudy) {
+  async function setStates(caseStudy) {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
+    // await setHtmlContent(caseStudy.test.json)
 
     caseStudy.bannerImage
       ? setBannerSrc(caseStudy.bannerImage.fluid.src)
@@ -238,7 +239,7 @@ const Graphics = props => {
   }
   async function set() {
     const initialSates = await nextCaseStudy[0].node
-    console.log(initialSates.test.json)
+    //  console.log(initialSates.test.json)
     await setHtmlContent(initialSates.test.json)
     await setStates(initialSates)
     //  console.log(JSON.parse(htmlContent))
@@ -247,17 +248,18 @@ const Graphics = props => {
     set().then(setLoading(false))
   }, [])
 
-  const handleNextProject = () => {
+  const handleNextProject = async () => {
     var arr = nextCaseStudy.length
     var idx = active + 1
     idx = idx % arr
 
     setActive(idx)
     const caseStudy = nextCaseStudy[idx].node
+    await setHtmlContent(caseStudy.test.json)
     setStates(caseStudy)
   }
 
-  const handlePrevProject = () => {
+  const handlePrevProject = async () => {
     var arr = nextCaseStudy.length
     var idx = active
 
@@ -268,6 +270,7 @@ const Graphics = props => {
     }
     setActive(idx)
     const caseStudy = nextCaseStudy[idx].node
+    await setHtmlContent(caseStudy.test.json)
     setStates(caseStudy)
   }
 
@@ -425,14 +428,9 @@ const Graphics = props => {
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
                 <Col md={12} className="t-mt-87">
-                  {}
-                  {}
-                  {
-                    // htmlContent && console.log("HTML", htmlContent)
-                    htmlContent
-                      ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
-                      : ""
-                  }
+                  {htmlContent
+                    ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
+                    : ""}
                 </Col>
                 <Col sm={12} className="border-top t-mt-87">
                   <Row className="t-mt-100 t-mb-100">
