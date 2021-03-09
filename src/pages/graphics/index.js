@@ -109,10 +109,20 @@ const RICHTEXT_OPTIONS = {
       )
     },
     [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-      console.log("Block", node)
+      console.log("Block", node.data.target.fields.file["en-US"].url)
       console.log("Children", children)
+
+      return (
+        <img
+          src={node.data.target.fields.file["en-US"].url}
+          alt="image"
+          width="50%"
+          height="400px"
+        />
+      )
     },
     [INLINES.HYPERLINK]: (node, children) => {
+      console.log("Block222", node)
       return (
         <BaseLink inner template link={node.data.uri}>
           {children}
@@ -232,10 +242,10 @@ const Graphics = props => {
   }
   async function set() {
     const initialSates = await nextCaseStudy[0].node
-    console.log(initialSates.test.json)
+    // console.log(initialSates.test.json)
     await setHtmlContent(initialSates.test.json)
     await setStates(initialSates)
-    console.log(htmlContent)
+    //  console.log(JSON.parse(htmlContent))
   }
   useEffect(() => {
     set().then(setLoading(false))
@@ -419,9 +429,9 @@ const Graphics = props => {
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
                 <Col md={12} className="t-mt-87">
-                  {htmlContent.length > 0
-                    ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
-                    : ""}
+                  {console.log(htmlContent)}
+                  {documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)}
+                  {/* {htmlContent} */}
                   {/* {setTimeout(() => {
                     documentToReactComponents(htmlContent)
                   }, 5000)} */}
