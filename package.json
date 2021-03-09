@@ -17,6 +17,7 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^14.1.1",
     "bootstrap": "^4.5.0",
+    "framer-motion": "^3.10.2",
     "gatsby": "^2.21.29",
     "gatsby-plugin-netlify": "^2.3.13",
     "gatsby-plugin-react-helmet": "^3.2.4",
