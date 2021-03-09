@@ -255,7 +255,7 @@ const Graphics = props => {
 
     setActive(idx)
     const caseStudy = nextCaseStudy[idx].node
-    await setHtmlContent(caseStudy.test.json)
+    // await setHtmlContent(caseStudy.test.json)
     setStates(caseStudy)
   }
 
@@ -270,7 +270,7 @@ const Graphics = props => {
     }
     setActive(idx)
     const caseStudy = nextCaseStudy[idx].node
-    await setHtmlContent(caseStudy.test.json)
+    //  await setHtmlContent(caseStudy.test.json)
     setStates(caseStudy)
   }
 
@@ -428,7 +428,7 @@ const Graphics = props => {
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
                 <Col md={12} className="t-mt-87">
-                  {htmlContent
+                  {htmlContent.length > 0
                     ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
                     : ""}
                 </Col>
