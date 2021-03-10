@@ -12,15 +12,7 @@ import { Layout } from "../../Components/organisms"
 import SocialMediaData from "../../data/SocialMedia"
 import { Container, Row, Col } from "react-bootstrap"
 
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import {
-  BLOCKS,
-  INLINES,
-  Heading1,
-  Heading2,
-  Heading3,
-} from "@contentful/rich-text-types"
-
+import NewHTML from "./html"
 import "./index.scss"
 
 export const query = graphql`
@@ -74,61 +66,14 @@ export const query = graphql`
           fifthLayerParagraph {
             fifthLayerParagraph
           }
-          test {
-            json
-          }
         }
       }
     }
   }
 `
-const RICHTEXT_OPTIONS = {
-  renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => {
-      return <BulletSection template>{children}</BulletSection>
-    },
-    [BLOCKS.HEADING_1]: (node, children) => {
-      return (
-        <Heading type="h2" inner colour="dark">
-          {children}
-        </Heading>
-      )
-    },
-    [BLOCKS.HEADING_2]: (node, children) => {
-      return (
-        <Heading type="h2" inner italic colour="dark">
-          {children}
-        </Heading>
-      )
-    },
-    [BLOCKS.HEADING_3]: (node, children) => {
-      return (
-        <Heading type="h3" inner colour="dark">
-          {children}
-        </Heading>
-      )
-    },
-    [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-      return (
-        <img
-          src={node.data.target.fields.file["en-US"].url}
-          alt="image"
-          width="50%"
-          height="400px"
-        />
-      )
-    },
-    [INLINES.HYPERLINK]: (node, children) => {
-      return (
-        <BaseLink inner template link={node.data.uri}>
-          {children}
-        </BaseLink>
-      )
-    },
-  },
-}
 
 const Graphics = props => {
+  // console.log(NewHTML())
   const nextCaseStudy = props.data.allContentfulCaseStudy.edges
 
   const [active, setActive] = useState(0)
@@ -163,7 +108,7 @@ const Graphics = props => {
   const [fifthLayerH2Heading, setFifthLayerH2Heading] = useState("")
   const [fifthLayerH3Heading, setFifthLayerH3Heading] = useState("")
   const [fifthLayerParagraph, setFifthLayerParagraph] = useState("")
-  const [htmlContent, setHtmlContent] = useState([])
+
   const [loading, setLoading] = useState(true)
   async function setStates(caseStudy) {
     document.body.scrollTop = 0
@@ -239,8 +184,6 @@ const Graphics = props => {
   }
   async function set() {
     const initialSates = await nextCaseStudy[0].node
-    //  console.log(initialSates.test.json)
-    await setHtmlContent(initialSates.test.json)
     await setStates(initialSates)
     //  console.log(JSON.parse(htmlContent))
   }
@@ -427,11 +370,10 @@ const Graphics = props => {
                 <Col lg={4} md={12}>
                   <ShareButton iconData={SocialMediaData} />
                 </Col>
-                <Col md={12} className="t-mt-87">
-                  {htmlContent.length > 0
-                    ? documentToReactComponents(htmlContent, RICHTEXT_OPTIONS)
-                    : ""}
-                </Col>
+                {/* <Col md={12} className="t-mt-87">
+                  {documentToReactComponents(NewHTML(), RICHTEXT_OPTIONS)}
+                </Col> */}
+                <NewHTML active={active} />
                 <Col sm={12} className="border-top t-mt-87">
                   <Row className="t-mt-100 t-mb-100">
                     <Col lg={2} md={3}>
