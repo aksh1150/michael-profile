@@ -73,7 +73,7 @@ const NewHTML = ({ active }) => {
   `)
 
   const getNode = () => {
-    if (query.allContentfulCaseStudy || query.allContentfulCaseStudy.edges) {
+    if (query.allContentfulCaseStudy.edges.node) {
       return query.allContentfulCaseStudy.edges[active].node.test !== null
         ? query.allContentfulCaseStudy.edges[active].node.test.json
         : ""
