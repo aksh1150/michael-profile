@@ -81,8 +81,9 @@ const NewHTML = ({ active }) => {
   //   }
   //   return null
   // }
-  const getHTML = edgesNode[active].node.test
-    ? edgesNode[active].node.test.json
+  const actives = active || 0
+  const getHTML = edgesNode[actives].node.test
+    ? edgesNode[actives].node.test.json
     : ""
 
   return (
