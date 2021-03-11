@@ -73,12 +73,12 @@ const NewHTML = ({ active }) => {
   `)
 
   const getNode = () => {
-    if (query.allContentfulCaseStudy.edges[active].node) {
+    if (query.allContentfulCaseStudy || query.allContentfulCaseStudy.edges) {
       return query.allContentfulCaseStudy.edges[active].node.test !== null
         ? query.allContentfulCaseStudy.edges[active].node.test.json
         : ""
     }
-    return ""
+    return null
   }
   const getHTML = getNode()
 
