@@ -357,7 +357,7 @@ const Graphics = props => {
             </Container>
           </Section>
           <Section background="White" inner>
-            <Container className="t-mt-84">
+            <Container className="">
               <Row>
                 <Col md={12}>
                   <NewHTML active={active} />
