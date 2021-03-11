@@ -72,15 +72,18 @@ const NewHTML = ({ active }) => {
     }
   `)
 
-  const getNode = () => {
-    if (query.allContentfulCaseStudy.edges.node) {
-      return query.allContentfulCaseStudy.edges[active].node.test !== null
-        ? query.allContentfulCaseStudy.edges[active].node.test.json
-        : ""
-    }
-    return null
-  }
-  const getHTML = getNode()
+  const edgesNode = query.allContentfulCaseStudy.edges
+  // const getNode = () => {
+  //   if (query.allContentfulCaseStudy.edges.node) {
+  //     return query.allContentfulCaseStudy.edges[active].node.test !== null
+  //       ? query.allContentfulCaseStudy.edges[active].node.test.json
+  //       : ""
+  //   }
+  //   return null
+  // }
+  const getHTML = edgesNode[active].node.test
+    ? edgesNode[active].node.test.json
+    : ""
 
   return (
     <Col md={12} className="t-mt-87">
