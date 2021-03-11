@@ -72,10 +72,16 @@ const NewHTML = ({ active }) => {
     }
   `)
 
-  const getHTML =
-    query.allContentfulCaseStudy.edges[active] !== null
-      ? query.allContentfulCaseStudy.edges[active].node.test.json
-      : ""
+  const getNode = () => {
+    if (query.allContentfulCaseStudy.edges[active].node !== undefined) {
+      return query.allContentfulCaseStudy.edges[active].node.test !== null
+        ? query.allContentfulCaseStudy.edges[active].node.test.json
+        : ""
+    }
+    return ""
+  }
+  const getHTML = getNode()
+
   return (
     <Col md={12} className="t-mt-87">
       {documentToReactComponents(getHTML, RICHTEXT_OPTIONS)}
