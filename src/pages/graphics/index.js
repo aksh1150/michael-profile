@@ -356,6 +356,15 @@ const Graphics = props => {
               </Row>
             </Container>
           </Section>
+          <Section background="White" inner>
+            <Container className="t-mt-84">
+              <Row>
+                <Col md={12}>
+                  <NewHTML active={active} />
+                </Col>
+              </Row>
+            </Container>
+          </Section>
 
           <Section background="White" inner>
             <Container className="t-mt-84">
@@ -373,7 +382,7 @@ const Graphics = props => {
                 {/* <Col md={12} className="t-mt-87">
                   {documentToReactComponents(NewHTML(), RICHTEXT_OPTIONS)}
                 </Col> */}
-                <NewHTML active={active} />
+
                 <Col sm={12} className="border-top t-mt-87">
                   <Row className="t-mt-100 t-mb-100">
                     <Col lg={2} md={3}>
