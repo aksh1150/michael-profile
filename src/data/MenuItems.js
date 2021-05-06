@@ -5,7 +5,7 @@ const Menu = [
   },
   {
     title: "Graphics",
-    link: "/graphics",
+    link: "",
   },
   {
     title: "About",
