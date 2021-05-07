@@ -276,7 +276,7 @@ const Home = () => {
             <Paragraph size="xs">{HomePage.footerText}</Paragraph>
           </Col>
           <Col xs={12} sm={4} lg={3}>
-            <ShareButton iconData={SocialMediaData} />
+            {/* <ShareButton iconData={SocialMediaData} /> */}
           </Col>
         </Row>
       </Container>

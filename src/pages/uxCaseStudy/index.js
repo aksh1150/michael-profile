@@ -1476,7 +1476,7 @@ const CaseStudies = () => {
                       Test out the invision prototype
                     </BulletSection>
                   </Col>
-                  <video
+                  {/* <video
                     width="100%"
                     height="430px"
                     controls={displayControls}
@@ -1491,7 +1491,7 @@ const CaseStudies = () => {
                   </video>
                   <BulletSection italic className="mt-4">
                     Click to play a demo of the main task flow.
-                  </BulletSection>
+                  </BulletSection> */}
                 </Col>
               </Row>
             </Col>
@@ -1613,8 +1613,7 @@ const CaseStudies = () => {
                 Furthermore, I am designing for the user, not myself. What was
                 intuitive to me in the UI and UX design was not always the case
                 for my users. The importance of information hierarchy is
-                crucial; users wilimport PopUp from
-                '../../Components/atoms/PopUp/index'; l benefit from being shown
+                crucial; users will benefit from being shown
                 only the relevant content in one digestible piece at a time.
                 Giving back the user the control of how information comes to
                 them improves engagement.

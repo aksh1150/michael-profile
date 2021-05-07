@@ -50,10 +50,10 @@ const Header = () => {
                 {menuItems.title}
               </BaseLink>
             ))}
-            <SocialMedia
+            {/* <SocialMedia
               data={SocialMediaData}
               className="d-lg-block d-sm-none d-none"
-            />
+            /> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
