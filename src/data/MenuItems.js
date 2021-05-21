@@ -3,10 +3,10 @@ const Menu = [
     title: "UX Case Studies",
     link: "/uxCaseStudy",
   },
-  // {
-  //   title: "Graphics",
-  //   link: "",
-  // },
+  {
+    title: "Graphics",
+    link: "designmicha.com",
+  },
   // {
   //   title: "About",
   //   link: "/",
