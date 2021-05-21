@@ -5,7 +5,7 @@ const Menu = [
   },
   {
     title: "Graphics",
-    link: "designmicha.com",
+    link: "https://designmicha.com",
   },
   // {
   //   title: "About",
