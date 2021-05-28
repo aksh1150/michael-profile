@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+@import "../../styles/global-style.scss";
+@import "../../styles/mixins.scss";
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../static/fonts/Helvetica-Light.ttf") format("truetype");
+}
+.imgTopMar {
+  margin-top: 200px !important;
+}
+.uxDesign {
+  img {
+    width: auto;
+  }
+  .svgWidth {
+    width: 160px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}
+.wrap {
+  position: relative;
+  .tex-center {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+
+    hr {
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      top: 38%;
+      left: 5%;
+      background-color: $spaceship;
+      @include respond(lg) {
+        top: 40%;
+      }
+    }
+  }
+  .line {
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+  }
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+ol,
+li {
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark;
+  font-family: "Helvetica";
+  @include respond(lg) {
+    font-size: 18px;
+  }
+}
+.shadowBox {
+  margin-top: 80px;
+  padding: 20px 40px 10px;
+  -webkit-box-shadow: 1px 4px 13px 2px rgba(94, 80, 198, 0.63);
+  box-shadow: 1px 4px 13px 2px rgba(94, 80, 198, 0.63);
+}
+.circle {
+  border: 2px solid $dark;
+  padding: 15px 10px 1px;
+  border-radius: 50%;
+  @include respond(sm) {
+    padding: 22px 15px 8px;
+  }
+  p {
+    &.HighlightedQuotes {
+      line-height: 0px;
+    }
+  }
+}
+.justify-content-md-center {
+  .HighlightedQuotes {
+    span {
+      font-size: 30px;
+      text-decoration: line-through;
+      color: $base-medium-grey;
+    }
+  }
+}
+.goal {
+  width: 80px !important;
+}
