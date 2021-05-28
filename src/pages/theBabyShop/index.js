@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { LinkButton, Header, ImageEnlarge } from "../../Components/molecules"
+import { LinkButton, Header, ImageEnlarge, NextPrevBtn } from "../../Components/molecules"
 import {
   BaseLink,
   Heading,
@@ -31,6 +31,31 @@ const TheBabyShop = () => {
             />
           </Col>
           
+          <Col sm={12} className="border-top t-mt-87">
+                  <Row className="t-mt-100 t-mb-100">
+                    <Col lg={3} md={3}>
+                     <NextPrevBtn>
+                         <BaseLink
+                            InnerLink
+                            link="/uxCaseStudy"
+                          >
+                            Herrd
+                        </BaseLink>
+                      </NextPrevBtn>
+                    </Col>
+                    <Col lg={6} md={6} />
+                    <Col lg={3} md={3}>
+                      {/* <NextPrevBtn rightArrow>
+                         <BaseLink
+                            InnerLink
+                            link="/theBabyShop"
+                          >
+                            The Baby Shop
+                        </BaseLink>
+                      </NextPrevBtn> */}
+                    </Col>
+                  </Row>
+                </Col>
         </Row>
         </Container>
         </Section>
