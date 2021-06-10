@@ -85,7 +85,7 @@ const TheBabyShop = () => {
               <Heading type="h2" inner colour="baby" italic>
                 Introduction
               </Heading>
-              <BulletSection className="mt-33">
+              <BulletSection className="mt-4">
                 thebabyshop.com first started as a high-end clothing boutique
                 for children. The company eventually adapted to a new product
                 line with a customer need pivot. I am tasked to integrate the
@@ -124,6 +124,56 @@ const TheBabyShop = () => {
               </BulletSection>
               <BulletSection inline>
                 Daily or weekly design sprints.
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col lg={12} md={12} className="pr-5 mt-5">
+              <Heading type="h1" inner colour="h1baby">
+                1.
+                <br /> Empathize
+              </Heading>
+            </Col>
+            <Col lg={6} md={10} className="pr-5">
+              <Heading type="h2" inner italic colour="baby">
+                Internal
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                The high-end brand lacks marketing support. Mid-ranged brands
+                only offered a 10-20% discount off retail price.
+              </Heading>
+              <BulletSection className="mt-4">
+                With the small margin, they need to rethink their business model
+                and try for the mainstream consumer market. The company saw the
+                need to expand its offerings.
+              </BulletSection>
+            </Col>
+
+            <Col lg={6} md={10} className="pr-5">
+              <Heading type="h2" inner italic colour="baby">
+                External
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                Shoppers enjoy the shopping experience of going into a luxury
+                brand store. It was hard to imitate that same experience online.
+              </Heading>
+              <BulletSection className="mt-4">
+                The current niche for the business is offering European brands
+                not sold in malls to justify shopper’s need to shop for
+                exclusiveness over safety and convenience.
+              </BulletSection>
+            </Col>
+
+            <Col lg={12} md={12} className="pr-5 mt-5">
+              <Heading type="h1" inner colour="dark" className="text-center">
+                “Shoppers will have the confidence that they are buying premium
+                products when they are buying from us.”
+              </Heading>
+              <BulletSection italic className="text-center">
+                Company Vision Statement
               </BulletSection>
             </Col>
           </Row>
