@@ -1,5 +1,10 @@
 import React, { useState } from "react"
-import { LinkButton, Header, ImageEnlarge, NextPrevBtn } from "../../Components/molecules"
+import {
+  LinkButton,
+  Header,
+  ImageEnlarge,
+  NextPrevBtn,
+} from "../../Components/molecules"
 import {
   BaseLink,
   Heading,
@@ -24,10 +29,7 @@ const CaseStudies = () => {
     setDisplayControls(true)
   }
   return (
-    <Layout
-      pagename="Home - Michelle Profile"
-      className="overflowHidden uxDesign globalStyle"
-    >
+    <Layout pagename="HERRD" className="overflowHidden uxDesign globalStyle">
       <Section background="White" inner heroSection>
         <Header />
         <img
@@ -1613,10 +1615,10 @@ const CaseStudies = () => {
                 Furthermore, I am designing for the user, not myself. What was
                 intuitive to me in the UI and UX design was not always the case
                 for my users. The importance of information hierarchy is
-                crucial; users will benefit from being shown
-                only the relevant content in one digestible piece at a time.
-                Giving back the user the control of how information comes to
-                them improves engagement.
+                crucial; users will benefit from being shown only the relevant
+                content in one digestible piece at a time. Giving back the user
+                the control of how information comes to them improves
+                engagement.
               </BulletSection>
               <BulletSection>
                 On a final note, it became so apparent to me that, I can only
@@ -1626,25 +1628,22 @@ const CaseStudies = () => {
             </Col>
 
             <Col sm={12} className="border-top t-mt-87">
-                  <Row className="t-mt-100 t-mb-100">
-                    <Col lg={3} md={3}>
-                      {/* <NextPrevBtn clickEvent={handlePrevProject}>
+              <Row className="t-mt-100 t-mb-100">
+                <Col lg={3} md={3}>
+                  {/* <NextPrevBtn clickEvent={handlePrevProject}>
                         {prevTitle(active, nextCaseStudy)}
                       </NextPrevBtn> */}
-                    </Col>
-                    <Col lg={6} md={6} />
-                    <Col lg={3} md={3}>
-                      <NextPrevBtn rightArrow>
-                         <BaseLink
-                            InnerLink
-                            link="/theBabyShop"
-                          >
-                            The Baby Shop
-                        </BaseLink>
-                      </NextPrevBtn>
-                    </Col>
-                  </Row>
                 </Col>
+                <Col lg={6} md={6} />
+                <Col lg={3} md={3}>
+                  <NextPrevBtn rightArrow>
+                    <BaseLink InnerLink link="/theBabyShop">
+                      The Baby Shop
+                    </BaseLink>
+                  </NextPrevBtn>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
 
@@ -1660,8 +1659,6 @@ const CaseStudies = () => {
           </Row>
         </Container>
       </Section>
-
-      
     </Layout>
   )
 }
