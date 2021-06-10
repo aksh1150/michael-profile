@@ -241,6 +241,44 @@ const TheBabyShop = () => {
             </Col>
           </Row>
         </Container>
+
+        <Container>
+          <Row>
+            <Col lg={9} md={10} className="mt-5">
+              <Heading type="h1" inner colour="h1baby">
+                3.
+                <br /> Ideate
+              </Heading>
+            </Col>
+
+            <Col lg={6} md={10}>
+              <BulletSection className="mt-4">
+                Since the founders of the company aspire to build the next
+                Taobao, the team took reference to how their site’s information
+                architecture.
+              </BulletSection>
+            </Col>
+            <Col lg={12} md={10}>
+              <img
+                src={require("../../static/images/theBabyShop/Taobao.png")}
+                alt="Hero Image"
+                className="HeroImage  d-md-block d-none"
+              />
+            </Col>
+
+            <Col lg={6} md={10}>
+              <BulletSection italic className="mt-4">
+                China’s biggest e-commerce: site Taobao Landing Page.
+              </BulletSection>
+            </Col>
+            <Col lg={6} md={10}>
+              <BulletSection italic className="mt-4">
+                All the possible categories of each section are presented
+                through a slide-out menu.
+              </BulletSection>
+            </Col>
+          </Row>
+        </Container>
       </Section>
 
       <Section background="White" inner>
