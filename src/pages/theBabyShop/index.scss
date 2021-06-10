@@ -118,3 +118,28 @@ li {
 .h1baby {
   color: #08598a !important;
 }
+.background {
+  position: relative;
+  height: 900px;
+  .img1 {
+    height: 900px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 100%;
+    background: url("../../static/images/theBabyShop/ScreenCap01.png") no-repeat
+      center right;
+  }
+  .img2 {
+    height: 300px;
+    position: absolute;
+    top: 140px;
+    left: 35px;
+    width: 100%;
+    background: url("../../static/images/theBabyShop/Rectangle.png") no-repeat
+      center left;
+    .innerWidth {
+      max-width: 200px;
+    }
+  }
+}

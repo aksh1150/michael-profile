@@ -279,6 +279,50 @@ const TheBabyShop = () => {
             </Col>
           </Row>
         </Container>
+
+        <Container>
+          <Row>
+            <Col lg={9} md={10} className="mt-5">
+              <Heading type="h1" inner colour="h1baby">
+                4.
+                <br /> Build
+              </Heading>
+            </Col>
+
+            <Col lg={12} md={12} className="background">
+              <Row>
+                <Col lg={6} md={10}>
+                  <Heading type="h2" inner italic colour="baby">
+                    One week sprint - Landing Page Catagorization
+                  </Heading>
+                  <BulletSection className="mt-4">
+                    <b>User Story:</b> As a new customer, I want to explore the
+                    categories at a glance so that I know if it sells the brand
+                    and the type of product I need to buy.
+                  </BulletSection>
+                  <BulletSection className="mt-4">
+                    <b>Spirational finding:</b> We took reference to how
+                    products are categorized on Taoboa’s landing page.
+                  </BulletSection>
+                </Col>
+              </Row>
+              <div className="img1"></div>
+              <Col lg={6} md={10}>
+                <div className="img2">
+                  <BulletSection className="mt-5 ml-4 innerWidth">
+                    <b>Main Nav:</b> <br />
+                    Sectioned by age
+                  </BulletSection>
+                  <BulletSection className="mt-4 ml-4 innerWidth">
+                    <b>Dropdown:</b> <br />
+                    3-column menu; product types, brands, featured sale in this
+                    age group
+                  </BulletSection>
+                </div>
+              </Col>
+            </Col>
+          </Row>
+        </Container>
       </Section>
 
       <Section background="White" inner>
