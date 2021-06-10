@@ -82,7 +82,7 @@ const TheBabyShop = () => {
               <BulletSection inline>Professional</BulletSection>
             </Col>
             <Col lg={9} md={10} className="pl-6 mt-5">
-              <Heading type="h2" inner colour="primary" italic>
+              <Heading type="h2" inner colour="baby" italic>
                 Introduction
               </Heading>
               <BulletSection className="mt-33">
@@ -97,7 +97,7 @@ const TheBabyShop = () => {
                 type="h2"
                 inner
                 italic
-                colour="primary"
+                colour="baby"
                 className="mt-5 mb-4"
               >
                 The Constraints
