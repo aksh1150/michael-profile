@@ -168,13 +168,76 @@ const TheBabyShop = () => {
             </Col>
 
             <Col lg={12} md={12} className="pr-5 mt-5">
-              <Heading type="h1" inner colour="dark" className="text-center">
+              <HighlightedQuotes
+                colour="dark"
+                className="text-center pr-5 pl-5"
+              >
                 “Shoppers will have the confidence that they are buying premium
                 products when they are buying from us.”
-              </Heading>
+              </HighlightedQuotes>
               <BulletSection italic className="text-center">
                 Company Vision Statement
               </BulletSection>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col lg={9} md={10} className="mt-5">
+              <Heading type="h1" inner colour="h1baby">
+                2.
+                <br /> Problem Discovery
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                The brand has gained success from celebrity-endorsed marketing
+                campaigns and press exposure. But it's now fizzling out...
+              </Heading>
+              <BulletSection className="mt-4">
+                In the beginning, I oversaw the packaging and weekly site
+                graphic updates. As the company faces diminishing interest from
+                its pre-launch marketing efforts, the company realized they need
+                a complete overhaul of its offerings to draw in more customers.
+              </BulletSection>
+            </Col>
+
+            <Col lg={6} md={10}>
+              <Row>
+                <Col lg={12} className="blueBox">
+                  <Heading type="h2" inner italic colour="baby">
+                    Hypothesis:
+                  </Heading>
+                  <HighlightedQuotes className="grey mt-4">
+                    Changing from selling luxury children apparel into selling a
+                    wide selection of premium brand children products will
+                    improve our current customers’ need to shop quality goods
+                    but with a lot more varieties.
+                  </HighlightedQuotes>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={6} md={10}>
+              <Row>
+                <Col lg={12} className="lightBlueBox">
+                  <Heading
+                    type="h2"
+                    inner
+                    italic
+                    colour="h1baby"
+                    className="mt-5"
+                  >
+                    The “Customer Need Pivot”
+                  </Heading>
+                  <Heading type="h3" inner colour="baby" className="mt-4">
+                    A step into mainstream essential goods.
+                  </Heading>
+                  <BulletSection className="mt-4 h1baby">
+                    The company entered in a state of Customer Need Pivot. They
+                    need more conversion and more market share in the youth
+                    product sector. So the site has undergone a total facelift.
+                  </BulletSection>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
