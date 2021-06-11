@@ -427,6 +427,22 @@ const TheBabyShop = () => {
                 on the desktop.
               </BulletSection>
             </Col>
+
+            <Col lg={8} md={10} className="mt-5">
+              <Heading type="h2" inner italic colour="baby">
+                Multi-platform Adaptation
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                Mobile Version
+              </Heading>
+            </Col>
+            <Col lg={12}>
+              <img
+                src={require("../../static/images/theBabyShop/mobile.png")}
+                alt="Screencap2"
+                className="img-fluid"
+              />
+            </Col>
           </Row>
         </Container>
       </Section>
