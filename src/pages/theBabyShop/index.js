@@ -382,6 +382,51 @@ const TheBabyShop = () => {
                 className="img-fluid"
               />
             </Col>
+            <Col lg={6} md={10}>
+              <BulletSection>
+                <b>Execution:</b> I supervised the photoshoot of a series of
+                gift hampers, gave it a luxurious backdrop with a European
+                flair. The product offers a side-by-side comparison of the
+                genders at a different price point. It was a happy marriage
+                between our gifting customer and essential goods customer.{" "}
+              </BulletSection>
+            </Col>
+
+            <Col lg={12} md={12} className="background">
+              <Row>
+                <Col lg={6} md={10} className="mt-5">
+                  <Heading type="h2" inner italic colour="baby">
+                    Enhancing Shopping Experience
+                  </Heading>
+                  <BulletSection className="mt-4">
+                    <b>User Story:</b> As a customer looking for a specific
+                    item, I want to find it by category then the brand so that I
+                    can see the price, delivery time, and return policy without
+                    searching for it.
+                  </BulletSection>
+                  <BulletSection className="mt-4">
+                    <b>Challenge:</b> With such an extensive selection of
+                    product offerings, I spent lots of time with the
+                    merchandising team to determine the sort and filter fields.
+                    A very tedious task, some product has many specifications a
+                    drop-down style menu for filter/sort will annoy any return
+                    customer.
+                  </BulletSection>
+                </Col>
+              </Row>
+              <div className="img5"></div>
+            </Col>
+            <Col lg={6} md={10} className="mt-5">
+              <BulletSection className="mt-5">
+                <b>Outcome:</b> The contents of the sort and filter functions
+                are layouts in rows. Adhering to one of Nielsen's heuristics
+                principles: “Match between system and the real world”, making
+                information appear naturally and logically. It entices the
+                shopper to add the item to the cart when they feel like they are
+                informed. Every action is achievable by click without scrolling
+                on the desktop.
+              </BulletSection>
+            </Col>
           </Row>
         </Container>
       </Section>
