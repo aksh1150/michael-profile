@@ -1,5 +1,5 @@
 import React from "react"
-import { Logo, BaseLink } from "../../atoms"
+import { Logo, BaseLink, ScrollToTop } from "../../atoms"
 import SocialMedia from "../SocialMedia"
 import { Navbar, Nav } from "react-bootstrap"
 import SocialMediaData from "../../../data/SocialMedia"
