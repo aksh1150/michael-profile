@@ -267,12 +267,12 @@ const TheBabyShop = () => {
             </Col>
 
             <Col lg={6} md={10}>
-              <BulletSection italic className="mt-4">
+              <BulletSection italic>
                 China’s biggest e-commerce: site Taobao Landing Page.
               </BulletSection>
             </Col>
             <Col lg={6} md={10}>
-              <BulletSection italic className="mt-4">
+              <BulletSection italic>
                 All the possible categories of each section are presented
                 through a slide-out menu.
               </BulletSection>
