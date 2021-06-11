@@ -439,7 +439,29 @@ const TheBabyShop = () => {
             <Col lg={12}>
               <img
                 src={require("../../static/images/theBabyShop/mobile.png")}
-                alt="Screencap2"
+                alt="Mobile version"
+                className="img-fluid"
+              />
+            </Col>
+
+            <Col lg={8} md={10} className="mt-5">
+              <Heading type="h2" inner italic colour="baby">
+                Weekly Promotional Campaign
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                E-blast
+              </Heading>
+              <BulletSection className="mt-4">
+                I was in charge of all the layout designs for the weekly e-blast
+                that tides into promotions, special occasions to enhance
+                engagement and promote our Main Value Proposition: Premium
+                children goods source and sold with ease on online shopping.
+              </BulletSection>
+            </Col>
+            <Col lg={12}>
+              <img
+                src={require("../../static/images/theBabyShop/eblasts.png")}
+                alt="Mobile version"
                 className="img-fluid"
               />
             </Col>
