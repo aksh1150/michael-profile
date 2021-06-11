@@ -321,6 +321,67 @@ const TheBabyShop = () => {
                 </div>
               </Col>
             </Col>
+            <Col lg={6} md={10} className="mt-5 mb-5">
+              <BulletSection className="mt-4">
+                <b>Outcome:</b> A new customer can view the list of categories
+                and brands just with one click. This layout allows for easy
+                content management internally as well. The overall landing page
+                is divided into sections that support similar graphic elements
+                and content input fields. With this UI structure, the layout
+                stays consistent even when an update was done by the
+                merchandising team with no coding knowledge. This is crucial as
+                there were over 2,000 products in the database, and by
+                standardizing the graphical elements by sections, the design
+                team can focus on other promotional material for the brand.
+              </BulletSection>
+            </Col>
+            <Col lg={6} md={10} className="mt-5 mb-4">
+              <div className="img3">
+                <BulletSection className="mt-4 ml-4 innerWidth">
+                  Notice how both banners have the same design components.
+                  Merchandising team will simply upload or edit on the three
+                  components: Header, body, and image inside the CMS.
+                </BulletSection>
+              </div>
+              <div className="img4"></div>
+            </Col>
+
+            <Col lg={8} md={10} className="mt-5">
+              <Heading type="h2" inner italic colour="baby">
+                Enhancing Conversion Rate
+              </Heading>
+              <Heading type="h3" inner colour="dark" className="mt-4">
+                Keeping existing customers happy
+              </Heading>
+            </Col>
+            <Col lg={6} md={10}>
+              <BulletSection>
+                <b>Challenge:</b> Returning shoppers came to know
+                thebabyshop.com as a luxury children's apparel site.{" "}
+                <b>
+                  <i>
+                    How do I offer the same luxury shopping experience without
+                    the luxury goods?
+                  </i>
+                </b>
+              </BulletSection>
+            </Col>
+            <Col lg={6} md={10}>
+              <BulletSection>
+                <b>Solution:</b> The team wants to keep our existing clients, of
+                course. The company has been selling bespoke gift hamper to
+                corporate clients use them as a gift for their employee turned
+                new parents. It gave us the insight that this can become a
+                stand-alone service for this customer segment.
+              </BulletSection>
+            </Col>
+            <Col lg={12}>
+              <img
+                src={require("../../static/images/theBabyShop/screencap2.png")}
+                alt="Screencap2"
+                className="img-fluid"
+              />
+            </Col>
           </Row>
         </Container>
       </Section>
