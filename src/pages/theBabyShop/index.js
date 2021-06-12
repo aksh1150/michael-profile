@@ -32,12 +32,12 @@ const TheBabyShop = () => {
               <img
                 src={require("../../static/images/theBabyShop/banner.png")}
                 alt="Hero Image"
-                className="HeroImage  d-md-block d-none"
+                className="HeroImage  d-md-block d-none babyShopImg"
               />
               <img
                 src={require("../../static/images/theBabyShop/banner.png")}
                 alt="Hero Image"
-                className="HeroImage  d-md-none d-block"
+                className="HeroImage  d-md-none d-block babyShopImg"
               />
             </Col>
           </Row>
