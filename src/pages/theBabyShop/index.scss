@@ -129,6 +129,12 @@ li {
     width: 100%;
     background: url("../../static/images/theBabyShop/ScreenCap01.png") no-repeat
       center right;
+    @include respond(sm) {
+      background-size: cover;
+    }
+    @include respond(md) {
+      background-size: initial;
+    }
   }
   .img2 {
     height: 300px;
@@ -150,6 +156,12 @@ li {
     width: 100%;
     background: url("../../static/images/theBabyShop/screencap3.png") no-repeat
       center right;
+  }
+  @include respond(sm) {
+    background-size: cover;
+  }
+  @include respond(md) {
+    background-size: initial;
   }
 }
 .img3 {

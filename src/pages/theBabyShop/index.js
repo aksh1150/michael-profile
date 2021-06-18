@@ -252,7 +252,7 @@ const TheBabyShop = () => {
             </Col>
 
             <Col lg={6} md={10}>
-              <BulletSection className="mt-4">
+              <BulletSection>
                 Since the founders of the company aspire to build the next
                 Taobao, the team took reference to how their site’s information
                 architecture.
@@ -262,7 +262,7 @@ const TheBabyShop = () => {
               <img
                 src={require("../../static/images/theBabyShop/Taobao.png")}
                 alt="Hero Image"
-                className="HeroImage  d-md-block d-none"
+                className="HeroImage d-md-block d-none middelImg"
               />
             </Col>
 
@@ -282,7 +282,7 @@ const TheBabyShop = () => {
 
         <Container>
           <Row>
-            <Col lg={9} md={10} className="mt-5">
+            <Col lg={9} md={10} className="mt-4">
               <Heading type="h1" inner colour="h1baby">
                 4.
                 <br /> Build
@@ -394,7 +394,7 @@ const TheBabyShop = () => {
 
             <Col lg={12} md={12} className="background">
               <Row>
-                <Col lg={6} md={10} className="mt-5">
+                <Col lg={6} md={10} className="mt-4">
                   <Heading type="h2" inner italic colour="baby">
                     Enhancing Shopping Experience
                   </Heading>
