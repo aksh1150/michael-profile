@@ -5,7 +5,7 @@ html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
-  background-color: $base-light-grey;
+  background-color: $base-light-grey !important;
 }
 .overflowHidden {
   max-width: 1440px;
